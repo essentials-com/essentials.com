@@ -906,7 +906,7 @@
     </div>
     <section class="traffic-section" id="traffic-section">
         <div class="traffic-header">
-            <h2>30-Day Traffic</h2>
+            <h2>Annual Traffic (estimated)</h2>
             <div class="total" id="traffic-total">0</div>
         </div>
         <div class="chart-container" id="chart-container"></div>
@@ -1157,8 +1157,9 @@
                     return dayTotal;
                 }));
 
-                // Update total
-                totalEl.textContent = grandTotal.toLocaleString() + ' visits';
+                // Update total - extrapolate 30 days to annual
+                const annualEstimate = Math.round(grandTotal * (365 / 30));
+                totalEl.textContent = annualEstimate.toLocaleString() + ' visits';
 
                 // Update date labels
                 const formatDate = (dateStr) => {
