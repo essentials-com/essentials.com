@@ -879,12 +879,25 @@
             
             allDomains.forEach(domain => {
                 const link = document.createElement('a');
-                // Use query param for local testing, real URL when live
-                link.href = isLocal ? `?domain=${domain.name}` : domain.url;
+                link.href = domain.url;
                 link.appendChild(createStyledText(domain.name));
+                
+                // For local testing, update without page reload
+                if (isLocal) {
+                    link.href = `?domain=${domain.name}`;
+                    link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        history.pushState({}, '', `?domain=${domain.name}`);
+                        render();
+                    });
+                }
+                
                 navEl.appendChild(link);
             });
         }
+
+        // Handle browser back/forward
+        window.addEventListener('popstate', render);
 
         render();
 
