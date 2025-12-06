@@ -238,7 +238,7 @@
         .domains a {
             font-family: 'Inter Tight', 'Inter Tight Fallback', sans-serif;
             font-weight: 900;
-            font-size: 1.1rem;
+            font-size: 1.4rem;
             color: var(--text-color);
             text-decoration: none;
             opacity: 0.5;
@@ -873,11 +873,11 @@
                 <a href="https://chromewebstore.google.com/detail/ahrefs-seo-toolbar/hgmoccdbjhknikckedaaebbpdeebhiei" target="_blank">Use Ahrefs Chrome Extension</a>
             `;
 
-            // Render domain links
+            // Render domain links (show all domains)
             const navEl = document.getElementById('domains-nav');
             navEl.innerHTML = '';
             
-            otherDomains.forEach(domain => {
+            allDomains.forEach(domain => {
                 const link = document.createElement('a');
                 // Use query param for local testing, real URL when live
                 link.href = isLocal ? `?domain=${domain.name}` : domain.url;
