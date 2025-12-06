@@ -1463,7 +1463,8 @@
             });
         })();
 
-        // Cycle text case on click (UPPER → Title → lower)
+        // Cycle text case on click (UPPER → Title → lower) - only for "ESSENTIALS" part
+        // Click on extension navigates to next domain
         (function() {
             const cases = ['upper', 'title', 'lower'];
             let currentCaseIndex = 0;
@@ -1480,7 +1481,7 @@
                     
                     if (span.classList.contains('dot')) {
                         isStartOfWord = true;
-                        afterFirstDot = true; // Everything after first dot is the extension
+                        afterFirstDot = true;
                         return;
                     }
                     
@@ -1489,7 +1490,6 @@
                             span.textContent = char.toUpperCase();
                             break;
                         case 'title':
-                            // Extension (after first dot) is always lowercase
                             if (afterFirstDot) {
                                 span.textContent = char.toLowerCase();
                             } else {
@@ -1504,10 +1504,38 @@
                 });
             }
 
+            function isExtensionChar(target) {
+                const logoEl = document.getElementById('main-logo');
+                const chars = Array.from(logoEl.querySelectorAll('.char'));
+                const dotIndex = chars.findIndex(c => c.classList.contains('dot'));
+                const targetIndex = chars.indexOf(target);
+                return dotIndex !== -1 && targetIndex > dotIndex;
+            }
+
+            function navigateToNextDomain() {
+                const currentDomain = getCurrentDomain();
+                const currentIndex = allDomains.findIndex(d => d.name === currentDomain.name);
+                const nextIndex = (currentIndex + 1) % allDomains.length;
+                const nextDomain = allDomains[nextIndex];
+                
+                if (isLocal) {
+                    history.pushState({}, '', `?domain=${nextDomain.name}`);
+                    render();
+                } else {
+                    window.location.href = nextDomain.url;
+                }
+            }
+
             document.getElementById('main-logo').addEventListener('click', (e) => {
                 if (e.target.classList.contains('char') && !e.target.classList.contains('dot')) {
-                    currentCaseIndex = (currentCaseIndex + 1) % cases.length;
-                    updateLogoCase();
+                    if (isExtensionChar(e.target)) {
+                        // Click on extension - navigate to next domain
+                        navigateToNextDomain();
+                    } else {
+                        // Click on "ESSENTIALS" - cycle case
+                        currentCaseIndex = (currentCaseIndex + 1) % cases.length;
+                        updateLogoCase();
+                    }
                 }
             });
         })();
