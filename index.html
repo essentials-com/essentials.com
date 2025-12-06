@@ -1091,19 +1091,56 @@
 
         // Traffic Chart
         (function() {
-            const domainColors = {
-                'essentials.com': '#FF6A00',
-                'essentials.net': '#3B82F6',
-                'essentials.co.uk': '#10B981',
-                'essentials.uk': '#8B5CF6',
-                'essentials.eu': '#F59E0B',
-                'essentials.us': '#EF4444',
-                'essentials.fr': '#EC4899',
-                'essentials.cn': '#06B6D4',
-                'essentials.hk': '#84CC16',
-                'essentials.tw': '#F97316',
-                'essentials.mobi': '#6366F1'
-            };
+            // Generate colors based on primary orange with brightness variations
+            // Works in both light and dark modes
+            function getDomainColors() {
+                const domains = [
+                    'essentials.com',
+                    'essentials.net', 
+                    'essentials.co.uk',
+                    'essentials.uk',
+                    'essentials.eu',
+                    'essentials.us',
+                    'essentials.fr',
+                    'essentials.cn',
+                    'essentials.hk',
+                    'essentials.tw',
+                    'essentials.mobi'
+                ];
+                
+                const isDark = root.getAttribute('data-theme') === 'dark' || 
+                    (!root.getAttribute('data-theme') && window.matchMedia('(prefers-color-scheme: dark)').matches);
+                
+                const colors = {};
+                const count = domains.length;
+                
+                domains.forEach((domain, i) => {
+                    // Base hue is orange (25-30)
+                    const hue = 25;
+                    // Vary saturation slightly for differentiation
+                    const saturation = 85 + (i % 3) * 5;
+                    // Spread lightness across range that works for both modes
+                    // Dark mode: lighter colors (50-80%), Light mode: darker colors (35-65%)
+                    const minL = isDark ? 45 : 30;
+                    const maxL = isDark ? 75 : 60;
+                    const lightness = minL + ((maxL - minL) * (i / (count - 1)));
+                    
+                    colors[domain] = `hsl(${hue}, ${saturation}%, ${lightness}%)`;
+                });
+                
+                return colors;
+            }
+            
+            let domainColors = getDomainColors();
+            
+            // Update colors when theme changes
+            const observer = new MutationObserver(() => {
+                domainColors = getDomainColors();
+                renderChart(currentChartData);
+            });
+            observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+            
+            let currentChartData = null;
 
             // Generate dummy data for last 30 days
             function generateDummyData() {
@@ -1229,12 +1266,26 @@
                 });
             }
 
-            // Initialize with dummy data
-            const dummyData = generateDummyData();
-            renderChart(dummyData);
-
-            // TODO: Replace with real data fetch
-            // fetch('/stats.json').then(r => r.json()).then(renderChart);
+            // Initialize chart
+            function initChart() {
+                // Try to load real data, fall back to dummy
+                fetch('/stats.json')
+                    .then(r => {
+                        if (!r.ok) throw new Error('No stats file');
+                        return r.json();
+                    })
+                    .then(data => {
+                        currentChartData = data;
+                        renderChart(data);
+                    })
+                    .catch(() => {
+                        // Use dummy data if stats.json doesn't exist
+                        currentChartData = generateDummyData();
+                        renderChart(currentChartData);
+                    });
+            }
+            
+            initChart();
         })();
 
         // Random dot color on click
