@@ -128,15 +128,15 @@
   {
     "date": "2025-12-07",
     "domains": {
-      "essentials.com": 432,
-      "essentials.net": 71,
-      "essentials.co.uk": 79,
-      "essentials.uk": 60,
-      "essentials.eu": 42,
-      "essentials.us": 80,
+      "essentials.com": 443,
+      "essentials.net": 72,
+      "essentials.co.uk": 88,
+      "essentials.uk": 63,
+      "essentials.eu": 48,
+      "essentials.us": 82,
       "essentials.fr": 82,
-      "essentials.tw": 51,
-      "essentials.mobi": 48
+      "essentials.tw": 52,
+      "essentials.mobi": 49
     }
   }
 ]
