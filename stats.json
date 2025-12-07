@@ -120,7 +120,9 @@
       "essentials.uk": 44,
       "essentials.eu": 22,
       "essentials.us": 35,
-      "essentials.fr": 23
+      "essentials.fr": 23,
+      "essentials.tw": 28,
+      "essentials.mobi": 15
     }
   },
   {
@@ -132,7 +134,9 @@
       "essentials.uk": 65,
       "essentials.eu": 48,
       "essentials.us": 84,
-      "essentials.fr": 84
+      "essentials.fr": 84,
+      "essentials.tw": 56,
+      "essentials.mobi": 65
     }
   }
 ]
