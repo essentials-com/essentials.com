@@ -15,7 +15,17 @@ Feel free to fork and use for your own similar needs.
 
 ## Live Demo
 
-[essentials.com](https://essentials.com)
+- [essentials.com](https://essentials.com)
+- [essentials.net](https://essentials.net)
+- [essentials.co.uk](https://essentials.co.uk)
+- [essentials.uk](https://essentials.uk)
+- [essentials.eu](https://essentials.eu)
+- [essentials.us](https://essentials.us)
+- [essentials.fr](https://essentials.fr)
+- [essentials.cn](https://essentials.cn)
+- [essentials.hk](https://essentials.hk)
+- [essentials.tw](https://essentials.tw)
+- [essentials.mobi](https://essentials.mobi)
 
 ## Setup Your Own
 
