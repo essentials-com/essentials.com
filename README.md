@@ -147,7 +147,7 @@ This color is used for the dot in domain names, chart accents, and interactive e
 
 ## More Projects
 
-If you like projects like this, please check out my other public projects: [github.com/marcusquinn](https://github.com/marcusquinn)
+If you like projects like this, you can browse more of my community work here: [github.com/marcusquinn](https://github.com/marcusquinn)
 
 If you want to learn more about vibe-coding and operations management with AI assistants, please check out: [aidevops.sh](https://aidevops.sh)
 
