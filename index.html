@@ -636,7 +636,7 @@
 
             <h2>Register your interest</h2>
             <p>Serious offers are invited for this unique collection — for the confidential and secure transfer to the successful winning investor.</p>
-            <p>Please review the portfolio, prospectus and guidance below. Address all enquiries and proposals to <a href="mailto:hello@essentials.com">hello@essentials.com</a>.</p>
+            <p>Please review the portfolio, prospectus and guidance below. Address all enquiries and proposals to <a href="#" id="contact-email" class="email-link"></a>.</p>
 
             <h3>Portfolio</h3>
             <p>We are pleased to present a unique opportunity to acquire a prestigious and memorable collection of domains:</p>
@@ -1538,6 +1538,21 @@
                     }
                 }
             });
+        })();
+
+        // Obfuscated email to prevent scraping
+        (function() {
+            const emailLink = document.getElementById('contact-email');
+            if (emailLink) {
+                // Encoded parts to prevent scraping
+                const parts = ['enquiries', 'essentials', 'com'];
+                const email = parts[0] + '@' + parts[1] + '.' + parts[2];
+                emailLink.textContent = email;
+                emailLink.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    window.location.href = 'mailto:' + email;
+                });
+            }
         })();
 
         // Prefetch fonts on hover over domain links to eliminate font swap on next page
