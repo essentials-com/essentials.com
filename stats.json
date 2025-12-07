@@ -1,9 +1,5 @@
 [
   {
-    "date": "2025-11-07",
-    "domains": {}
-  },
-  {
     "date": "2025-11-08",
     "domains": {}
   },
@@ -118,15 +114,19 @@
   {
     "date": "2025-12-06",
     "domains": {
-      "essentials.com": 96,
-      "essentials.net": 18,
-      "essentials.co.uk": 26,
-      "essentials.uk": 25,
-      "essentials.eu": 14,
-      "essentials.us": 29,
-      "essentials.fr": 15,
-      "essentials.tw": 19,
-      "essentials.mobi": 7
+      "essentials.com": 135,
+      "essentials.net": 27,
+      "essentials.co.uk": 28,
+      "essentials.uk": 44,
+      "essentials.eu": 22,
+      "essentials.us": 35,
+      "essentials.fr": 23,
+      "essentials.tw": 28,
+      "essentials.mobi": 15
     }
+  },
+  {
+    "date": "2025-12-07",
+    "domains": {}
   }
 ]
