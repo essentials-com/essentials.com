@@ -126,6 +126,10 @@ Modify the `--dot-color` CSS variable:
 }
 ```
 
+## More Projects
+
+If you like projects like this, please check out my other public projects: [github.com/marcusquinn](https://github.com/marcusquinn)
+
 ## License
 
 MIT License. See [LICENSE](LICENSE) for details.
