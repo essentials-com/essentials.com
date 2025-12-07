@@ -116,9 +116,31 @@ const allDomains = [
 ];
 ```
 
-### Changing the Accent Color
+### Choosing Your Font
 
-Modify the `--dot-color` CSS variable:
+Choose a font that suits your domain name's personality. Update the Google Fonts import in `index.html`:
+
+```html
+<link href="https://fonts.googleapis.com/css2?family=YourFont:wght@400;900&display=swap" rel="stylesheet">
+```
+
+Then update the CSS font-family declarations:
+
+```css
+body {
+    font-family: 'YourFont', sans-serif;
+}
+
+.logo {
+    font-family: 'YourFont', sans-serif;
+}
+```
+
+Browse fonts at [fonts.google.com](https://fonts.google.com) - consider bold, impactful fonts for domain showcases.
+
+### Choosing Your Primary Color
+
+Pick a color that complements your brand. Modify the `--dot-color` CSS variable:
 
 ```css
 :root {
@@ -126,9 +148,13 @@ Modify the `--dot-color` CSS variable:
 }
 ```
 
+This color is used for the dot in domain names, chart accents, and interactive elements. Choose something that stands out against both light and dark backgrounds.
+
 ## More Projects
 
 If you like projects like this, please check out my other public projects: [github.com/marcusquinn](https://github.com/marcusquinn)
+
+If you want to learn more about vibe-coding and operations management with AI assistants, please check out: [aidevops.sh](https://aidevops.sh)
 
 ## License
 
