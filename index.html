@@ -1312,29 +1312,19 @@
                     return dayTotal;
                 }));
 
-                // Calculate daily average from complete days, or extrapolate from partial day
+                // Calculate daily average from complete days only (exclude today's partial data)
                 const now = new Date();
                 const today = now.toISOString().split('T')[0];
-                const currentHour = now.getUTCHours();
                 
                 const daysWithData = data.filter(day => Object.keys(day.domains).length > 0);
                 const completeDays = daysWithData.filter(day => day.date !== today);
-                const todayData = daysWithData.find(day => day.date === today);
                 
-                let dailyAverage;
+                let dailyAverage = 0;
                 if (completeDays.length > 0) {
-                    // Use average of complete days
                     const completeDaysTotal = completeDays.reduce((sum, day) => 
                         sum + Object.values(day.domains).reduce((a, b) => a + b, 0), 0
                     );
                     dailyAverage = completeDaysTotal / completeDays.length;
-                } else if (todayData) {
-                    // Extrapolate from partial day (hours elapsed)
-                    const todayTotal = Object.values(todayData.domains).reduce((a, b) => a + b, 0);
-                    const hoursElapsed = currentHour || 1; // Avoid division by zero
-                    dailyAverage = (todayTotal / hoursElapsed) * 24;
-                } else {
-                    dailyAverage = 0;
                 }
                 
                 // Calculate all time periods
