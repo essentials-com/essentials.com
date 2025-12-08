@@ -1312,12 +1312,16 @@
                     return dayTotal;
                 }));
 
-                // Calculate daily average from complete days only (exclude today's partial data)
+                // Calculate daily average from complete days only
+                // Exclude today (partial) and first day of data collection (also partial)
                 const now = new Date();
                 const today = now.toISOString().split('T')[0];
                 
                 const daysWithData = data.filter(day => Object.keys(day.domains).length > 0);
-                const completeDays = daysWithData.filter(day => day.date !== today);
+                const firstDataDate = daysWithData.length > 0 ? daysWithData[0].date : null;
+                const completeDays = daysWithData.filter(day => 
+                    day.date !== today && day.date !== firstDataDate
+                );
                 
                 let dailyAverage = 0;
                 if (completeDays.length > 0) {
