@@ -164,17 +164,28 @@
 
         .cta {
             font-size: 1rem;
-            color: var(--text-color);
-            opacity: 0.6;
+            color: #fff;
             cursor: pointer;
-            transition: opacity 0.2s ease;
-            background: none;
-            border: none;
+            transition: all 0.2s ease;
+            background: var(--dot-color);
+            border: 2px solid var(--dot-color);
             font-family: 'Inter', 'Inter Fallback', sans-serif;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(255, 106, 0, 0.3);
         }
 
         .cta:hover {
-            opacity: 1;
+            background: transparent;
+            color: var(--dot-color);
+            box-shadow: 0 4px 12px rgba(255, 106, 0, 0.4);
+            transform: translateY(-1px);
+        }
+
+        .cta:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 6px rgba(255, 106, 0, 0.3);
         }
 
         .cta-links {
