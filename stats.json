@@ -125,6 +125,8 @@
   },
   {
     "date": "2025-12-10",
-    "domains": {}
+    "domains": {
+      "essentials.com": 20
+    }
   }
 ]
