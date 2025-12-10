@@ -1,9 +1,5 @@
 [
   {
-    "date": "2025-11-10",
-    "domains": {}
-  },
-  {
     "date": "2025-11-11",
     "domains": {}
   },
@@ -124,7 +120,11 @@
   {
     "date": "2025-12-09",
     "domains": {
-      "essentials.com": 650
+      "essentials.com": 660
     }
+  },
+  {
+    "date": "2025-12-10",
+    "domains": {}
   }
 ]
