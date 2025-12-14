@@ -452,46 +452,73 @@
 
         .browser-chart {
             display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-            max-width: 600px;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            max-width: 700px;
             margin: 0 auto;
         }
 
-        .browser-bar {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
+        .pie-container {
+            position: relative;
+            width: 200px;
+            height: 200px;
         }
 
-        .browser-bar .label {
-            width: 160px;
-            min-width: 160px;
+        .pie-chart {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            transform: rotate(-90deg);
+        }
+
+        .pie-total {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .pie-total .number {
+            font-family: 'Inter Tight', 'Inter Tight Fallback', sans-serif;
+            font-weight: 900;
+            font-size: 1.8rem;
+            color: var(--dot-color);
+        }
+
+        .pie-total .label {
+            font-size: 0.75rem;
+            opacity: 0.6;
+        }
+
+        .pie-legend {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .pie-legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
             font-size: 0.85rem;
-            text-align: right;
+        }
+
+        .pie-legend-item .color {
+            width: 12px;
+            height: 12px;
+            border-radius: 2px;
+        }
+
+        .pie-legend-item .name {
             opacity: 0.8;
         }
 
-        .browser-bar .bar-container {
-            flex: 1;
-            height: 24px;
-            background: rgba(128, 128, 128, 0.15);
-            border-radius: 4px;
-            overflow: hidden;
-        }
-
-        .browser-bar .bar {
-            height: 100%;
-            background: var(--dot-color);
-            border-radius: 4px;
-            transition: width 0.5s ease;
-            opacity: 0.9;
-        }
-
-        .browser-bar .value {
-            width: 60px;
-            font-size: 0.85rem;
-            opacity: 0.6;
+        .pie-legend-item .value {
+            opacity: 0.5;
+            margin-left: auto;
         }
 
         .site-header {
@@ -1651,39 +1678,73 @@
                 });
             }
 
-            // Render browser chart
+            // Render browser pie chart
             function renderBrowserChart(browsers) {
                 const container = document.getElementById('browser-chart');
                 if (!container || !browsers) return;
                 
                 container.innerHTML = '';
                 
-                // Filter out bots and unknown, take top 8 browsers
+                // Filter out bots and unknown, take top 6 browsers
                 const browserList = Object.entries(browsers)
                     .filter(([name]) => !name.includes('Bot') && name !== 'Unknown' && name !== 'Curl' && name !== 'ChromeHeadless')
                     .sort((a, b) => b[1] - a[1])
-                    .slice(0, 8);
+                    .slice(0, 6);
                 
                 if (browserList.length === 0) return;
                 
-                const maxValue = browserList[0][1];
+                const total = browserList.reduce((sum, [, val]) => sum + val, 0);
                 
-                browserList.forEach(([name, value]) => {
-                    const bar = document.createElement('div');
-                    bar.className = 'browser-bar';
-                    
-                    const percentage = (value / maxValue) * 100;
-                    
-                    bar.innerHTML = `
-                        <span class="label">${name}</span>
-                        <div class="bar-container">
-                            <div class="bar" style="width: ${percentage}%"></div>
-                        </div>
-                        <span class="value">${value.toLocaleString()}</span>
-                    `;
-                    
-                    container.appendChild(bar);
+                // Generate colors for pie slices
+                const colors = [
+                    'var(--dot-color)',
+                    '#4CAF50',
+                    '#2196F3',
+                    '#9C27B0',
+                    '#FF5722',
+                    '#607D8B'
+                ];
+                
+                // Build conic gradient for pie chart
+                let gradientParts = [];
+                let currentAngle = 0;
+                
+                browserList.forEach(([name, value], index) => {
+                    const percentage = (value / total) * 100;
+                    const nextAngle = currentAngle + percentage;
+                    gradientParts.push(`${colors[index]} ${currentAngle}% ${nextAngle}%`);
+                    currentAngle = nextAngle;
                 });
+                
+                // Create pie chart
+                const pieContainer = document.createElement('div');
+                pieContainer.className = 'pie-container';
+                pieContainer.innerHTML = `
+                    <div class="pie-chart" style="background: conic-gradient(${gradientParts.join(', ')})"></div>
+                    <div class="pie-total">
+                        <div class="number">${total.toLocaleString()}</div>
+                        <div class="label">pageviews</div>
+                    </div>
+                `;
+                
+                // Create legend
+                const legend = document.createElement('div');
+                legend.className = 'pie-legend';
+                
+                browserList.forEach(([name, value], index) => {
+                    const percentage = ((value / total) * 100).toFixed(1);
+                    const item = document.createElement('div');
+                    item.className = 'pie-legend-item';
+                    item.innerHTML = `
+                        <span class="color" style="background: ${colors[index]}"></span>
+                        <span class="name">${name}</span>
+                        <span class="value">${percentage}%</span>
+                    `;
+                    legend.appendChild(item);
+                });
+                
+                container.appendChild(pieContainer);
+                container.appendChild(legend);
             }
 
             // Initialize chart
