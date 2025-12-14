@@ -1,219 +1,223 @@
-[
-  {
-    "date": "2025-11-15",
-    "domains": {}
-  },
-  {
-    "date": "2025-11-16",
-    "domains": {}
-  },
-  {
-    "date": "2025-11-17",
-    "domains": {}
-  },
-  {
-    "date": "2025-11-18",
-    "domains": {}
-  },
-  {
-    "date": "2025-11-19",
-    "domains": {}
-  },
-  {
-    "date": "2025-11-20",
-    "domains": {}
-  },
-  {
-    "date": "2025-11-21",
-    "domains": {}
-  },
-  {
-    "date": "2025-11-22",
-    "domains": {}
-  },
-  {
-    "date": "2025-11-23",
-    "domains": {}
-  },
-  {
-    "date": "2025-11-24",
-    "domains": {}
-  },
-  {
-    "date": "2025-11-25",
-    "domains": {}
-  },
-  {
-    "date": "2025-11-26",
-    "domains": {}
-  },
-  {
-    "date": "2025-11-27",
-    "domains": {}
-  },
-  {
-    "date": "2025-11-28",
-    "domains": {}
-  },
-  {
-    "date": "2025-11-29",
-    "domains": {}
-  },
-  {
-    "date": "2025-11-30",
-    "domains": {}
-  },
-  {
-    "date": "2025-12-01",
-    "domains": {}
-  },
-  {
-    "date": "2025-12-02",
-    "domains": {}
-  },
-  {
-    "date": "2025-12-03",
-    "domains": {}
-  },
-  {
-    "date": "2025-12-04",
-    "domains": {}
-  },
-  {
-    "date": "2025-12-05",
-    "domains": {}
-  },
-  {
-    "date": "2025-12-06",
-    "domains": {
-      "essentials.com": 136,
-      "essentials.net": 27,
-      "essentials.co.uk": 28,
-      "essentials.uk": 44,
-      "essentials.eu": 22,
-      "essentials.us": 35,
-      "essentials.fr": 23,
-      "essentials.tw": 28,
-      "essentials.mobi": 15
+{
+  "date": "2025-12-14",
+  "domains": [
+    {
+      "date": "2025-11-15",
+      "domains": {}
+    },
+    {
+      "date": "2025-11-16",
+      "domains": {}
+    },
+    {
+      "date": "2025-11-17",
+      "domains": {}
+    },
+    {
+      "date": "2025-11-18",
+      "domains": {}
+    },
+    {
+      "date": "2025-11-19",
+      "domains": {}
+    },
+    {
+      "date": "2025-11-20",
+      "domains": {}
+    },
+    {
+      "date": "2025-11-21",
+      "domains": {}
+    },
+    {
+      "date": "2025-11-22",
+      "domains": {}
+    },
+    {
+      "date": "2025-11-23",
+      "domains": {}
+    },
+    {
+      "date": "2025-11-24",
+      "domains": {}
+    },
+    {
+      "date": "2025-11-25",
+      "domains": {}
+    },
+    {
+      "date": "2025-11-26",
+      "domains": {}
+    },
+    {
+      "date": "2025-11-27",
+      "domains": {}
+    },
+    {
+      "date": "2025-11-28",
+      "domains": {}
+    },
+    {
+      "date": "2025-11-29",
+      "domains": {}
+    },
+    {
+      "date": "2025-11-30",
+      "domains": {}
+    },
+    {
+      "date": "2025-12-01",
+      "domains": {}
+    },
+    {
+      "date": "2025-12-02",
+      "domains": {}
+    },
+    {
+      "date": "2025-12-03",
+      "domains": {}
+    },
+    {
+      "date": "2025-12-04",
+      "domains": {}
+    },
+    {
+      "date": "2025-12-05",
+      "domains": {}
+    },
+    {
+      "date": "2025-12-06",
+      "domains": {
+        "essentials.com": 136,
+        "essentials.net": 27,
+        "essentials.co.uk": 28,
+        "essentials.uk": 44,
+        "essentials.eu": 22,
+        "essentials.us": 35,
+        "essentials.fr": 23,
+        "essentials.tw": 28,
+        "essentials.mobi": 15
+      }
+    },
+    {
+      "date": "2025-12-07",
+      "domains": {
+        "essentials.com": 810,
+        "essentials.net": 109,
+        "essentials.co.uk": 125,
+        "essentials.uk": 84,
+        "essentials.eu": 69,
+        "essentials.us": 140,
+        "essentials.fr": 112,
+        "essentials.tw": 77,
+        "essentials.mobi": 84
+      }
+    },
+    {
+      "date": "2025-12-08",
+      "domains": {
+        "essentials.com": 825,
+        "essentials.net": 120,
+        "essentials.co.uk": 104,
+        "essentials.uk": 57,
+        "essentials.eu": 81,
+        "essentials.us": 122,
+        "essentials.fr": 57,
+        "essentials.hk": 21,
+        "essentials.tw": 99,
+        "essentials.mobi": 51
+      }
+    },
+    {
+      "date": "2025-12-09",
+      "domains": {
+        "essentials.com": 964,
+        "essentials.net": 98,
+        "essentials.co.uk": 94,
+        "essentials.uk": 56,
+        "essentials.eu": 66,
+        "essentials.us": 156,
+        "essentials.fr": 73,
+        "essentials.hk": 155,
+        "essentials.tw": 89,
+        "essentials.mobi": 50
+      }
+    },
+    {
+      "date": "2025-12-10",
+      "domains": {
+        "essentials.com": 820,
+        "essentials.net": 93,
+        "essentials.co.uk": 109,
+        "essentials.uk": 62,
+        "essentials.eu": 62,
+        "essentials.us": 81,
+        "essentials.fr": 75,
+        "essentials.hk": 68,
+        "essentials.tw": 90,
+        "essentials.mobi": 54
+      }
+    },
+    {
+      "date": "2025-12-11",
+      "domains": {
+        "essentials.com": 793,
+        "essentials.net": 82,
+        "essentials.co.uk": 113,
+        "essentials.uk": 83,
+        "essentials.eu": 87,
+        "essentials.us": 97,
+        "essentials.fr": 66,
+        "essentials.hk": 155,
+        "essentials.tw": 85,
+        "essentials.mobi": 51
+      }
+    },
+    {
+      "date": "2025-12-12",
+      "domains": {
+        "essentials.com": 901,
+        "essentials.net": 175,
+        "essentials.co.uk": 84,
+        "essentials.uk": 78,
+        "essentials.eu": 81,
+        "essentials.us": 88,
+        "essentials.fr": 67,
+        "essentials.hk": 85,
+        "essentials.tw": 60,
+        "essentials.mobi": 122
+      }
+    },
+    {
+      "date": "2025-12-13",
+      "domains": {
+        "essentials.com": 841,
+        "essentials.net": 89,
+        "essentials.co.uk": 83,
+        "essentials.uk": 72,
+        "essentials.eu": 58,
+        "essentials.us": 83,
+        "essentials.fr": 62,
+        "essentials.hk": 107,
+        "essentials.tw": 104,
+        "essentials.mobi": 55
+      }
+    },
+    {
+      "date": "2025-12-14",
+      "domains": {
+        "essentials.com": 196,
+        "essentials.net": 19,
+        "essentials.co.uk": 20,
+        "essentials.uk": 15,
+        "essentials.eu": 15,
+        "essentials.us": 25,
+        "essentials.fr": 18,
+        "essentials.hk": 18,
+        "essentials.tw": 25,
+        "essentials.mobi": 13
+      }
     }
-  },
-  {
-    "date": "2025-12-07",
-    "domains": {
-      "essentials.com": 810,
-      "essentials.net": 109,
-      "essentials.co.uk": 125,
-      "essentials.uk": 84,
-      "essentials.eu": 69,
-      "essentials.us": 140,
-      "essentials.fr": 112,
-      "essentials.tw": 77,
-      "essentials.mobi": 84
-    }
-  },
-  {
-    "date": "2025-12-08",
-    "domains": {
-      "essentials.com": 825,
-      "essentials.net": 120,
-      "essentials.co.uk": 104,
-      "essentials.uk": 57,
-      "essentials.eu": 81,
-      "essentials.us": 122,
-      "essentials.fr": 57,
-      "essentials.hk": 21,
-      "essentials.tw": 99,
-      "essentials.mobi": 51
-    }
-  },
-  {
-    "date": "2025-12-09",
-    "domains": {
-      "essentials.com": 964,
-      "essentials.net": 98,
-      "essentials.co.uk": 94,
-      "essentials.uk": 56,
-      "essentials.eu": 66,
-      "essentials.us": 156,
-      "essentials.fr": 73,
-      "essentials.hk": 155,
-      "essentials.tw": 89,
-      "essentials.mobi": 50
-    }
-  },
-  {
-    "date": "2025-12-10",
-    "domains": {
-      "essentials.com": 820,
-      "essentials.net": 93,
-      "essentials.co.uk": 109,
-      "essentials.uk": 62,
-      "essentials.eu": 62,
-      "essentials.us": 81,
-      "essentials.fr": 75,
-      "essentials.hk": 68,
-      "essentials.tw": 90,
-      "essentials.mobi": 54
-    }
-  },
-  {
-    "date": "2025-12-11",
-    "domains": {
-      "essentials.com": 793,
-      "essentials.net": 82,
-      "essentials.co.uk": 113,
-      "essentials.uk": 83,
-      "essentials.eu": 87,
-      "essentials.us": 97,
-      "essentials.fr": 66,
-      "essentials.hk": 155,
-      "essentials.tw": 85,
-      "essentials.mobi": 51
-    }
-  },
-  {
-    "date": "2025-12-12",
-    "domains": {
-      "essentials.com": 901,
-      "essentials.net": 175,
-      "essentials.co.uk": 84,
-      "essentials.uk": 78,
-      "essentials.eu": 81,
-      "essentials.us": 88,
-      "essentials.fr": 67,
-      "essentials.hk": 85,
-      "essentials.tw": 60,
-      "essentials.mobi": 122
-    }
-  },
-  {
-    "date": "2025-12-13",
-    "domains": {
-      "essentials.com": 841,
-      "essentials.net": 89,
-      "essentials.co.uk": 83,
-      "essentials.uk": 72,
-      "essentials.eu": 58,
-      "essentials.us": 83,
-      "essentials.fr": 62,
-      "essentials.hk": 107,
-      "essentials.tw": 104,
-      "essentials.mobi": 55
-    }
-  },
-  {
-    "date": "2025-12-14",
-    "domains": {
-      "essentials.com": 195,
-      "essentials.net": 19,
-      "essentials.co.uk": 20,
-      "essentials.uk": 15,
-      "essentials.eu": 15,
-      "essentials.us": 25,
-      "essentials.fr": 18,
-      "essentials.hk": 18,
-      "essentials.tw": 25,
-      "essentials.mobi": 13
-    }
-  }
-]
+  ],
+  "browsers": {}
+}
