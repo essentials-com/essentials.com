@@ -146,6 +146,7 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            padding-bottom: 3rem;
             transition: background-color 0.3s ease, color 0.3s ease;
         }
 
@@ -765,6 +766,35 @@
             .chart-legend {
                 gap: 0.5rem;
                 font-size: 0.65rem;
+            }
+
+            .browser-chart {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            .pie-container {
+                width: 160px;
+                height: 160px;
+            }
+
+            .pie-total .number {
+                font-size: 1.4rem;
+            }
+
+            .pie-legend {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 0.5rem 1rem;
+            }
+
+            .pie-legend-item {
+                font-size: 0.75rem;
+            }
+
+            .pie-hover-info {
+                font-size: 0.85rem;
             }
         }
 
