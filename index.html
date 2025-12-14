@@ -450,6 +450,49 @@
             border-radius: 2px;
         }
 
+        .browser-chart {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .browser-bar {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .browser-bar .label {
+            width: 120px;
+            font-size: 0.85rem;
+            text-align: right;
+            opacity: 0.8;
+        }
+
+        .browser-bar .bar-container {
+            flex: 1;
+            height: 24px;
+            background: var(--text-color);
+            opacity: 0.1;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .browser-bar .bar {
+            height: 100%;
+            background: var(--dot-color);
+            border-radius: 4px;
+            transition: width 0.5s ease;
+        }
+
+        .browser-bar .value {
+            width: 60px;
+            font-size: 0.85rem;
+            opacity: 0.6;
+        }
+
         .site-header {
             position: fixed;
             top: 0;
@@ -1115,6 +1158,15 @@
         </div>
         <div class="chart-legend" id="chart-legend"></div>
     </section>
+    
+    <section class="traffic-section" id="browser-section">
+        <div class="traffic-header">
+            <h2>Browsers</h2>
+            <div class="source">(30-day pageview breakdown by browser)</div>
+        </div>
+        <div class="browser-chart" id="browser-chart"></div>
+    </section>
+    
     <div class="chart-tooltip" id="chart-tooltip"></div>
 
     <script>
@@ -1598,6 +1650,41 @@
                 });
             }
 
+            // Render browser chart
+            function renderBrowserChart(browsers) {
+                const container = document.getElementById('browser-chart');
+                if (!container || !browsers) return;
+                
+                container.innerHTML = '';
+                
+                // Filter out bots and unknown, take top 8 browsers
+                const browserList = Object.entries(browsers)
+                    .filter(([name]) => !name.includes('Bot') && name !== 'Unknown' && name !== 'Curl' && name !== 'ChromeHeadless')
+                    .sort((a, b) => b[1] - a[1])
+                    .slice(0, 8);
+                
+                if (browserList.length === 0) return;
+                
+                const maxValue = browserList[0][1];
+                
+                browserList.forEach(([name, value]) => {
+                    const bar = document.createElement('div');
+                    bar.className = 'browser-bar';
+                    
+                    const percentage = (value / maxValue) * 100;
+                    
+                    bar.innerHTML = `
+                        <span class="label">${name}</span>
+                        <div class="bar-container">
+                            <div class="bar" style="width: ${percentage}%"></div>
+                        </div>
+                        <span class="value">${value.toLocaleString()}</span>
+                    `;
+                    
+                    container.appendChild(bar);
+                });
+            }
+
             // Initialize chart
             function initChart() {
                 // Try to load real data from stats branch, fall back to dummy
@@ -1608,8 +1695,17 @@
                         return r.json();
                     })
                     .then(data => {
-                        currentChartData = data;
-                        renderChart(data);
+                        // Handle both old format (array) and new format (object with domains and browsers)
+                        if (Array.isArray(data)) {
+                            currentChartData = data;
+                            renderChart(data);
+                        } else {
+                            currentChartData = data.domains || data;
+                            renderChart(currentChartData);
+                            if (data.browsers) {
+                                renderBrowserChart(data.browsers);
+                            }
+                        }
                     })
                     .catch(() => {
                         // Use dummy data if stats.json doesn't exist
