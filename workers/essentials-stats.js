@@ -23,23 +23,22 @@ export default {
 };
 
 async function updateStats(env) {
-  // Web Analytics site tags (for RUM API queries - filters bot traffic)
-  // Note: site_tag is used in GraphQL API queries, site_token is used in beacon scripts
-  const sites = {
-    "essentials.com": "3c70b68deb4c47c0b1b20fb5b13a8ac7",
-    "essentials.net": "a6b388101b694341ae5f60784ba44f77",
-    "essentials.co.uk": "cd7b62213ab94108b7956bc0c91c544c",
-    "essentials.uk": "f81ece8b0e404e9b9daffbf129dad11f",
-    "essentials.eu": "cce0d068b21146c0b0b27a823b5642ba",
-    "essentials.us": "6868d7d0633b4224a7d7e7b3bba344fc",
-    "essentials.fr": "3efc92066a2e45598427ba7d6dba1ab3",
-    "essentials.cn": "6699f55f63aa44979af522c2b3b99f02",
-    "essentials.hk": "b50f1c2fa2e04dcc920d0944306cf101",
-    "essentials.tw": "75bd8006a16f45db9be8a72006b760c1",
-    "essentials.mobi": "586af3efb4ef48baa63961cd4e457279"
+  // Zone IDs for Zone Analytics (httpRequests1dGroups)
+  // Note: Zone Analytics includes all traffic (bots + humans)
+  const zones = {
+    "essentials.com": "3962b136d6e3492bdb570478899847b2",
+    "essentials.net": "d2bb7fe3fdb1217b844ef3c61deaf7e0",
+    "essentials.co.uk": "f5df3dc2776423f4653d4f58f7bf819c",
+    "essentials.uk": "5dd34def9f2ad086dd54afef45abc7c5",
+    "essentials.eu": "75a68625aff272cfcd14be528568774e",
+    "essentials.us": "0030f0ca87bb371396df88f626f40f51",
+    "essentials.fr": "51bd9812a67450597344caaba49dcf0c",
+    "essentials.cn": "9c657d9a33c65cf08f7388bac27567fb",
+    "essentials.hk": "eba3476c1545e7921a74afd94910ef7a",
+    "essentials.tw": "fa860897d24799154c196c1a3df49d68",
+    "essentials.mobi": "dc698847dff06bf68ff8356605228d82"
   };
 
-  const accountTag = env.CF_ACCOUNT_ID;
   const endDate = new Date();
   const startDate = new Date();
   startDate.setDate(startDate.getDate() - 30);
@@ -58,27 +57,25 @@ async function updateStats(env) {
 
   const errors = [];
 
-  for (const [domain, siteTag] of Object.entries(sites)) {
+  for (const [domain, zoneId] of Object.entries(zones)) {
     try {
-      // Use Web Analytics RUM API - filters bot traffic automatically
+      // Use Zone Analytics - httpRequests1dGroups for daily page views
       const query = `
         query {
           viewer {
-            accounts(filter: {accountTag: "${accountTag}"}) {
-              rumPageloadEventsAdaptiveGroups(
+            zones(filter: {zoneTag: "${zoneId}"}) {
+              httpRequests1dGroups(
                 limit: 30
                 filter: {
                   date_gt: "${formatDate(startDate)}"
-                  siteTag: "${siteTag}"
                 }
                 orderBy: [date_ASC]
               ) {
-                count
                 dimensions {
                   date
                 }
                 sum {
-                  visits
+                  pageViews
                 }
               }
             }
@@ -102,12 +99,12 @@ async function updateStats(env) {
         continue;
       }
       
-      if (result.data?.viewer?.accounts?.[0]?.rumPageloadEventsAdaptiveGroups) {
-        result.data.viewer.accounts[0].rumPageloadEventsAdaptiveGroups.forEach(day => {
+      if (result.data?.viewer?.zones?.[0]?.httpRequests1dGroups) {
+        result.data.viewer.zones[0].httpRequests1dGroups.forEach(day => {
           const dayData = data.find(d => d.date === day.dimensions.date);
           if (dayData) {
-            // Use visits count (unique visitors per day)
-            dayData.domains[domain] = day.sum.visits;
+            // Use pageViews count from Zone Analytics
+            dayData.domains[domain] = day.sum.pageViews;
           }
         });
       }
