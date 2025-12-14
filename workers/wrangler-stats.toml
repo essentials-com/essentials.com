@@ -1,0 +1,7 @@
+name = "essentials-stats"
+main = "essentials-stats.js"
+compatibility_date = "2024-01-01"
+
+# Cron trigger - every 5 minutes
+[triggers]
+crons = ["*/5 * * * *"]
