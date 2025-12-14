@@ -460,6 +460,13 @@
             margin: 0 auto;
         }
 
+        .pie-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
         .pie-container {
             position: relative;
             width: 200px;
@@ -474,10 +481,6 @@
         }
 
         .pie-total {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
             text-align: center;
         }
 
@@ -491,6 +494,19 @@
         .pie-total .label {
             font-size: 0.75rem;
             opacity: 0.6;
+        }
+
+        .pie-hover-info {
+            text-align: center;
+            min-height: 2.5rem;
+        }
+
+        .pie-hover-info .browser-name {
+            font-weight: 700;
+        }
+
+        .pie-hover-info .browser-value {
+            color: var(--dot-color);
         }
 
         .pie-legend {
@@ -1716,16 +1732,33 @@
                     currentAngle = nextAngle;
                 });
                 
+                // Create pie wrapper with chart and total below
+                const pieWrapper = document.createElement('div');
+                pieWrapper.className = 'pie-wrapper';
+                
                 // Create pie chart
                 const pieContainer = document.createElement('div');
                 pieContainer.className = 'pie-container';
                 pieContainer.innerHTML = `
                     <div class="pie-chart" style="background: conic-gradient(${gradientParts.join(', ')})"></div>
-                    <div class="pie-total">
-                        <div class="number">${total.toLocaleString()}</div>
-                        <div class="label">pageviews</div>
-                    </div>
                 `;
+                
+                // Create total display below pie
+                const pieTotal = document.createElement('div');
+                pieTotal.className = 'pie-total';
+                pieTotal.innerHTML = `
+                    <div class="number">${total.toLocaleString()}</div>
+                    <div class="label">pageviews</div>
+                `;
+                
+                // Create hover info area
+                const hoverInfo = document.createElement('div');
+                hoverInfo.className = 'pie-hover-info';
+                hoverInfo.innerHTML = '<span class="browser-name">Hover for details</span>';
+                
+                pieWrapper.appendChild(pieContainer);
+                pieWrapper.appendChild(pieTotal);
+                pieWrapper.appendChild(hoverInfo);
                 
                 // Create legend
                 const legend = document.createElement('div');
@@ -1740,10 +1773,19 @@
                         <span class="name">${name}</span>
                         <span class="value">${percentage}%</span>
                     `;
+                    
+                    // Add hover events
+                    item.addEventListener('mouseenter', () => {
+                        hoverInfo.innerHTML = `<span class="browser-name">${name}</span>: <span class="browser-value">${value.toLocaleString()} pageviews (${percentage}%)</span>`;
+                    });
+                    item.addEventListener('mouseleave', () => {
+                        hoverInfo.innerHTML = '<span class="browser-name">Hover for details</span>';
+                    });
+                    
                     legend.appendChild(item);
                 });
                 
-                container.appendChild(pieContainer);
+                container.appendChild(pieWrapper);
                 container.appendChild(legend);
             }
 
