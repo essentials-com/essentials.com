@@ -24,7 +24,7 @@ export default {
 
 async function updateStats(env) {
   // Zone IDs for Zone Analytics (httpRequests1dGroups)
-  // Note: Zone Analytics includes all traffic (bots + humans)
+  // Note: Using uniq.uniques for unique visitor counts (filters out bots)
   const zones = {
     "essentials.com": "3962b136d6e3492bdb570478899847b2",
     "essentials.net": "d2bb7fe3fdb1217b844ef3c61deaf7e0",
@@ -56,10 +56,63 @@ async function updateStats(env) {
   }
 
   const errors = [];
+  const browsers = {};
+
+  // First, fetch browser stats from the primary zone (essentials.com)
+  try {
+    const browserQuery = `
+      query {
+        viewer {
+          zones(filter: {zoneTag: "${zones["essentials.com"]}"}) {
+            httpRequests1dGroups(
+              limit: 30
+              filter: {
+                date_gt: "${formatDate(startDate)}"
+              }
+            ) {
+              sum {
+                browserMap {
+                  pageViews
+                  uaBrowserFamily
+                }
+              }
+            }
+          }
+        }
+      }
+    `;
+
+    const browserResponse = await fetch("https://api.cloudflare.com/client/v4/graphql", {
+      method: "POST",
+      headers: {
+        "Authorization": `Bearer ${env.CF_API_TOKEN}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ query: browserQuery })
+    });
+
+    const browserResult = await browserResponse.json();
+    
+    if (browserResult.errors) {
+      errors.push({ source: "browserMap", errors: browserResult.errors });
+    } else if (browserResult.data?.viewer?.zones?.[0]?.httpRequests1dGroups) {
+      // Aggregate browser pageViews across all days
+      browserResult.data.viewer.zones[0].httpRequests1dGroups.forEach(day => {
+        if (day.sum?.browserMap) {
+          day.sum.browserMap.forEach(browser => {
+            const family = browser.uaBrowserFamily || "Unknown";
+            browsers[family] = (browsers[family] || 0) + browser.pageViews;
+          });
+        }
+      });
+    }
+  } catch (e) {
+    errors.push({ source: "browserMap", error: e.message });
+  }
 
   for (const [domain, zoneId] of Object.entries(zones)) {
     try {
-      // Use Zone Analytics - httpRequests1dGroups for daily page views
+      // Use Zone Analytics - httpRequests1dGroups for daily unique visitors
       const query = `
         query {
           viewer {
@@ -74,8 +127,8 @@ async function updateStats(env) {
                 dimensions {
                   date
                 }
-                sum {
-                  pageViews
+                uniq {
+                  uniques
                 }
               }
             }
@@ -103,8 +156,8 @@ async function updateStats(env) {
         result.data.viewer.zones[0].httpRequests1dGroups.forEach(day => {
           const dayData = data.find(d => d.date === day.dimensions.date);
           if (dayData) {
-            // Use pageViews count from Zone Analytics
-            dayData.domains[domain] = day.sum.pageViews;
+            // Use uniques count from Zone Analytics (filters out bots)
+            dayData.domains[domain] = day.uniq.uniques;
           }
         });
       }
@@ -113,8 +166,20 @@ async function updateStats(env) {
     }
   }
 
+  // Sort browsers by pageViews descending
+  const sortedBrowsers = Object.fromEntries(
+    Object.entries(browsers).sort((a, b) => b[1] - a[1])
+  );
+
+  // Build final stats object with browsers
+  const statsOutput = {
+    date: formatDate(endDate),
+    domains: data,
+    browsers: sortedBrowsers
+  };
+
   // Commit to GitHub - stats branch
-  const content = btoa(JSON.stringify(data, null, 2));
+  const content = btoa(JSON.stringify(statsOutput, null, 2));
   
   let sha = null;
   try {

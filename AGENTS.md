@@ -11,7 +11,7 @@ Domain collection landing page for the essentials.* portfolio, hosted on GitHub 
 | Hosting | GitHub Pages | Static site hosting from `main` branch |
 | DNS | Cloudflare | DNS management for all essentials.* domains |
 | Proxy | Cloudflare Worker (`essentials-proxy`) | Serves content from www.essentials.com to all domain aliases, injects per-domain analytics beacon |
-| Analytics | Cloudflare Zone Analytics | Page views from httpRequests1dGroups (includes all traffic) |
+| Analytics | Cloudflare Zone Analytics | Unique visitors from httpRequests1dGroups.uniq.uniques (filters bots) |
 | Stats | Cloudflare Worker (`essentials-stats`) | Fetches Zone Analytics via GraphQL API, commits to stats.json on `stats` branch every 5 mins |
 
 ## Domains
@@ -86,8 +86,8 @@ Cloudflare Web Analytics tokens are used by the proxy worker to inject per-domai
 | essentials.mobi | `141ccb0338744ec5aa52bc614d034937` |
 
 ### Analytics
-- Stats use Zone Analytics (`httpRequests1dGroups`) which includes all traffic (bots + humans)
-- Uses `sum.pageViews` field for visitor counts
+- Stats use Zone Analytics (`httpRequests1dGroups`) with `uniq.uniques` for unique visitor counts
+- This filters out bot traffic and provides more accurate human visitor metrics
 - The proxy worker still injects Web Analytics beacons for RUM data (optional, not used for stats)
 
 ## Stats Calculation
@@ -99,7 +99,7 @@ The `/day`, `/week`, `/month`, `/year` stats are calculated from **complete days
 ## Important Notes
 
 - Do NOT create redirect rules - domains must serve content directly for JS hostname detection
-- Stats use Zone Analytics (`httpRequests1dGroups`) for page views - includes all traffic
+- Stats use Zone Analytics (`httpRequests1dGroups.uniq.uniques`) for unique visitors - filters bot traffic
 - GitHub Pages only recognizes one custom domain; the proxy worker handles the rest
 - The proxy worker MUST inject per-domain analytics beacons; without this, all traffic reports to essentials.com only
 - After making changes, purge Cloudflare cache for affected domains
