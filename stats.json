@@ -206,7 +206,7 @@
     {
       "date": "2025-12-14",
       "domains": {
-        "essentials.com": 201,
+        "essentials.com": 207,
         "essentials.net": 22,
         "essentials.co.uk": 20,
         "essentials.uk": 16,
@@ -220,10 +220,10 @@
     }
   ],
   "browsers": {
-    "MobileSafari": 3059,
-    "Chrome": 1994,
-    "Unknown": 1877,
-    "ChromeMobile": 1038,
+    "MobileSafari": 3060,
+    "Chrome": 1996,
+    "Unknown": 1878,
+    "ChromeMobile": 1041,
     "Firefox": 231,
     "Edge": 224,
     "Safari": 220,
