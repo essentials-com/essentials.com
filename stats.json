@@ -209,7 +209,7 @@
         "essentials.com": 196,
         "essentials.net": 19,
         "essentials.co.uk": 20,
-        "essentials.uk": 15,
+        "essentials.uk": 16,
         "essentials.eu": 15,
         "essentials.us": 25,
         "essentials.fr": 18,
@@ -219,5 +219,34 @@
       }
     }
   ],
-  "browsers": {}
+  "browsers": {
+    "MobileSafari": 3056,
+    "Chrome": 1993,
+    "Unknown": 1875,
+    "ChromeMobile": 1037,
+    "Firefox": 231,
+    "Edge": 222,
+    "Safari": 220,
+    "Curl": 142,
+    "GoogleBot": 131,
+    "SamsungInternet": 43,
+    "TwitterBot": 33,
+    "BingBot": 29,
+    "ChromeHeadless": 26,
+    "MobileSafariWebview": 22,
+    "ChromeDerivative": 21,
+    "ChromeMobileWebview": 20,
+    "YandexBot": 18,
+    "Opera": 16,
+    "AppleBot": 12,
+    "OperaMobile": 10,
+    "Brave": 7,
+    "Facebook": 5,
+    "Instagram": 4,
+    "Silk": 3,
+    "FirefoxMobile": 2,
+    "Microsoft365": 2,
+    "IE": 1,
+    "Wget": 1
+  }
 }
