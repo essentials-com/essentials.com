@@ -57,62 +57,15 @@ async function updateStats(env) {
 
   const errors = [];
   const browsers = {};
-
-  // First, fetch browser stats from the primary zone (essentials.com)
-  try {
-    const browserQuery = `
-      query {
-        viewer {
-          zones(filter: {zoneTag: "${zones["essentials.com"]}"}) {
-            httpRequests1dGroups(
-              limit: 30
-              filter: {
-                date_gt: "${formatDate(startDate)}"
-              }
-            ) {
-              sum {
-                browserMap {
-                  pageViews
-                  uaBrowserFamily
-                }
-              }
-            }
-          }
-        }
-      }
-    `;
-
-    const browserResponse = await fetch("https://api.cloudflare.com/client/v4/graphql", {
-      method: "POST",
-      headers: {
-        "Authorization": `Bearer ${env.CF_API_TOKEN}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ query: browserQuery })
-    });
-
-    const browserResult = await browserResponse.json();
-    
-    if (browserResult.errors) {
-      errors.push({ source: "browserMap", errors: browserResult.errors });
-    } else if (browserResult.data?.viewer?.zones?.[0]?.httpRequests1dGroups) {
-      // Aggregate browser pageViews across all days
-      browserResult.data.viewer.zones[0].httpRequests1dGroups.forEach(day => {
-        if (day.sum?.browserMap) {
-          day.sum.browserMap.forEach(browser => {
-            const family = browser.uaBrowserFamily || "Unknown";
-            browsers[family] = (browsers[family] || 0) + browser.pageViews;
-          });
-        }
-      });
-    }
-  } catch (e) {
-    errors.push({ source: "browserMap", error: e.message });
-  }
+  
+  // Calculate date range for last 7 days (for browser daily average)
+  const sevenDaysAgo = new Date();
+  sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
 
   for (const [domain, zoneId] of Object.entries(zones)) {
     try {
       // Use Zone Analytics - httpRequests1dGroups for daily unique visitors
+      // Also fetch browser stats for last 7 days
       const query = `
         query {
           viewer {
@@ -129,6 +82,12 @@ async function updateStats(env) {
                 }
                 uniq {
                   uniques
+                }
+                sum {
+                  browserMap {
+                    pageViews
+                    uaBrowserFamily
+                  }
                 }
               }
             }
@@ -159,6 +118,14 @@ async function updateStats(env) {
             // Use uniques count from Zone Analytics (filters out bots)
             dayData.domains[domain] = day.uniq.uniques;
           }
+          
+          // Aggregate browser stats from last 7 days only
+          if (day.dimensions.date > formatDate(sevenDaysAgo) && day.sum?.browserMap) {
+            day.sum.browserMap.forEach(browser => {
+              const family = browser.uaBrowserFamily || "Unknown";
+              browsers[family] = (browsers[family] || 0) + browser.pageViews;
+            });
+          }
         });
       }
     } catch (e) {
@@ -166,16 +133,18 @@ async function updateStats(env) {
     }
   }
 
-  // Sort browsers by pageViews descending
-  const sortedBrowsers = Object.fromEntries(
-    Object.entries(browsers).sort((a, b) => b[1] - a[1])
+  // Calculate daily average from 7-day totals and sort by pageViews descending
+  const dailyBrowsers = Object.fromEntries(
+    Object.entries(browsers)
+      .map(([name, total]) => [name, Math.round(total / 7)])
+      .sort((a, b) => b[1] - a[1])
   );
 
-  // Build final stats object with browsers
+  // Build final stats object with browsers (daily averages)
   const statsOutput = {
     date: formatDate(endDate),
     domains: data,
-    browsers: sortedBrowsers
+    browsers: dailyBrowsers
   };
 
   // Commit to GitHub - stats branch

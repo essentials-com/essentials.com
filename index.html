@@ -146,6 +146,7 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            padding-top: 5rem;
             padding-bottom: 3rem;
             transition: background-color 0.3s ease, color 0.3s ease;
         }
@@ -200,7 +201,7 @@
         }
 
         .cta-links a {
-            font-size: 0.85rem;
+            font-size: 1rem;
             color: var(--text-color);
             opacity: 0.4;
             text-decoration: none;
@@ -316,7 +317,7 @@
         }
 
         .traffic-header .source {
-            font-size: 0.8rem;
+            font-size: 1rem;
             opacity: 0.5;
             margin-bottom: 0.5rem;
         }
@@ -343,7 +344,7 @@
         }
 
         .traffic-stats .stat-label {
-            font-size: 0.9rem;
+            font-size: 1rem;
             opacity: 0.6;
         }
 
@@ -378,7 +379,7 @@
         }
 
         .chart-bar .day-label {
-            font-size: 0.55rem;
+            font-size: 1rem;
             text-align: center;
             opacity: 0.4;
             padding-top: 0.3rem;
@@ -389,7 +390,7 @@
             display: flex;
             justify-content: space-between;
             padding: 0.5rem 0.5rem 0;
-            font-size: 0.7rem;
+            font-size: 1rem;
             opacity: 0.4;
         }
 
@@ -399,7 +400,7 @@
             justify-content: center;
             gap: 1rem;
             margin-top: 1.5rem;
-            font-size: 0.75rem;
+            font-size: 1rem;
         }
 
         .legend-item {
@@ -421,7 +422,7 @@
             border: 1px solid var(--dot-color);
             padding: 0.75rem;
             border-radius: 4px;
-            font-size: 0.8rem;
+            font-size: 1rem;
             pointer-events: none;
             opacity: 0;
             transition: opacity 0.2s ease;
@@ -453,10 +454,9 @@
 
         .browser-chart {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            gap: 2rem;
-            flex-wrap: wrap;
+            gap: 1.5rem;
             max-width: 700px;
             margin: 0 auto;
         }
@@ -493,13 +493,16 @@
         }
 
         .pie-total .label {
-            font-size: 0.75rem;
+            font-size: 1rem;
             opacity: 0.6;
         }
 
         .pie-hover-info {
             text-align: center;
-            min-height: 2.5rem;
+            height: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .pie-hover-info .browser-name {
@@ -512,15 +515,16 @@
 
         .pie-legend {
             display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem 1.5rem;
         }
 
         .pie-legend-item {
             display: flex;
             align-items: center;
             gap: 0.5rem;
-            font-size: 0.85rem;
+            font-size: 1rem;
         }
 
         .pie-legend-item .color {
@@ -535,7 +539,6 @@
 
         .pie-legend-item .value {
             opacity: 0.5;
-            margin-left: auto;
         }
 
         .site-header {
@@ -724,7 +727,7 @@
             }
 
             .site-header .domains a {
-                font-size: 0.7rem;
+                font-size: 1rem;
             }
 
             .top-icons {
@@ -765,12 +768,6 @@
 
             .chart-legend {
                 gap: 0.5rem;
-                font-size: 0.65rem;
-            }
-
-            .browser-chart {
-                flex-direction: column;
-                gap: 1.5rem;
             }
 
             .pie-container {
@@ -783,18 +780,7 @@
             }
 
             .pie-legend {
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: center;
                 gap: 0.5rem 1rem;
-            }
-
-            .pie-legend-item {
-                font-size: 0.75rem;
-            }
-
-            .pie-hover-info {
-                font-size: 0.85rem;
             }
         }
 
@@ -862,7 +848,7 @@
         }
 
         .modal .reference-list {
-            font-size: 0.85rem;
+            font-size: 1rem;
             opacity: 0.8;
             padding-left: 2.5rem;
         }
@@ -1217,7 +1203,7 @@
     <section class="traffic-section" id="traffic-section">
         <div class="traffic-header">
             <h2>Unique Visitors</h2>
-            <div class="source">(Cloudflare's independent analytics data. Real users only, bots excluded.)</div>
+            <div class="source">(Cloudflare's independent analytics data)</div>
             <div class="traffic-stats" id="traffic-stats">
                 <div class="stat"><span class="stat-value" id="stat-day">0</span><span class="stat-label">/day</span></div>
                 <div class="stat"><span class="stat-value" id="stat-week">0</span><span class="stat-label">/week</span></div>
@@ -1236,7 +1222,7 @@
     <section class="traffic-section" id="browser-section">
         <div class="traffic-header">
             <h2>Browsers</h2>
-            <div class="source">(30-day pageview breakdown by browser)</div>
+            <div class="source">(Daily pageviews. Real users only, bots excluded.)</div>
         </div>
         <div class="browser-chart" id="browser-chart"></div>
     </section>
@@ -1766,16 +1752,6 @@
                 const pieWrapper = document.createElement('div');
                 pieWrapper.className = 'pie-wrapper';
                 
-                // Build slice angle ranges for hover detection
-                const sliceRanges = [];
-                let angleStart = 0;
-                browserList.forEach(([name, value], index) => {
-                    const percentage = (value / total) * 100;
-                    const angleEnd = angleStart + (percentage * 3.6); // 360 degrees / 100%
-                    sliceRanges.push({ name, value, percentage, angleStart, angleEnd, color: colors[index] });
-                    angleStart = angleEnd;
-                });
-                
                 // Create pie chart
                 const pieContainer = document.createElement('div');
                 pieContainer.className = 'pie-container';
@@ -1788,7 +1764,7 @@
                 pieTotal.className = 'pie-total';
                 pieTotal.innerHTML = `
                     <div class="number">${total.toLocaleString()}</div>
-                    <div class="label">pageviews</div>
+                    <div class="label">daily pageviews</div>
                 `;
                 
                 // Create hover info area
@@ -1799,28 +1775,6 @@
                 pieWrapper.appendChild(pieContainer);
                 pieWrapper.appendChild(pieTotal);
                 pieWrapper.appendChild(hoverInfo);
-                
-                // Add hover to pie chart to detect slice
-                pieContainer.addEventListener('mousemove', (e) => {
-                    const rect = pieContainer.getBoundingClientRect();
-                    const centerX = rect.width / 2;
-                    const centerY = rect.height / 2;
-                    const x = e.clientX - rect.left - centerX;
-                    const y = e.clientY - rect.top - centerY;
-                    
-                    // Calculate angle (0 = top, clockwise)
-                    let angle = Math.atan2(x, -y) * (180 / Math.PI);
-                    if (angle < 0) angle += 360;
-                    
-                    // Find which slice
-                    const slice = sliceRanges.find(s => angle >= s.angleStart && angle < s.angleEnd);
-                    if (slice) {
-                        hoverInfo.innerHTML = `<span class="browser-name">${slice.name}</span>: <span class="browser-value">${slice.value.toLocaleString()} pageviews (${slice.percentage.toFixed(1)}%)</span>`;
-                    }
-                });
-                pieContainer.addEventListener('mouseleave', () => {
-                    hoverInfo.innerHTML = '';
-                });
                 
                 // Create legend
                 const legend = document.createElement('div');
@@ -1838,7 +1792,7 @@
                     
                     // Add hover events
                     item.addEventListener('mouseenter', () => {
-                        hoverInfo.innerHTML = `<span class="browser-name">${name}</span>: <span class="browser-value">${value.toLocaleString()} pageviews (${percentage}%)</span>`;
+                        hoverInfo.innerHTML = `<span class="browser-name">${name}</span>: <span class="browser-value">${value.toLocaleString()}/day (${percentage}%)</span>`;
                     });
                     item.addEventListener('mouseleave', () => {
                         hoverInfo.innerHTML = '';
@@ -1847,7 +1801,7 @@
                     // Touch support
                     item.addEventListener('touchstart', (e) => {
                         e.preventDefault();
-                        hoverInfo.innerHTML = `<span class="browser-name">${name}</span>: <span class="browser-value">${value.toLocaleString()} pageviews (${percentage}%)</span>`;
+                        hoverInfo.innerHTML = `<span class="browser-name">${name}</span>: <span class="browser-value">${value.toLocaleString()}/day (${percentage}%)</span>`;
                     });
                     
                     legend.appendChild(item);
