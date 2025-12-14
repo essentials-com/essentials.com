@@ -25,7 +25,7 @@ All domains serve the same content; JavaScript detects the hostname and updates 
 - essentials.eu
 - essentials.us
 - essentials.fr
-- essentials.cn
+- essentials.cn (DNS unavailable, links to essentials.com, skipped in logo rotation)
 - essentials.hk
 - essentials.tw
 - essentials.mobi
@@ -35,8 +35,12 @@ All domains serve the same content; JavaScript detects the hostname and updates 
 | File | Purpose |
 |------|---------|
 | `index.html` | Single-page site with all HTML, CSS, and JavaScript |
-| `stats.json` | Visitor statistics, auto-updated by Cloudflare Worker |
+| `stats.json` | Visitor statistics on `stats` branch, auto-updated by Cloudflare Worker |
 | `CNAME` | GitHub Pages custom domain (www.essentials.com) |
+| `workers/essentials-proxy.js` | Proxy worker source code |
+| `workers/essentials-stats.js` | Stats worker source code |
+| `workers/wrangler-*.toml` | Wrangler deployment configs |
+| `workers/README.md` | Worker setup and deployment guide |
 
 ## Cloudflare Configuration
 
@@ -88,13 +92,32 @@ Cloudflare Web Analytics tokens are used by the proxy worker to inject per-domai
 ### Analytics
 - Stats use Zone Analytics (`httpRequests1dGroups`) with `uniq.uniques` for unique visitor counts
 - This filters out bot traffic and provides more accurate human visitor metrics
-- The proxy worker still injects Web Analytics beacons for RUM data (optional, not used for stats)
+- Browser stats aggregated from `sum.browserMap` for pie chart (7-day average, all domains)
+- The proxy worker injects Web Analytics beacons for RUM data (optional, not used for stats)
+- Stats fetched from `raw.githubusercontent.com/.../stats/stats.json`
 
 ## Stats Calculation
 
+### Unique Visitors Chart
 The `/day`, `/week`, `/month`, `/year` stats are calculated from **complete days only**:
 - Excludes today (partial day in progress)
 - Excludes the first day of data collection (partial day when analytics started)
+- 30-day stacked bar chart showing per-domain breakdown
+
+### Browser Pie Chart
+- 7-day average daily pageviews from all 11 domains
+- Excludes today (partial day) - uses 7 complete days
+- Filters out bots (GoogleBot, BingBot, etc.), Unknown, Curl, ChromeHeadless
+- Shows top 6 browsers with hover details on legend
+
+## UI Features
+
+- Dark/light theme toggle (persisted in localStorage)
+- Logo click cycles case (UPPER → Title → lower)
+- Extension click navigates to next domain (skips essentials.cn)
+- Fade-in rise animation on logo
+- Mobile responsive with touch support for charts
+- Minimum 16px font size throughout
 
 ## Important Notes
 
@@ -103,3 +126,5 @@ The `/day`, `/week`, `/month`, `/year` stats are calculated from **complete days
 - GitHub Pages only recognizes one custom domain; the proxy worker handles the rest
 - The proxy worker MUST inject per-domain analytics beacons; without this, all traffic reports to essentials.com only
 - After making changes, purge Cloudflare cache for affected domains
+- Zone IDs and Web Analytics tokens are public identifiers (not secrets)
+- Actual API secrets stored via `wrangler secret put` (CF_API_TOKEN, GITHUB_TOKEN)
