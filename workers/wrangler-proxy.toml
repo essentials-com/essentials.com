@@ -1,0 +1,7 @@
+name = "essentials-proxy"
+main = "essentials-proxy.js"
+compatibility_date = "2024-01-01"
+
+# Routes - add your domains here
+# Each domain needs a route configured in Cloudflare dashboard
+# or via wrangler route commands
