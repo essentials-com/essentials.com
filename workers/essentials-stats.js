@@ -58,9 +58,12 @@ async function updateStats(env) {
   const errors = [];
   const browsers = {};
   
-  // Calculate date range for last 7 days (for browser daily average)
-  const sevenDaysAgo = new Date();
-  sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+  // Calculate date range for last 7 complete days (exclude today)
+  const today = new Date();
+  const yesterday = new Date(today);
+  yesterday.setDate(yesterday.getDate() - 1);
+  const eightDaysAgo = new Date(today);
+  eightDaysAgo.setDate(eightDaysAgo.getDate() - 8);
 
   for (const [domain, zoneId] of Object.entries(zones)) {
     try {
@@ -119,8 +122,9 @@ async function updateStats(env) {
             dayData.domains[domain] = day.uniq.uniques;
           }
           
-          // Aggregate browser stats from last 7 days only
-          if (day.dimensions.date > formatDate(sevenDaysAgo) && day.sum?.browserMap) {
+          // Aggregate browser stats from last 7 complete days (exclude today)
+          const dayDate = day.dimensions.date;
+          if (dayDate > formatDate(eightDaysAgo) && dayDate <= formatDate(yesterday) && day.sum?.browserMap) {
             day.sum.browserMap.forEach(browser => {
               const family = browser.uaBrowserFamily || "Unknown";
               browsers[family] = (browsers[family] || 0) + browser.pageViews;
