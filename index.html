@@ -1784,11 +1784,19 @@
                 // Create hover info area
                 const hoverInfo = document.createElement('div');
                 hoverInfo.className = 'pie-hover-info';
-                hoverInfo.innerHTML = '<span class="browser-name">Hover for details</span>';
+                hoverInfo.innerHTML = '';
                 
                 pieWrapper.appendChild(pieContainer);
                 pieWrapper.appendChild(pieTotal);
                 pieWrapper.appendChild(hoverInfo);
+                
+                // Add hover to pie chart itself
+                pieContainer.addEventListener('mouseenter', () => {
+                    hoverInfo.innerHTML = `<span class="browser-value">Total: ${total.toLocaleString()} pageviews</span>`;
+                });
+                pieContainer.addEventListener('mouseleave', () => {
+                    hoverInfo.innerHTML = '';
+                });
                 
                 // Create legend
                 const legend = document.createElement('div');
@@ -1809,7 +1817,13 @@
                         hoverInfo.innerHTML = `<span class="browser-name">${name}</span>: <span class="browser-value">${value.toLocaleString()} pageviews (${percentage}%)</span>`;
                     });
                     item.addEventListener('mouseleave', () => {
-                        hoverInfo.innerHTML = '<span class="browser-name">Hover for details</span>';
+                        hoverInfo.innerHTML = '';
+                    });
+                    
+                    // Touch support
+                    item.addEventListener('touchstart', (e) => {
+                        e.preventDefault();
+                        hoverInfo.innerHTML = `<span class="browser-name">${name}</span>: <span class="browser-value">${value.toLocaleString()} pageviews (${percentage}%)</span>`;
                     });
                     
                     legend.appendChild(item);
