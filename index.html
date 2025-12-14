@@ -1766,6 +1766,16 @@
                 const pieWrapper = document.createElement('div');
                 pieWrapper.className = 'pie-wrapper';
                 
+                // Build slice angle ranges for hover detection
+                const sliceRanges = [];
+                let angleStart = 0;
+                browserList.forEach(([name, value], index) => {
+                    const percentage = (value / total) * 100;
+                    const angleEnd = angleStart + (percentage * 3.6); // 360 degrees / 100%
+                    sliceRanges.push({ name, value, percentage, angleStart, angleEnd, color: colors[index] });
+                    angleStart = angleEnd;
+                });
+                
                 // Create pie chart
                 const pieContainer = document.createElement('div');
                 pieContainer.className = 'pie-container';
@@ -1790,9 +1800,23 @@
                 pieWrapper.appendChild(pieTotal);
                 pieWrapper.appendChild(hoverInfo);
                 
-                // Add hover to pie chart itself
-                pieContainer.addEventListener('mouseenter', () => {
-                    hoverInfo.innerHTML = `<span class="browser-value">Total: ${total.toLocaleString()} pageviews</span>`;
+                // Add hover to pie chart to detect slice
+                pieContainer.addEventListener('mousemove', (e) => {
+                    const rect = pieContainer.getBoundingClientRect();
+                    const centerX = rect.width / 2;
+                    const centerY = rect.height / 2;
+                    const x = e.clientX - rect.left - centerX;
+                    const y = e.clientY - rect.top - centerY;
+                    
+                    // Calculate angle (0 = top, clockwise)
+                    let angle = Math.atan2(x, -y) * (180 / Math.PI);
+                    if (angle < 0) angle += 360;
+                    
+                    // Find which slice
+                    const slice = sliceRanges.find(s => angle >= s.angleStart && angle < s.angleEnd);
+                    if (slice) {
+                        hoverInfo.innerHTML = `<span class="browser-name">${slice.name}</span>: <span class="browser-value">${slice.value.toLocaleString()} pageviews (${slice.percentage.toFixed(1)}%)</span>`;
+                    }
                 });
                 pieContainer.addEventListener('mouseleave', () => {
                     hoverInfo.innerHTML = '';
