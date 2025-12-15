@@ -669,6 +669,7 @@
             transition: opacity 0.3s ease, visibility 0.3s ease;
             z-index: 100;
             padding: 1rem;
+            overscroll-behavior: contain;
         }
 
         .modal-overlay.active {
@@ -683,6 +684,9 @@
             max-width: 600px;
             max-height: 85vh;
             overflow-y: auto;
+            overflow-x: hidden;
+            overscroll-behavior: contain;
+            -webkit-overflow-scrolling: touch;
             border-radius: 8px;
             padding: 2rem;
             position: relative;
