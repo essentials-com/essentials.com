@@ -2047,6 +2047,19 @@
             const navEl = document.getElementById('domains-nav');
             navEl.addEventListener('mouseenter', prefetchFonts, { once: true, capture: true });
             navEl.addEventListener('touchstart', prefetchFonts, { once: true, passive: true });
+
+            // Prefetch pages on hover over domain links
+            const prefetchedUrls = new Set();
+            navEl.addEventListener('mouseover', (e) => {
+                const link = e.target.closest('a');
+                if (link && link.href && !prefetchedUrls.has(link.href)) {
+                    prefetchedUrls.add(link.href);
+                    const prefetchLink = document.createElement('link');
+                    prefetchLink.rel = 'prefetch';
+                    prefetchLink.href = link.href;
+                    document.head.appendChild(prefetchLink);
+                }
+            });
         })();
     </script>
 </body>
