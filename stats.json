@@ -216,13 +216,17 @@
     },
     {
       "date": "2025-12-15",
-      "domains": {}
+      "domains": {
+        "essentials.com": 4,
+        "essentials.net": 1,
+        "essentials.co.uk": 1
+      }
     }
   ],
   "browsers": {
     "MobileSafari": 543,
     "Chrome": 428,
-    "Unknown": 413,
+    "Unknown": 414,
     "ChromeMobile": 169,
     "Firefox": 49,
     "Edge": 47,
