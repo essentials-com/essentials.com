@@ -233,6 +233,10 @@
             justify-content: center;
             align-items: center;
             gap: 0.02em;
+            opacity: 1;
+        }
+
+        .logo.animate {
             opacity: 0;
             animation: fadeInUp 0.8s ease-out forwards;
         }
@@ -1309,8 +1313,12 @@
 
             // Render main logo
             const logoEl = document.getElementById('main-logo');
+            const isFirstRender = logoEl.innerHTML === '';
             logoEl.innerHTML = '';
             logoEl.appendChild(createStyledText(currentDomain.name));
+            if (isFirstRender) {
+                logoEl.classList.add('animate');
+            }
 
             // Update page title and SEO meta tags
             document.title = currentDomain.name;
