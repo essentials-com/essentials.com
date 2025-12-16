@@ -112,12 +112,16 @@ The `/day`, `/week`, `/month`, `/year` stats are calculated from **complete days
 
 ## UI Features
 
-- Dark/light theme toggle (persisted in localStorage)
+- Dark/light theme toggle in footer (persisted in localStorage)
+- GitHub link in footer
 - Logo click cycles case (UPPER → Title → lower)
 - Extension click navigates to next domain (skips essentials.cn)
-- Fade-in rise animation on logo
+- Fade-in rise animation on logo (initial load only)
 - Mobile responsive with touch support for charts
+- Mobile header scrolls with content (non-sticky)
 - Minimum 16px font size throughout
+- Page prefetching on hover over domain links
+- Font prefetching on hover over navigation
 
 ## Important Notes
 

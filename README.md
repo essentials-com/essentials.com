@@ -8,10 +8,13 @@ Feel free to fork and use for your own similar needs.
 
 - Responsive single-page design with dark/light mode
 - Interactive domain showcase with styled typography
-- Real-time visitor statistics powered by Cloudflare Web Analytics
-- Bot-filtered analytics (real users only)
+- Real-time visitor statistics powered by Cloudflare Zone Analytics
+- Bot-filtered unique visitor counts (real users only)
+- Browser breakdown pie chart (7-day average daily pageviews)
 - Modal with portfolio details and contact information
 - Automatic stats updates every 5 minutes via Cloudflare Workers
+- Page prefetching on hover for faster navigation
+- Mobile-optimized with non-sticky header
 
 ## Live Demo
 
@@ -64,40 +67,29 @@ For each domain you want to track:
 3. Select scope: `repo` (full control)
 4. Copy the token
 
-### 4. Create the Stats Worker
+### 4. Deploy the Workers
 
-Give your AI assistant this prompt:
+See [workers/README.md](workers/README.md) for detailed setup instructions.
 
+**Quick start:**
+```bash
+cd workers
+
+# Login to Cloudflare
+wrangler login
+
+# Deploy proxy worker (serves content to all domain aliases)
+wrangler deploy -c wrangler-proxy.toml
+
+# Deploy stats worker (fetches analytics, commits to GitHub)
+wrangler deploy -c wrangler-stats.toml
+
+# Set secrets for stats worker
+wrangler secret put CF_API_TOKEN -c wrangler-stats.toml
+wrangler secret put GITHUB_TOKEN -c wrangler-stats.toml
 ```
-Create a Cloudflare Worker called "domain-stats" that:
 
-1. Runs on a cron schedule every 5 minutes
-2. Fetches Web Analytics data from Cloudflare's GraphQL API using the 
-   rumPageloadEventsAdaptiveGroups query (this filters out bot traffic)
-3. Queries the last 30 days of unique visitor data for these domains:
-   [LIST YOUR DOMAINS AND THEIR SITE TAGS]
-4. Commits the results as stats.json to my GitHub repository
-
-Configure these secrets for the Worker:
-- CF_API_TOKEN: [YOUR CLOUDFLARE API TOKEN]
-- CF_ACCOUNT_ID: [YOUR CLOUDFLARE ACCOUNT ID]
-- GITHUB_TOKEN: [YOUR GITHUB PERSONAL ACCESS TOKEN]
-- GITHUB_REPO: [YOUR REPO, e.g. username/repo-name]
-
-The stats.json format should be:
-[
-  {
-    "date": "YYYY-MM-DD",
-    "domains": {
-      "example.com": 123,
-      "example.net": 45
-    }
-  }
-]
-
-Use the Web Analytics RUM API (rumPageloadEventsAdaptiveGroups) NOT Zone 
-Analytics (httpRequests1dGroups) - this ensures bot traffic is excluded.
-```
+**Note:** Stats are committed to a separate `stats` branch to avoid triggering GitHub Pages rebuilds.
 
 ### 5. Customize
 
