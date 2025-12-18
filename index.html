@@ -92,15 +92,30 @@
         "sameAs": []
     }
     </script>
-    <!-- Ahrefs Analytics - essentials.com only -->
+    <!-- Ahrefs Analytics - per-domain keys -->
     <script>
-    if (window.location.hostname.includes('essentials.com')) {
-        var s = document.createElement('script');
-        s.src = 'https://analytics.ahrefs.com/analytics.js';
-        s.dataset.key = 'CaTMjarSuc8Fd0scpEbjyA';
-        s.async = true;
-        document.head.appendChild(s);
-    }
+    (function() {
+        var defined = {
+            'essentials.com': 'CaTMjarSuc8Fd0scpEbjyA',
+            'essentials.eu': '8Vc3TD4kCYT9QCIF9kZRzw',
+            'essentials.fr': '0tA0eEnJcnFkGB737elQTA',
+            'essentials.uk': 's4ioNhXFH7gXMVwW79wF/g',
+            'essentials.co.uk': 'VWNgkomN2acCUaLVT4WmUw',
+            'essentials.tw': 'k1byhRJTemRHLVN3Mr6+CA',
+            'essentials.hk': 'O7bX73mR0HaU34LhrRC5ow',
+            'essentials.mobi': 'egUMA2obY3z3CRDlqY3JJw',
+            'essentials.net': 'STZ2dHbZL/AQQ5dbtPec1Q'
+        };
+        var host = window.location.hostname.replace(/^www\./, '');
+        var key = defined[host];
+        if (key) {
+            var s = document.createElement('script');
+            s.src = 'https://analytics.ahrefs.com/analytics.js';
+            s.dataset.key = key;
+            s.async = true;
+            document.head.appendChild(s);
+        }
+    })();
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
