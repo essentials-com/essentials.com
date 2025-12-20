@@ -272,8 +272,10 @@
     {
       "date": "2025-12-20",
       "domains": {
-        "essentials.com": 1,
-        "essentials.hk": 3
+        "essentials.com": 5,
+        "essentials.net": 1,
+        "essentials.hk": 4,
+        "essentials.mobi": 2
       }
     }
   ],
