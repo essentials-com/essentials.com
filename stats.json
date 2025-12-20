@@ -64,6 +64,7 @@
     {
       "date": "2025-12-06",
       "domains": {
+        "essentials.com": 136,
         "essentials.net": 27,
         "essentials.co.uk": 28,
         "essentials.uk": 44,
@@ -77,6 +78,7 @@
     {
       "date": "2025-12-07",
       "domains": {
+        "essentials.com": 810,
         "essentials.net": 109,
         "essentials.co.uk": 125,
         "essentials.uk": 84,
@@ -90,6 +92,7 @@
     {
       "date": "2025-12-08",
       "domains": {
+        "essentials.com": 825,
         "essentials.net": 120,
         "essentials.co.uk": 104,
         "essentials.uk": 57,
@@ -104,6 +107,7 @@
     {
       "date": "2025-12-09",
       "domains": {
+        "essentials.com": 964,
         "essentials.net": 98,
         "essentials.co.uk": 94,
         "essentials.uk": 56,
@@ -118,6 +122,7 @@
     {
       "date": "2025-12-10",
       "domains": {
+        "essentials.com": 820,
         "essentials.net": 93,
         "essentials.co.uk": 109,
         "essentials.uk": 62,
@@ -132,6 +137,7 @@
     {
       "date": "2025-12-11",
       "domains": {
+        "essentials.com": 793,
         "essentials.net": 82,
         "essentials.co.uk": 113,
         "essentials.uk": 83,
@@ -146,6 +152,7 @@
     {
       "date": "2025-12-12",
       "domains": {
+        "essentials.com": 901,
         "essentials.net": 175,
         "essentials.co.uk": 84,
         "essentials.uk": 78,
@@ -160,6 +167,7 @@
     {
       "date": "2025-12-13",
       "domains": {
+        "essentials.com": 841,
         "essentials.net": 89,
         "essentials.co.uk": 83,
         "essentials.uk": 72,
@@ -174,6 +182,7 @@
     {
       "date": "2025-12-14",
       "domains": {
+        "essentials.com": 813,
         "essentials.net": 84,
         "essentials.co.uk": 101,
         "essentials.uk": 55,
@@ -188,6 +197,7 @@
     {
       "date": "2025-12-15",
       "domains": {
+        "essentials.com": 809,
         "essentials.net": 126,
         "essentials.co.uk": 103,
         "essentials.uk": 60,
@@ -202,6 +212,7 @@
     {
       "date": "2025-12-16",
       "domains": {
+        "essentials.com": 770,
         "essentials.net": 141,
         "essentials.co.uk": 110,
         "essentials.uk": 100,
@@ -216,6 +227,7 @@
     {
       "date": "2025-12-17",
       "domains": {
+        "essentials.com": 760,
         "essentials.net": 97,
         "essentials.co.uk": 100,
         "essentials.uk": 75,
@@ -230,6 +242,7 @@
     {
       "date": "2025-12-18",
       "domains": {
+        "essentials.com": 821,
         "essentials.net": 112,
         "essentials.co.uk": 132,
         "essentials.uk": 76,
@@ -244,6 +257,7 @@
     {
       "date": "2025-12-19",
       "domains": {
+        "essentials.com": 819,
         "essentials.net": 124,
         "essentials.co.uk": 119,
         "essentials.uk": 107,
@@ -258,6 +272,7 @@
     {
       "date": "2025-12-20",
       "domains": {
+        "essentials.com": 372,
         "essentials.net": 59,
         "essentials.co.uk": 70,
         "essentials.uk": 42,
@@ -271,26 +286,34 @@
     }
   ],
   "browsers": {
-    "Chrome": 229,
-    "Unknown": 149,
-    "MobileSafari": 121,
-    "ChromeMobile": 29,
-    "Edge": 27,
-    "Firefox": 13,
-    "GoogleBot": 12,
-    "Safari": 7,
-    "Curl": 5,
-    "Opera": 2,
-    "SamsungInternet": 2,
-    "BingBot": 2,
-    "Yandex": 2,
-    "ChromeMobileWebview": 1,
-    "ChromeHeadless": 1,
+    "Chrome": 675,
+    "MobileSafari": 524,
+    "Unknown": 420,
+    "ChromeMobile": 165,
+    "Edge": 77,
+    "Safari": 38,
+    "Firefox": 35,
+    "GoogleBot": 24,
+    "Curl": 11,
+    "SamsungInternet": 9,
+    "BingBot": 7,
+    "MobileSafariWebview": 6,
+    "Opera": 5,
+    "Yandex": 5,
+    "ChromeMobileWebview": 4,
+    "ChromeHeadless": 2,
+    "OperaMobile": 2,
+    "ChromeDerivative": 2,
+    "YandexBot": 2,
+    "IE": 1,
+    "Instagram": 1,
     "AppleBot": 1,
-    "YandexBot": 1,
-    "ChromeDerivative": 1,
-    "OperaMobile": 1,
-    "MobileSafariWebview": 0,
-    "IE": 0
+    "Facebook": 1,
+    "Silk": 0,
+    "TwitterBot": 0,
+    "Wget": 0,
+    "UCBrowserMobile": 0,
+    "FirefoxMobile": 0,
+    "Pinterest": 0
   }
 }
