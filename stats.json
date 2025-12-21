@@ -67,6 +67,7 @@
         "essentials.eu": 22,
         "essentials.us": 35,
         "essentials.fr": 23,
+        "essentials.tw": 28,
         "essentials.mobi": 15
       }
     },
@@ -80,6 +81,7 @@
         "essentials.eu": 69,
         "essentials.us": 140,
         "essentials.fr": 112,
+        "essentials.tw": 77,
         "essentials.mobi": 84
       }
     },
@@ -94,6 +96,7 @@
         "essentials.us": 122,
         "essentials.fr": 57,
         "essentials.hk": 21,
+        "essentials.tw": 99,
         "essentials.mobi": 51
       }
     },
@@ -108,6 +111,7 @@
         "essentials.us": 156,
         "essentials.fr": 73,
         "essentials.hk": 155,
+        "essentials.tw": 89,
         "essentials.mobi": 50
       }
     },
@@ -122,6 +126,7 @@
         "essentials.us": 81,
         "essentials.fr": 75,
         "essentials.hk": 68,
+        "essentials.tw": 90,
         "essentials.mobi": 54
       }
     },
@@ -136,6 +141,7 @@
         "essentials.us": 97,
         "essentials.fr": 66,
         "essentials.hk": 155,
+        "essentials.tw": 85,
         "essentials.mobi": 51
       }
     },
@@ -150,6 +156,7 @@
         "essentials.us": 88,
         "essentials.fr": 67,
         "essentials.hk": 85,
+        "essentials.tw": 60,
         "essentials.mobi": 122
       }
     },
@@ -164,6 +171,7 @@
         "essentials.us": 83,
         "essentials.fr": 62,
         "essentials.hk": 107,
+        "essentials.tw": 104,
         "essentials.mobi": 55
       }
     },
@@ -178,6 +186,7 @@
         "essentials.us": 91,
         "essentials.fr": 70,
         "essentials.hk": 137,
+        "essentials.tw": 167,
         "essentials.mobi": 77
       }
     },
@@ -192,6 +201,7 @@
         "essentials.us": 68,
         "essentials.fr": 59,
         "essentials.hk": 94,
+        "essentials.tw": 66,
         "essentials.mobi": 61
       }
     },
@@ -206,6 +216,7 @@
         "essentials.us": 84,
         "essentials.fr": 96,
         "essentials.hk": 104,
+        "essentials.tw": 180,
         "essentials.mobi": 101
       }
     },
@@ -220,6 +231,7 @@
         "essentials.us": 91,
         "essentials.fr": 71,
         "essentials.hk": 109,
+        "essentials.tw": 80,
         "essentials.mobi": 50
       }
     },
@@ -234,6 +246,7 @@
         "essentials.us": 78,
         "essentials.fr": 90,
         "essentials.hk": 97,
+        "essentials.tw": 88,
         "essentials.mobi": 66
       }
     },
@@ -248,6 +261,7 @@
         "essentials.us": 93,
         "essentials.fr": 89,
         "essentials.hk": 180,
+        "essentials.tw": 117,
         "essentials.mobi": 70
       }
     },
@@ -262,33 +276,35 @@
         "essentials.us": 80,
         "essentials.fr": 57,
         "essentials.hk": 91,
+        "essentials.tw": 153,
         "essentials.mobi": 48
       }
     },
     {
       "date": "2025-12-21",
       "domains": {
-        "essentials.com": 429,
+        "essentials.com": 431,
         "essentials.net": 78,
-        "essentials.co.uk": 79,
+        "essentials.co.uk": 81,
         "essentials.uk": 60,
-        "essentials.eu": 44,
+        "essentials.eu": 46,
         "essentials.us": 63,
         "essentials.fr": 57,
-        "essentials.hk": 69,
+        "essentials.hk": 70,
+        "essentials.tw": 53,
         "essentials.mobi": 30
       }
     }
   ],
   "browsers": {
-    "Chrome": 661,
-    "MobileSafari": 506,
-    "Unknown": 409,
-    "ChromeMobile": 164,
-    "Edge": 74,
+    "Chrome": 677,
+    "MobileSafari": 518,
+    "Unknown": 425,
+    "ChromeMobile": 165,
+    "Edge": 76,
     "Safari": 38,
-    "Firefox": 35,
-    "GoogleBot": 25,
+    "Firefox": 37,
+    "GoogleBot": 26,
     "SamsungInternet": 9,
     "BingBot": 8,
     "MobileSafariWebview": 6,
