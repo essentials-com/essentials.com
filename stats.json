@@ -1,10 +1,6 @@
 {
-  "date": "2025-12-21",
+  "date": "2025-12-22",
   "domains": [
-    {
-      "date": "2025-11-22",
-      "domains": {}
-    },
     {
       "date": "2025-11-23",
       "domains": {}
@@ -283,48 +279,54 @@
     {
       "date": "2025-12-21",
       "domains": {
-        "essentials.com": 704,
-        "essentials.net": 117,
-        "essentials.co.uk": 112,
-        "essentials.uk": 79,
-        "essentials.eu": 60,
-        "essentials.us": 92,
-        "essentials.fr": 93,
-        "essentials.hk": 87,
-        "essentials.tw": 95,
-        "essentials.mobi": 51
+        "essentials.com": 707,
+        "essentials.net": 119,
+        "essentials.co.uk": 114,
+        "essentials.uk": 81,
+        "essentials.eu": 62,
+        "essentials.us": 93,
+        "essentials.fr": 94,
+        "essentials.hk": 89,
+        "essentials.tw": 97,
+        "essentials.mobi": 52
       }
+    },
+    {
+      "date": "2025-12-22",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Chrome": 677,
-    "MobileSafari": 518,
-    "Unknown": 425,
-    "ChromeMobile": 165,
-    "Edge": 76,
-    "Safari": 38,
-    "Firefox": 37,
-    "GoogleBot": 26,
+    "Chrome": 688,
+    "MobileSafari": 504,
+    "Unknown": 427,
+    "ChromeMobile": 169,
+    "Edge": 67,
+    "Firefox": 42,
+    "Safari": 33,
+    "GoogleBot": 30,
+    "BingBot": 9,
     "SamsungInternet": 9,
-    "BingBot": 8,
-    "MobileSafariWebview": 6,
+    "MobileSafariWebview": 7,
+    "Yandex": 6,
     "Opera": 5,
-    "Yandex": 5,
-    "ChromeMobileWebview": 4,
+    "ChromeMobileWebview": 5,
     "ChromeDerivative": 4,
-    "OperaMobile": 2,
-    "ChromeHeadless": 2,
     "AppleBot": 2,
     "YandexBot": 2,
+    "OperaMobile": 2,
     "Facebook": 2,
-    "IE": 1,
-    "Instagram": 1,
+    "ChromeHeadless": 2,
     "Curl": 1,
-    "Silk": 0,
-    "TwitterBot": 0,
-    "Wget": 0,
+    "Instagram": 1,
     "UCBrowserMobile": 0,
+    "Wget": 0,
+    "TwitterBot": 0,
     "FirefoxMobile": 0,
-    "Pinterest": 0
+    "Silk": 0,
+    "IE": 0,
+    "Pinterest": 0,
+    "Chromium": 0,
+    "Brave": 0
   }
 }
