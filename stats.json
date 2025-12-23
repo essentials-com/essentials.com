@@ -305,10 +305,11 @@
     {
       "date": "2025-12-23",
       "domains": {
-        "essentials.com": 9,
-        "essentials.net": 4,
-        "essentials.co.uk": 2,
+        "essentials.com": 12,
+        "essentials.net": 5,
+        "essentials.co.uk": 3,
         "essentials.uk": 1,
+        "essentials.us": 2,
         "essentials.mobi": 2
       }
     }
