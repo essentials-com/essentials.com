@@ -316,9 +316,9 @@
     {
       "date": "2025-12-24",
       "domains": {
-        "essentials.com": 403,
+        "essentials.com": 404,
         "essentials.net": 70,
-        "essentials.co.uk": 92,
+        "essentials.co.uk": 93,
         "essentials.uk": 53,
         "essentials.eu": 61,
         "essentials.us": 54,
