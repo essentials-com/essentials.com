@@ -327,7 +327,8 @@
     {
       "date": "2025-12-25",
       "domains": {
-        "essentials.com": 2
+        "essentials.com": 7,
+        "essentials.tw": 3
       }
     }
   ],
