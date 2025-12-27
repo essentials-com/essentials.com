@@ -350,7 +350,9 @@
       "date": "2025-12-27",
       "domains": {
         "essentials.com": 1,
-        "essentials.eu": 1
+        "essentials.eu": 1,
+        "essentials.fr": 1,
+        "essentials.hk": 20
       }
     }
   ],
