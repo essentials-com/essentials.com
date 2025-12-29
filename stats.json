@@ -365,12 +365,14 @@
         "essentials.fr": 101,
         "essentials.hk": 99,
         "essentials.tw": 98,
-        "essentials.mobi": 56
+        "essentials.mobi": 57
       }
     },
     {
       "date": "2025-12-29",
-      "domains": {}
+      "domains": {
+        "essentials.com": 2
+      }
     }
   ],
   "browsers": {
