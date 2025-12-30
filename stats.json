@@ -370,7 +370,7 @@
         "essentials.com": 752,
         "essentials.net": 85,
         "essentials.co.uk": 104,
-        "essentials.uk": 86,
+        "essentials.uk": 87,
         "essentials.eu": 86,
         "essentials.us": 82,
         "essentials.fr": 82,
@@ -381,7 +381,9 @@
     },
     {
       "date": "2025-12-30",
-      "domains": {}
+      "domains": {
+        "essentials.mobi": 1
+      }
     }
   ],
   "browsers": {
@@ -392,7 +394,7 @@
     "Edge": 54,
     "GoogleBot": 39,
     "Firefox": 37,
-    "Safari": 31,
+    "Safari": 32,
     "Opera": 13,
     "BingBot": 10,
     "ChromeDerivative": 6,
