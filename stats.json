@@ -412,7 +412,7 @@
       "date": "2026-01-02",
       "domains": {
         "essentials.com": 732,
-        "essentials.net": 109,
+        "essentials.net": 110,
         "essentials.co.uk": 137,
         "essentials.uk": 103,
         "essentials.eu": 95,
@@ -427,7 +427,10 @@
       "date": "2026-01-03",
       "domains": {
         "essentials.com": 14,
-        "essentials.uk": 2
+        "essentials.uk": 2,
+        "essentials.fr": 1,
+        "essentials.tw": 1,
+        "essentials.mobi": 1
       }
     }
   ],
@@ -439,7 +442,7 @@
     "Firefox": 58,
     "Edge": 53,
     "GoogleBot": 36,
-    "Safari": 28,
+    "Safari": 29,
     "TwitterBot": 13,
     "Opera": 12,
     "BingBot": 7,
