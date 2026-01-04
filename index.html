@@ -178,30 +178,17 @@
             font-family: 'Inter', 'Inter Fallback', sans-serif;
             background-color: var(--bg-color);
             color: var(--text-color);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding-bottom: 3rem;
             transition: background-color 0.3s ease, color 0.3s ease;
         }
 
         .logo-container {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 2rem 0;
+            text-align: center;
+            padding: 2rem 1rem;
         }
 
         .cta-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1rem;
-            padding: 2rem 0;
+            text-align: center;
+            padding: 2rem 1rem;
         }
 
         .cta {
@@ -231,11 +218,12 @@
         }
 
         .cta-links {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.5rem;
             margin-top: 1rem;
+        }
+
+        .cta-links a {
+            display: block;
+            margin: 0.5rem 0;
         }
 
         .cta-links a {
@@ -265,9 +253,7 @@
             font-family: 'Inter Tight', 'Inter Tight Fallback', sans-serif;
             font-weight: 900;
             font-size: clamp(2rem, 8vw, 6rem);
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            display: inline-flex;
             gap: 0.02em;
             opacity: 1;
         }
@@ -585,11 +571,8 @@
         }
 
         .site-header {
-            display: flex;
-            justify-content: center;
-            align-items: center;
             padding: 1rem 1.5rem;
-            width: 100%;
+            text-align: center;
         }
 
         .site-header .domains {
@@ -603,15 +586,13 @@
         }
 
         .site-footer {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            padding: 2rem 2rem 2rem;
+            text-align: center;
+            padding: 2rem;
             margin-top: 2rem;
         }
 
         .footer-icons {
-            display: flex;
+            display: inline-flex;
             gap: 1rem;
             align-items: center;
         }
@@ -757,45 +738,18 @@
             }
         }
 
-        /* Mobile layout fixes */
+        /* Mobile adjustments */
         @media (max-width: 767px) {
-            body {
-                justify-content: flex-start;
-            }
-
-            .site-header {
-                flex-wrap: wrap;
-                padding: 0.75rem 1rem;
-            }
-
-            .site-header .domains {
-                width: 100%;
-                justify-content: center;
-                flex-wrap: wrap;
-            }
-
             .site-header .domains a {
                 font-size: 1rem;
             }
 
-            .logo-container {
-                flex: none;
-                padding: 2rem 1rem;
-            }
-
             .logo {
                 font-size: clamp(1.2rem, 7vw, 3rem);
-                flex-wrap: nowrap;
-                white-space: nowrap;
-            }
-
-            .cta-section {
-                padding: 1rem;
             }
 
             .traffic-section {
                 padding: 1rem;
-                min-height: auto;
             }
 
             .traffic-stats {
