@@ -183,7 +183,6 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            padding-top: 5rem;
             padding-bottom: 3rem;
             transition: background-color 0.3s ease, color 0.3s ease;
         }
@@ -586,16 +585,11 @@
         }
 
         .site-header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 1rem 1.5rem;
-            z-index: 100;
-            background: var(--bg-color);
+            width: 100%;
         }
 
         .site-header .domains {
@@ -767,11 +761,9 @@
         @media (max-width: 767px) {
             body {
                 justify-content: flex-start;
-                padding-top: 1rem;
             }
 
             .site-header {
-                position: relative;
                 flex-wrap: wrap;
                 padding: 0.75rem 1rem;
             }
