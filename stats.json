@@ -1,21 +1,6 @@
 {
-  "date": "2026-01-06",
+  "date": "2026-01-07",
   "domains": [
-    {
-      "date": "2025-12-08",
-      "domains": {
-        "essentials.com": 825,
-        "essentials.net": 120,
-        "essentials.co.uk": 104,
-        "essentials.uk": 57,
-        "essentials.eu": 81,
-        "essentials.us": 122,
-        "essentials.fr": 57,
-        "essentials.hk": 21,
-        "essentials.tw": 99,
-        "essentials.mobi": 51
-      }
-    },
     {
       "date": "2025-12-09",
       "domains": {
@@ -439,45 +424,50 @@
     {
       "date": "2026-01-06",
       "domains": {
-        "essentials.com": 751,
-        "essentials.net": 130,
-        "essentials.co.uk": 164,
+        "essentials.com": 752,
+        "essentials.net": 132,
+        "essentials.co.uk": 165,
         "essentials.uk": 79,
         "essentials.eu": 105,
         "essentials.us": 93,
-        "essentials.fr": 83,
+        "essentials.fr": 84,
         "essentials.hk": 113,
         "essentials.tw": 177,
         "essentials.mobi": 80
       }
+    },
+    {
+      "date": "2026-01-07",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 550,
-    "MobileSafari": 415,
-    "Chrome": 378,
-    "ChromeMobile": 130,
+    "Unknown": 529,
+    "MobileSafari": 419,
+    "Chrome": 406,
+    "ChromeMobile": 132,
     "Edge": 55,
-    "Firefox": 53,
-    "Safari": 29,
-    "GoogleBot": 28,
-    "TwitterBot": 20,
-    "Opera": 8,
-    "BingBot": 7,
+    "Firefox": 54,
+    "Safari": 28,
+    "GoogleBot": 26,
+    "TwitterBot": 18,
+    "Opera": 11,
+    "BingBot": 6,
     "SamsungInternet": 5,
-    "ChromeDerivative": 5,
+    "ChromeDerivative": 4,
     "MobileSafariWebview": 3,
-    "ChromeMobileWebview": 2,
+    "YandexBot": 3,
+    "OperaMobile": 2,
     "ChromeHeadless": 2,
-    "AppleBot": 1,
-    "YandexBot": 1,
-    "Facebook": 1,
-    "Instagram": 1,
-    "OperaMobile": 1,
+    "ChromeMobileWebview": 2,
     "Chromium": 1,
+    "AppleBot": 1,
     "Brave": 1,
+    "Facebook": 0,
+    "Instagram": 0,
     "Yandex": 0,
     "Curl": 0,
-    "Wget": 0
+    "Wget": 0,
+    "Microsoft365": 0
   }
 }
