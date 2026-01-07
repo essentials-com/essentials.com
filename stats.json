@@ -439,7 +439,10 @@
     {
       "date": "2026-01-07",
       "domains": {
-        "essentials.com": 4
+        "essentials.com": 30,
+        "essentials.net": 1,
+        "essentials.co.uk": 1,
+        "essentials.uk": 1
       }
     }
   ],
