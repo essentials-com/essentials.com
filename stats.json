@@ -1,21 +1,6 @@
 {
-  "date": "2026-01-08",
+  "date": "2026-01-09",
   "domains": [
-    {
-      "date": "2025-12-10",
-      "domains": {
-        "essentials.com": 820,
-        "essentials.net": 93,
-        "essentials.co.uk": 109,
-        "essentials.uk": 62,
-        "essentials.eu": 62,
-        "essentials.us": 81,
-        "essentials.fr": 75,
-        "essentials.hk": 68,
-        "essentials.tw": 90,
-        "essentials.mobi": 54
-      }
-    },
     {
       "date": "2025-12-11",
       "domains": {
@@ -439,46 +424,51 @@
     {
       "date": "2026-01-08",
       "domains": {
-        "essentials.com": 764,
+        "essentials.com": 766,
         "essentials.net": 121,
         "essentials.co.uk": 159,
-        "essentials.uk": 89,
-        "essentials.eu": 122,
+        "essentials.uk": 90,
+        "essentials.eu": 123,
         "essentials.us": 88,
-        "essentials.fr": 98,
+        "essentials.fr": 99,
         "essentials.hk": 113,
         "essentials.tw": 143,
         "essentials.mobi": 83
       }
+    },
+    {
+      "date": "2026-01-09",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 537,
-    "Chrome": 425,
+    "Unknown": 552,
+    "Chrome": 442,
     "MobileSafari": 422,
-    "ChromeMobile": 132,
-    "Edge": 55,
-    "Firefox": 36,
-    "Safari": 30,
-    "GoogleBot": 22,
-    "TwitterBot": 17,
-    "Opera": 8,
+    "ChromeMobile": 130,
+    "Edge": 54,
+    "Safari": 42,
+    "Firefox": 39,
+    "GoogleBot": 21,
+    "TwitterBot": 16,
+    "Opera": 11,
+    "ChromeDerivative": 9,
     "SamsungInternet": 6,
-    "BingBot": 5,
-    "ChromeDerivative": 4,
-    "YandexBot": 3,
+    "BingBot": 4,
+    "YandexBot": 4,
     "MobileSafariWebview": 3,
     "ChromeHeadless": 3,
     "ChromeMobileWebview": 2,
-    "Chromium": 1,
-    "OperaMobile": 1,
     "AppleBot": 1,
+    "OperaMobile": 1,
+    "Facebook": 1,
     "Brave": 1,
     "Instagram": 0,
+    "Chromium": 0,
     "Yandex": 0,
-    "Facebook": 0,
     "Curl": 0,
     "Wget": 0,
-    "Microsoft365": 0
+    "Microsoft365": 0,
+    "FirefoxMobile": 0
   }
 }
