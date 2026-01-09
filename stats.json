@@ -439,7 +439,8 @@
     {
       "date": "2026-01-09",
       "domains": {
-        "essentials.com": 3
+        "essentials.com": 4,
+        "essentials.fr": 1
       }
     }
   ],
