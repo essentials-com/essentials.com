@@ -439,14 +439,14 @@
     {
       "date": "2026-01-09",
       "domains": {
-        "essentials.com": 470,
+        "essentials.com": 479,
         "essentials.net": 58,
         "essentials.co.uk": 149,
-        "essentials.uk": 65,
+        "essentials.uk": 66,
         "essentials.eu": 75,
-        "essentials.us": 49,
-        "essentials.fr": 59,
-        "essentials.hk": 79,
+        "essentials.us": 50,
+        "essentials.fr": 67,
+        "essentials.hk": 80,
         "essentials.tw": 63,
         "essentials.mobi": 42
       }
