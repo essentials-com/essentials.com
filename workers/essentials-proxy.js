@@ -23,6 +23,40 @@ export default {
       return Response.redirect("https://www.essentials.com/", 301);
     }
     
+    // Generate dynamic sitemap.xml for the current domain
+    if (url.pathname === "/sitemap.xml") {
+      const wwwHost = originalHost.startsWith("www.") ? originalHost : `www.${originalHost}`;
+      const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://${wwwHost}/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>`;
+      return new Response(sitemap, {
+        headers: {
+          "Content-Type": "application/xml",
+          "Cache-Control": "public, max-age=86400",
+        },
+      });
+    }
+    
+    // Generate dynamic robots.txt for the current domain
+    if (url.pathname === "/robots.txt") {
+      const wwwHost = originalHost.startsWith("www.") ? originalHost : `www.${originalHost}`;
+      const robots = `User-agent: *
+Allow: /
+
+Sitemap: https://${wwwHost}/sitemap.xml`;
+      return new Response(robots, {
+        headers: {
+          "Content-Type": "text/plain",
+          "Cache-Control": "public, max-age=86400",
+        },
+      });
+    }
+    
     // Site tokens for each domain (Cloudflare Web Analytics beacon)
     // Note: site_token is used in the beacon script, site_tag is used in GraphQL API queries
     const siteTokens = {
