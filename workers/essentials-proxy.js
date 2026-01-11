@@ -3,6 +3,26 @@ export default {
     const url = new URL(request.url);
     const originalHost = url.host;
     
+    // Valid hosts (root and www only)
+    const validHosts = [
+      "essentials.com", "www.essentials.com",
+      "essentials.net", "www.essentials.net",
+      "essentials.co.uk", "www.essentials.co.uk",
+      "essentials.uk", "www.essentials.uk",
+      "essentials.eu", "www.essentials.eu",
+      "essentials.us", "www.essentials.us",
+      "essentials.fr", "www.essentials.fr",
+      "essentials.cn", "www.essentials.cn",
+      "essentials.hk", "www.essentials.hk",
+      "essentials.tw", "www.essentials.tw",
+      "essentials.mobi", "www.essentials.mobi",
+    ];
+    
+    // 301 redirect unknown subdomains to www.essentials.com
+    if (!validHosts.includes(originalHost)) {
+      return Response.redirect("https://www.essentials.com/", 301);
+    }
+    
     // Site tokens for each domain (Cloudflare Web Analytics beacon)
     // Note: site_token is used in the beacon script, site_tag is used in GraphQL API queries
     const siteTokens = {
