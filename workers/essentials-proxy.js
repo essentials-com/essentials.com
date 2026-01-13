@@ -107,9 +107,9 @@ Sitemap: https://${wwwHost}/sitemap.xml`;
     // Add a header so the JavaScript can detect the original domain
     newHeaders.set("X-Original-Host", originalHost);
     
-    // Set no-transform to prevent Cloudflare from auto-injecting the beacon
-    // This allows us to inject the correct beacon for each domain
-    newHeaders.set("Cache-Control", "public, no-transform");
+    // Allow Cloudflare to compress the response (gzip/brotli)
+    // HTMLRewriter handles beacon injection, so no-transform is not needed
+    newHeaders.set("Cache-Control", "public");
     
     // Check if this is HTML content that needs beacon injection
     const contentType = response.headers.get("content-type") || "";
