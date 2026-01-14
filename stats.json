@@ -1,21 +1,6 @@
 {
-  "date": "2026-01-13",
+  "date": "2026-01-14",
   "domains": [
-    {
-      "date": "2025-12-15",
-      "domains": {
-        "essentials.com": 809,
-        "essentials.net": 126,
-        "essentials.co.uk": 103,
-        "essentials.uk": 60,
-        "essentials.eu": 63,
-        "essentials.us": 68,
-        "essentials.fr": 59,
-        "essentials.hk": 94,
-        "essentials.tw": 66,
-        "essentials.mobi": 61
-      }
-    },
     {
       "date": "2025-12-16",
       "domains": {
@@ -439,46 +424,50 @@
     {
       "date": "2026-01-13",
       "domains": {
-        "essentials.com": 954,
-        "essentials.net": 133,
+        "essentials.com": 958,
+        "essentials.net": 139,
         "essentials.co.uk": 185,
         "essentials.uk": 103,
         "essentials.eu": 96,
         "essentials.us": 93,
-        "essentials.fr": 98,
-        "essentials.hk": 99,
+        "essentials.fr": 101,
+        "essentials.hk": 100,
         "essentials.tw": 107,
         "essentials.mobi": 93
       }
+    },
+    {
+      "date": "2026-01-14",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 573,
-    "MobileSafari": 452,
-    "Chrome": 439,
-    "ChromeMobile": 130,
-    "Edge": 55,
-    "Safari": 47,
-    "Firefox": 47,
-    "Opera": 23,
-    "GoogleBot": 20,
+    "Unknown": 583,
+    "MobileSafari": 453,
+    "Chrome": 447,
+    "ChromeMobile": 129,
+    "Edge": 58,
+    "Firefox": 48,
+    "Safari": 46,
+    "GoogleBot": 22,
+    "Opera": 18,
     "ChromeDerivative": 8,
-    "YandexBot": 7,
+    "YandexBot": 5,
+    "BingBot": 4,
     "SamsungInternet": 4,
-    "BingBot": 3,
     "MobileSafariWebview": 3,
     "ChromeHeadless": 3,
+    "Curl": 3,
+    "ChromeMobileWebview": 2,
     "OperaMobile": 2,
-    "ChromeMobileWebview": 1,
+    "Yandex": 2,
     "Facebook": 1,
     "Brave": 1,
-    "Yandex": 1,
-    "Curl": 1,
-    "TwitterBot": 0,
-    "Wget": 0,
-    "Microsoft365": 0,
     "FirefoxMobile": 0,
     "AppleBot": 0,
-    "IE": 0
+    "IE": 0,
+    "TwitterBot": 0,
+    "Chromium": 0,
+    "Instagram": 0
   }
 }
