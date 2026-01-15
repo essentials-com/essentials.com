@@ -1,21 +1,6 @@
 {
-  "date": "2026-01-14",
+  "date": "2026-01-15",
   "domains": [
-    {
-      "date": "2025-12-16",
-      "domains": {
-        "essentials.com": 770,
-        "essentials.net": 141,
-        "essentials.co.uk": 110,
-        "essentials.uk": 100,
-        "essentials.eu": 67,
-        "essentials.us": 84,
-        "essentials.fr": 96,
-        "essentials.hk": 104,
-        "essentials.tw": 180,
-        "essentials.mobi": 101
-      }
-    },
     {
       "date": "2025-12-17",
       "domains": {
@@ -439,43 +424,47 @@
     {
       "date": "2026-01-14",
       "domains": {
-        "essentials.com": 949,
-        "essentials.net": 118,
-        "essentials.co.uk": 164,
-        "essentials.uk": 94,
+        "essentials.com": 959,
+        "essentials.net": 120,
+        "essentials.co.uk": 165,
+        "essentials.uk": 95,
         "essentials.eu": 107,
-        "essentials.us": 104,
+        "essentials.us": 105,
         "essentials.fr": 102,
         "essentials.hk": 109,
-        "essentials.tw": 78,
+        "essentials.tw": 79,
         "essentials.mobi": 96
       }
+    },
+    {
+      "date": "2026-01-15",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 583,
-    "MobileSafari": 453,
-    "Chrome": 447,
-    "ChromeMobile": 129,
-    "Edge": 58,
-    "Firefox": 48,
-    "Safari": 46,
-    "GoogleBot": 22,
-    "Opera": 18,
-    "ChromeDerivative": 8,
+    "Unknown": 620,
+    "MobileSafari": 468,
+    "Chrome": 441,
+    "ChromeMobile": 147,
+    "Edge": 63,
+    "Safari": 44,
+    "Firefox": 44,
+    "GoogleBot": 26,
+    "Opera": 19,
+    "ChromeDerivative": 9,
     "YandexBot": 5,
+    "SamsungInternet": 5,
     "BingBot": 4,
-    "SamsungInternet": 4,
     "MobileSafariWebview": 3,
-    "ChromeHeadless": 3,
     "Curl": 3,
     "ChromeMobileWebview": 2,
     "OperaMobile": 2,
+    "ChromeHeadless": 2,
     "Yandex": 2,
     "Facebook": 1,
+    "AppleBot": 1,
     "Brave": 1,
     "FirefoxMobile": 0,
-    "AppleBot": 0,
     "IE": 0,
     "TwitterBot": 0,
     "Chromium": 0,
