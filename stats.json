@@ -438,7 +438,12 @@
     },
     {
       "date": "2026-01-17",
-      "domains": {}
+      "domains": {
+        "essentials.com": 1,
+        "essentials.eu": 1,
+        "essentials.fr": 1,
+        "essentials.hk": 1
+      }
     }
   ],
   "browsers": {
