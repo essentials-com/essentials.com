@@ -438,7 +438,10 @@
     },
     {
       "date": "2026-01-18",
-      "domains": {}
+      "domains": {
+        "essentials.com": 2,
+        "essentials.eu": 1
+      }
     }
   ],
   "browsers": {
