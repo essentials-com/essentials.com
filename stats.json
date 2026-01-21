@@ -1,21 +1,6 @@
 {
-  "date": "2026-01-20",
+  "date": "2026-01-21",
   "domains": [
-    {
-      "date": "2025-12-22",
-      "domains": {
-        "essentials.com": 751,
-        "essentials.net": 99,
-        "essentials.co.uk": 131,
-        "essentials.uk": 79,
-        "essentials.eu": 79,
-        "essentials.us": 75,
-        "essentials.fr": 70,
-        "essentials.hk": 100,
-        "essentials.tw": 86,
-        "essentials.mobi": 58
-      }
-    },
     {
       "date": "2025-12-23",
       "domains": {
@@ -439,46 +424,50 @@
     {
       "date": "2026-01-20",
       "domains": {
-        "essentials.com": 751,
-        "essentials.net": 110,
+        "essentials.com": 759,
+        "essentials.net": 118,
         "essentials.co.uk": 136,
         "essentials.uk": 103,
         "essentials.eu": 89,
         "essentials.us": 107,
-        "essentials.fr": 90,
+        "essentials.fr": 91,
         "essentials.hk": 174,
         "essentials.tw": 121,
         "essentials.mobi": 75
       }
+    },
+    {
+      "date": "2026-01-21",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 657,
-    "Chrome": 497,
-    "MobileSafari": 491,
-    "ChromeMobile": 164,
+    "Unknown": 659,
+    "MobileSafari": 494,
+    "Chrome": 475,
+    "ChromeMobile": 165,
     "Edge": 80,
-    "Firefox": 56,
-    "Safari": 42,
-    "GoogleBot": 26,
+    "Firefox": 58,
+    "Safari": 48,
+    "GoogleBot": 21,
     "Opera": 7,
+    "BingBot": 6,
     "SamsungInternet": 6,
-    "BingBot": 5,
-    "ChromeMobileWebview": 4,
     "YandexBot": 3,
-    "MobileSafariWebview": 3,
-    "Instagram": 3,
-    "OperaMobile": 2,
-    "Curl": 2,
+    "ChromeMobileWebview": 3,
+    "ChromeDerivative": 3,
     "AppleBot": 2,
-    "ChromeDerivative": 2,
-    "IE": 1,
-    "TwitterBot": 1,
-    "Yandex": 1,
+    "OperaMobile": 2,
+    "MobileSafariWebview": 2,
+    "Instagram": 2,
     "Facebook": 1,
     "ChromeHeadless": 1,
+    "IE": 1,
     "FirefoxMobile": 1,
     "Brave": 1,
+    "Curl": 0,
+    "Yandex": 0,
+    "TwitterBot": 0,
     "Chromium": 0,
     "Wget": 0
   }
