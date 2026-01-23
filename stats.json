@@ -1,21 +1,6 @@
 {
-  "date": "2026-01-22",
+  "date": "2026-01-23",
   "domains": [
-    {
-      "date": "2025-12-24",
-      "domains": {
-        "essentials.com": 683,
-        "essentials.net": 102,
-        "essentials.co.uk": 129,
-        "essentials.uk": 106,
-        "essentials.eu": 84,
-        "essentials.us": 79,
-        "essentials.fr": 88,
-        "essentials.hk": 139,
-        "essentials.tw": 102,
-        "essentials.mobi": 68
-      }
-    },
     {
       "date": "2025-12-25",
       "domains": {
@@ -439,48 +424,51 @@
     {
       "date": "2026-01-22",
       "domains": {
-        "essentials.com": 1030,
+        "essentials.com": 1034,
         "essentials.net": 156,
-        "essentials.co.uk": 175,
-        "essentials.uk": 128,
-        "essentials.eu": 132,
+        "essentials.co.uk": 176,
+        "essentials.uk": 134,
+        "essentials.eu": 135,
         "essentials.us": 83,
-        "essentials.fr": 136,
+        "essentials.fr": 137,
         "essentials.hk": 173,
         "essentials.tw": 139,
         "essentials.mobi": 100
       }
+    },
+    {
+      "date": "2026-01-23",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 638,
-    "Chrome": 488,
-    "MobileSafari": 482,
-    "ChromeMobile": 153,
-    "Edge": 83,
-    "Firefox": 67,
-    "Safari": 62,
-    "GoogleBot": 19,
+    "Unknown": 648,
+    "Chrome": 541,
+    "MobileSafari": 478,
+    "ChromeMobile": 160,
+    "Edge": 86,
+    "Firefox": 83,
+    "Safari": 80,
+    "GoogleBot": 24,
+    "Curl": 10,
+    "YandexBot": 9,
     "Opera": 8,
     "BingBot": 6,
-    "Curl": 6,
     "SamsungInternet": 5,
-    "YandexBot": 3,
-    "MobileSafariWebview": 3,
-    "ChromeMobileWebview": 3,
+    "OperaMobile": 3,
     "ChromeDerivative": 3,
-    "Instagram": 3,
-    "AppleBot": 2,
-    "OperaMobile": 2,
-    "IE": 1,
-    "ChromeHeadless": 1,
+    "MobileSafariWebview": 2,
+    "ChromeMobileWebview": 2,
+    "AppleBot": 1,
     "TwitterBot": 1,
+    "Instagram": 1,
+    "ChromeHeadless": 1,
     "FirefoxMobile": 1,
     "Brave": 1,
-    "Yandex": 0,
-    "Facebook": 0,
+    "Wget": 1,
     "Chromium": 0,
-    "Wget": 0,
+    "IE": 0,
+    "Facebook": 0,
     "Silk": 0,
     "LinkedInBot": 0
   }
