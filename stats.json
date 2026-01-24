@@ -1,21 +1,6 @@
 {
-  "date": "2026-01-23",
+  "date": "2026-01-24",
   "domains": [
-    {
-      "date": "2025-12-25",
-      "domains": {
-        "essentials.com": 788,
-        "essentials.net": 135,
-        "essentials.co.uk": 134,
-        "essentials.uk": 118,
-        "essentials.eu": 110,
-        "essentials.us": 96,
-        "essentials.fr": 102,
-        "essentials.hk": 161,
-        "essentials.tw": 182,
-        "essentials.mobi": 88
-      }
-    },
     {
       "date": "2025-12-26",
       "domains": {
@@ -439,48 +424,52 @@
     {
       "date": "2026-01-23",
       "domains": {
-        "essentials.com": 794,
-        "essentials.net": 113,
+        "essentials.com": 795,
+        "essentials.net": 116,
         "essentials.co.uk": 132,
         "essentials.uk": 91,
         "essentials.eu": 89,
         "essentials.us": 83,
-        "essentials.fr": 92,
+        "essentials.fr": 93,
         "essentials.hk": 119,
         "essentials.tw": 145,
         "essentials.mobi": 97
       }
+    },
+    {
+      "date": "2026-01-24",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 648,
-    "Chrome": 541,
-    "MobileSafari": 478,
-    "ChromeMobile": 160,
-    "Edge": 86,
+    "Unknown": 608,
+    "Chrome": 523,
+    "MobileSafari": 481,
+    "ChromeMobile": 167,
+    "Edge": 84,
     "Firefox": 83,
-    "Safari": 80,
-    "GoogleBot": 24,
-    "Curl": 10,
+    "Safari": 82,
+    "GoogleBot": 22,
+    "Curl": 11,
+    "Opera": 10,
     "YandexBot": 9,
-    "Opera": 8,
-    "BingBot": 6,
+    "BingBot": 7,
     "SamsungInternet": 5,
+    "ChromeDerivative": 4,
     "OperaMobile": 3,
-    "ChromeDerivative": 3,
-    "MobileSafariWebview": 2,
     "ChromeMobileWebview": 2,
+    "FirefoxMobile": 1,
+    "MobileSafariWebview": 1,
+    "Instagram": 1,
     "AppleBot": 1,
     "TwitterBot": 1,
-    "Instagram": 1,
-    "ChromeHeadless": 1,
-    "FirefoxMobile": 1,
     "Brave": 1,
     "Wget": 1,
-    "Chromium": 0,
+    "Facebook": 1,
+    "ChromeHeadless": 1,
     "IE": 0,
-    "Facebook": 0,
     "Silk": 0,
-    "LinkedInBot": 0
+    "LinkedInBot": 0,
+    "Microsoft365": 0
   }
 }
