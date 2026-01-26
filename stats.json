@@ -1,21 +1,6 @@
 {
-  "date": "2026-01-25",
+  "date": "2026-01-26",
   "domains": [
-    {
-      "date": "2025-12-27",
-      "domains": {
-        "essentials.com": 662,
-        "essentials.net": 102,
-        "essentials.co.uk": 121,
-        "essentials.uk": 90,
-        "essentials.eu": 87,
-        "essentials.us": 86,
-        "essentials.fr": 108,
-        "essentials.hk": 87,
-        "essentials.tw": 138,
-        "essentials.mobi": 57
-      }
-    },
     {
       "date": "2025-12-28",
       "domains": {
@@ -439,10 +424,10 @@
     {
       "date": "2026-01-25",
       "domains": {
-        "essentials.com": 847,
+        "essentials.com": 854,
         "essentials.net": 114,
         "essentials.co.uk": 128,
-        "essentials.uk": 92,
+        "essentials.uk": 95,
         "essentials.eu": 89,
         "essentials.us": 118,
         "essentials.fr": 105,
@@ -450,37 +435,42 @@
         "essentials.tw": 155,
         "essentials.mobi": 90
       }
+    },
+    {
+      "date": "2026-01-26",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 595,
-    "Chrome": 518,
-    "MobileSafari": 491,
-    "ChromeMobile": 168,
-    "Safari": 88,
-    "Edge": 86,
-    "Firefox": 84,
-    "GoogleBot": 22,
-    "Curl": 13,
-    "Opera": 9,
-    "BingBot": 9,
+    "Unknown": 621,
+    "Chrome": 562,
+    "MobileSafari": 497,
+    "ChromeMobile": 163,
+    "Safari": 109,
+    "Firefox": 94,
+    "Edge": 87,
+    "GoogleBot": 27,
+    "Curl": 15,
+    "Opera": 11,
+    "BingBot": 10,
     "YandexBot": 9,
-    "SamsungInternet": 5,
-    "ChromeDerivative": 5,
+    "TwitterBot": 8,
+    "SamsungInternet": 6,
+    "ChromeDerivative": 6,
+    "MobileSafariWebview": 2,
     "OperaMobile": 2,
-    "IE": 1,
     "AppleBot": 1,
-    "TwitterBot": 1,
-    "Brave": 1,
-    "Instagram": 1,
-    "Wget": 1,
-    "MobileSafariWebview": 1,
     "ChromeMobileWebview": 1,
     "Facebook": 1,
+    "Brave": 1,
     "ChromeHeadless": 1,
-    "FirefoxMobile": 0,
     "Silk": 0,
     "LinkedInBot": 0,
-    "Microsoft365": 0
+    "Instagram": 0,
+    "Wget": 0,
+    "IE": 0,
+    "Microsoft365": 0,
+    "FirefoxMobile": 0,
+    "YandexMobile": 0
   }
 }
