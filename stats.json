@@ -1,21 +1,6 @@
 {
-  "date": "2026-01-28",
+  "date": "2026-01-29",
   "domains": [
-    {
-      "date": "2025-12-30",
-      "domains": {
-        "essentials.com": 760,
-        "essentials.net": 90,
-        "essentials.co.uk": 121,
-        "essentials.uk": 77,
-        "essentials.eu": 57,
-        "essentials.us": 83,
-        "essentials.fr": 89,
-        "essentials.hk": 115,
-        "essentials.tw": 71,
-        "essentials.mobi": 73
-      }
-    },
     {
       "date": "2025-12-31",
       "domains": {
@@ -439,48 +424,51 @@
     {
       "date": "2026-01-28",
       "domains": {
-        "essentials.com": 1322,
+        "essentials.com": 1325,
         "essentials.net": 117,
         "essentials.co.uk": 128,
         "essentials.uk": 77,
         "essentials.eu": 69,
         "essentials.us": 90,
-        "essentials.fr": 76,
+        "essentials.fr": 77,
         "essentials.hk": 143,
-        "essentials.tw": 74,
+        "essentials.tw": 75,
         "essentials.mobi": 78
       }
+    },
+    {
+      "date": "2026-01-29",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 594,
-    "Chrome": 566,
-    "MobileSafari": 508,
-    "ChromeMobile": 173,
-    "Safari": 104,
-    "Firefox": 78,
-    "Edge": 72,
-    "GoogleBot": 25,
-    "TwitterBot": 21,
-    "Curl": 19,
+    "Unknown": 629,
+    "Chrome": 561,
+    "MobileSafari": 510,
+    "ChromeMobile": 168,
+    "Safari": 94,
+    "Firefox": 75,
+    "Edge": 69,
+    "GoogleBot": 23,
+    "TwitterBot": 20,
+    "Curl": 16,
     "BingBot": 11,
-    "Opera": 10,
+    "Opera": 9,
     "YandexBot": 9,
     "SamsungInternet": 6,
     "ChromeDerivative": 4,
     "MobileSafariWebview": 3,
     "OperaMobile": 3,
+    "ChromeHeadless": 3,
     "ChromeMobileWebview": 2,
-    "ChromeHeadless": 2,
-    "Silk": 1,
-    "AppleBot": 1,
     "Facebook": 1,
     "Yandex": 1,
-    "LinkedInBot": 0,
-    "Instagram": 0,
+    "Silk": 0,
     "Wget": 0,
     "IE": 0,
+    "AppleBot": 0,
     "Microsoft365": 0,
+    "Instagram": 0,
     "FirefoxMobile": 0,
     "YandexMobile": 0,
     "Brave": 0
