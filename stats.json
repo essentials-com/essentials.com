@@ -438,7 +438,11 @@
     },
     {
       "date": "2026-01-30",
-      "domains": {}
+      "domains": {
+        "essentials.com": 9,
+        "essentials.net": 1,
+        "essentials.mobi": 1
+      }
     }
   ],
   "browsers": {
