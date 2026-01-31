@@ -432,13 +432,16 @@
         "essentials.us": 128,
         "essentials.fr": 103,
         "essentials.hk": 172,
-        "essentials.tw": 74,
-        "essentials.mobi": 87
+        "essentials.tw": 75,
+        "essentials.mobi": 91
       }
     },
     {
       "date": "2026-01-31",
-      "domains": {}
+      "domains": {
+        "essentials.com": 3,
+        "essentials.eu": 1
+      }
     }
   ],
   "browsers": {
