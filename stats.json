@@ -1,21 +1,6 @@
 {
-  "date": "2026-02-02",
+  "date": "2026-02-03",
   "domains": [
-    {
-      "date": "2026-01-04",
-      "domains": {
-        "essentials.com": 766,
-        "essentials.net": 118,
-        "essentials.co.uk": 176,
-        "essentials.uk": 94,
-        "essentials.eu": 74,
-        "essentials.us": 103,
-        "essentials.fr": 94,
-        "essentials.hk": 115,
-        "essentials.tw": 112,
-        "essentials.mobi": 59
-      }
-    },
     {
       "date": "2026-01-05",
       "domains": {
@@ -364,7 +349,7 @@
     {
       "date": "2026-01-28",
       "domains": {
-        "essentials.com": 1326,
+        "essentials.com": 1325,
         "essentials.net": 117,
         "essentials.co.uk": 128,
         "essentials.uk": 77,
@@ -439,40 +424,44 @@
     {
       "date": "2026-02-02",
       "domains": {
-        "essentials.com": 1347,
+        "essentials.com": 1351,
         "essentials.net": 101,
-        "essentials.co.uk": 181,
+        "essentials.co.uk": 182,
         "essentials.uk": 98,
         "essentials.eu": 87,
         "essentials.us": 94,
         "essentials.fr": 86,
         "essentials.hk": 150,
         "essentials.tw": 113,
-        "essentials.mobi": 106
+        "essentials.mobi": 107
       }
+    },
+    {
+      "date": "2026-02-03",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 738,
-    "MobileSafari": 492,
-    "Chrome": 477,
-    "ChromeMobile": 158,
-    "Edge": 52,
-    "Firefox": 47,
-    "Safari": 44,
-    "GoogleBot": 23,
-    "TwitterBot": 16,
-    "Opera": 12,
+    "Unknown": 813,
+    "MobileSafari": 489,
+    "Chrome": 472,
+    "ChromeMobile": 161,
+    "Edge": 61,
+    "Safari": 46,
+    "Firefox": 45,
+    "GoogleBot": 24,
+    "Opera": 13,
     "BingBot": 11,
+    "TwitterBot": 10,
+    "Curl": 9,
     "SamsungInternet": 8,
-    "Curl": 8,
     "ChromeMobileWebview": 7,
-    "MobileSafariWebview": 3,
     "OperaMobile": 3,
     "ChromeDerivative": 3,
-    "YandexBot": 2,
-    "Yandex": 2,
+    "MobileSafariWebview": 2,
     "ChromeHeadless": 2,
+    "Yandex": 2,
+    "YandexBot": 1,
     "Facebook": 1,
     "Brave": 1,
     "AppleBot": 1,
