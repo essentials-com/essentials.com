@@ -1,21 +1,6 @@
 {
-  "date": "2026-02-05",
+  "date": "2026-02-06",
   "domains": [
-    {
-      "date": "2026-01-07",
-      "domains": {
-        "essentials.com": 764,
-        "essentials.net": 100,
-        "essentials.co.uk": 129,
-        "essentials.uk": 79,
-        "essentials.eu": 70,
-        "essentials.us": 91,
-        "essentials.fr": 102,
-        "essentials.hk": 168,
-        "essentials.tw": 72,
-        "essentials.mobi": 63
-      }
-    },
     {
       "date": "2026-01-08",
       "domains": {
@@ -439,9 +424,9 @@
     {
       "date": "2026-02-05",
       "domains": {
-        "essentials.com": 956,
+        "essentials.com": 959,
         "essentials.net": 145,
-        "essentials.co.uk": 187,
+        "essentials.co.uk": 189,
         "essentials.uk": 126,
         "essentials.eu": 134,
         "essentials.us": 86,
@@ -450,35 +435,40 @@
         "essentials.tw": 120,
         "essentials.mobi": 174
       }
+    },
+    {
+      "date": "2026-02-06",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 837,
-    "Chrome": 554,
-    "MobileSafari": 493,
-    "ChromeMobile": 158,
-    "Edge": 57,
-    "Firefox": 54,
-    "Safari": 52,
-    "GoogleBot": 25,
-    "Curl": 25,
-    "Opera": 14,
+    "Unknown": 849,
+    "Chrome": 580,
+    "MobileSafari": 494,
+    "ChromeMobile": 161,
+    "Edge": 69,
+    "Safari": 57,
+    "Firefox": 56,
+    "Curl": 31,
+    "GoogleBot": 23,
     "BingBot": 10,
-    "ChromeMobileWebview": 8,
+    "Opera": 9,
+    "ChromeMobileWebview": 9,
     "SamsungInternet": 7,
-    "ChromeDerivative": 4,
     "Yandex": 4,
-    "OperaMobile": 3,
-    "TwitterBot": 3,
-    "MobileSafariWebview": 2,
+    "OperaMobile": 4,
+    "ChromeDerivative": 4,
+    "TwitterBot": 4,
     "YandexBot": 2,
-    "Brave": 1,
+    "MobileSafariWebview": 2,
+    "ChromeHeadless": 2,
     "AppleBot": 1,
-    "ChromeHeadless": 1,
+    "Brave": 1,
     "FirefoxMobile": 1,
-    "Wget": 0,
+    "Facebook": 1,
     "UCBrowserMobile": 0,
-    "Facebook": 0,
-    "IE": 0
+    "Wget": 0,
+    "IE": 0,
+    "Instagram": 0
   }
 }
