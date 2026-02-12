@@ -1,21 +1,6 @@
 {
-  "date": "2026-02-11",
+  "date": "2026-02-12",
   "domains": [
-    {
-      "date": "2026-01-13",
-      "domains": {
-        "essentials.com": 958,
-        "essentials.net": 139,
-        "essentials.co.uk": 185,
-        "essentials.uk": 103,
-        "essentials.eu": 96,
-        "essentials.us": 93,
-        "essentials.fr": 101,
-        "essentials.hk": 100,
-        "essentials.tw": 107,
-        "essentials.mobi": 94
-      }
-    },
     {
       "date": "2026-01-14",
       "domains": {
@@ -439,10 +424,10 @@
     {
       "date": "2026-02-11",
       "domains": {
-        "essentials.com": 1223,
+        "essentials.com": 1232,
         "essentials.net": 147,
-        "essentials.co.uk": 220,
-        "essentials.uk": 147,
+        "essentials.co.uk": 221,
+        "essentials.uk": 148,
         "essentials.eu": 109,
         "essentials.us": 95,
         "essentials.fr": 102,
@@ -450,39 +435,43 @@
         "essentials.tw": 235,
         "essentials.mobi": 81
       }
+    },
+    {
+      "date": "2026-02-12",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 732,
-    "Chrome": 540,
-    "MobileSafari": 466,
-    "ChromeMobile": 152,
-    "Edge": 63,
-    "Firefox": 60,
+    "Unknown": 739,
+    "Chrome": 506,
+    "MobileSafari": 453,
+    "ChromeMobile": 164,
+    "Edge": 62,
+    "Firefox": 52,
     "Safari": 48,
-    "Curl": 35,
-    "GoogleBot": 15,
+    "GoogleBot": 16,
+    "Curl": 15,
     "ChromeMobileWebview": 8,
-    "BingBot": 7,
-    "ChromeDerivative": 5,
+    "BingBot": 6,
     "SamsungInternet": 4,
-    "Opera": 3,
+    "ChromeDerivative": 4,
     "ChromeHeadless": 3,
+    "Opera": 2,
     "MobileSafariWebview": 2,
-    "Yandex": 2,
     "OperaMobile": 2,
     "Facebook": 2,
-    "YandexBot": 1,
+    "YandexBot": 2,
     "TwitterBot": 1,
+    "Yandex": 1,
     "Instagram": 1,
-    "Brave": 0,
-    "Wget": 0,
+    "IE": 1,
     "AppleBot": 0,
     "UCBrowserMobile": 0,
     "Chromium": 0,
-    "IE": 0,
+    "Wget": 0,
     "Silk": 0,
     "FirefoxMobile": 0,
-    "Pinterest": 0
+    "Pinterest": 0,
+    "Brave": 0
   }
 }
