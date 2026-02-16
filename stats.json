@@ -1,21 +1,6 @@
 {
-  "date": "2026-02-15",
+  "date": "2026-02-16",
   "domains": [
-    {
-      "date": "2026-01-17",
-      "domains": {
-        "essentials.com": 763,
-        "essentials.net": 102,
-        "essentials.co.uk": 112,
-        "essentials.uk": 77,
-        "essentials.eu": 85,
-        "essentials.us": 57,
-        "essentials.fr": 82,
-        "essentials.hk": 62,
-        "essentials.tw": 54,
-        "essentials.mobi": 67
-      }
-    },
     {
       "date": "2026-01-18",
       "domains": {
@@ -439,49 +424,52 @@
     {
       "date": "2026-02-15",
       "domains": {
-        "essentials.com": 904,
-        "essentials.net": 149,
-        "essentials.co.uk": 108,
+        "essentials.com": 905,
+        "essentials.net": 151,
+        "essentials.co.uk": 109,
         "essentials.uk": 83,
-        "essentials.eu": 100,
+        "essentials.eu": 103,
         "essentials.us": 127,
         "essentials.fr": 96,
         "essentials.hk": 170,
-        "essentials.tw": 625,
+        "essentials.tw": 629,
         "essentials.mobi": 85
       }
+    },
+    {
+      "date": "2026-02-16",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 753,
+    "Unknown": 915,
     "Curl": 724,
-    "MobileSafari": 442,
-    "Chrome": 410,
-    "ChromeMobile": 183,
-    "Firefox": 49,
-    "Safari": 47,
-    "Edge": 46,
-    "GoogleBot": 14,
-    "ChromeMobileWebview": 11,
+    "MobileSafari": 422,
+    "Chrome": 381,
+    "ChromeMobile": 166,
+    "Safari": 49,
+    "Firefox": 48,
+    "Edge": 43,
+    "GoogleBot": 12,
+    "ChromeMobileWebview": 9,
     "YandexBot": 7,
     "BingBot": 6,
-    "Facebook": 5,
     "SamsungInternet": 4,
-    "ChromeHeadless": 4,
+    "Facebook": 4,
+    "Yandex": 3,
+    "ChromeHeadless": 3,
+    "Opera": 3,
     "ChromeDerivative": 3,
-    "Opera": 2,
     "MobileSafariWebview": 2,
-    "Yandex": 2,
     "OperaMobile": 2,
-    "IE": 1,
     "FirefoxMobile": 1,
     "Instagram": 1,
+    "IE": 1,
     "TwitterBot": 1,
     "Brave": 1,
-    "Silk": 0,
-    "Wget": 0,
     "Chromium": 0,
     "Pinterest": 0,
+    "Silk": 0,
     "AppleBot": 0
   }
 }
