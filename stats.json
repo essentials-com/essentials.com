@@ -443,10 +443,11 @@
         "essentials.net": 1,
         "essentials.co.uk": 2,
         "essentials.uk": 2,
-        "essentials.eu": 6,
+        "essentials.eu": 8,
         "essentials.us": 2,
+        "essentials.fr": 4,
         "essentials.hk": 3,
-        "essentials.tw": 45,
+        "essentials.tw": 49,
         "essentials.mobi": 2
       }
     }
