@@ -1,21 +1,6 @@
 {
-  "date": "2026-02-18",
+  "date": "2026-02-19",
   "domains": [
-    {
-      "date": "2026-01-20",
-      "domains": {
-        "essentials.com": 764,
-        "essentials.net": 118,
-        "essentials.co.uk": 136,
-        "essentials.uk": 103,
-        "essentials.eu": 89,
-        "essentials.us": 107,
-        "essentials.fr": 91,
-        "essentials.hk": 174,
-        "essentials.tw": 121,
-        "essentials.mobi": 75
-      }
-    },
     {
       "date": "2026-01-21",
       "domains": {
@@ -439,48 +424,52 @@
     {
       "date": "2026-02-18",
       "domains": {
-        "essentials.com": 1099,
-        "essentials.net": 130,
+        "essentials.com": 1100,
+        "essentials.net": 131,
         "essentials.co.uk": 126,
         "essentials.uk": 103,
-        "essentials.eu": 106,
+        "essentials.eu": 107,
         "essentials.us": 103,
         "essentials.fr": 115,
-        "essentials.hk": 81,
+        "essentials.hk": 83,
         "essentials.tw": 713,
         "essentials.mobi": 66
       }
+    },
+    {
+      "date": "2026-02-19",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 2157,
-    "Curl": 725,
-    "MobileSafari": 413,
-    "Chrome": 345,
-    "ChromeMobile": 178,
-    "Firefox": 47,
-    "Safari": 42,
+    "Unknown": 2921,
+    "Curl": 729,
+    "MobileSafari": 415,
+    "Chrome": 329,
+    "ChromeMobile": 166,
+    "Firefox": 55,
     "Edge": 41,
-    "GoogleBot": 17,
+    "Safari": 40,
+    "GoogleBot": 16,
+    "YandexBot": 13,
     "ChromeMobileWebview": 10,
-    "YandexBot": 10,
-    "Opera": 6,
-    "BingBot": 5,
+    "Opera": 9,
+    "SamsungInternet": 5,
     "Yandex": 5,
+    "BingBot": 4,
     "Facebook": 4,
-    "SamsungInternet": 4,
     "ChromeDerivative": 3,
     "ChromeHeadless": 3,
+    "MobileSafariWebview": 2,
     "OperaMobile": 2,
     "UCBrowserMobile": 2,
     "YandexSearchApp": 2,
     "IE": 1,
-    "TwitterBot": 1,
-    "MobileSafariWebview": 1,
-    "Brave": 1,
-    "Instagram": 1,
     "FirefoxMobile": 1,
+    "Brave": 1,
     "AppleBot": 1,
+    "TwitterBot": 1,
+    "Instagram": 0,
     "Silk": 0
   }
 }
