@@ -1,21 +1,6 @@
 {
-  "date": "2026-02-23",
+  "date": "2026-02-24",
   "domains": [
-    {
-      "date": "2026-01-25",
-      "domains": {
-        "essentials.com": 857,
-        "essentials.net": 114,
-        "essentials.co.uk": 128,
-        "essentials.uk": 95,
-        "essentials.eu": 89,
-        "essentials.us": 118,
-        "essentials.fr": 105,
-        "essentials.hk": 80,
-        "essentials.tw": 155,
-        "essentials.mobi": 90
-      }
-    },
     {
       "date": "2026-01-26",
       "domains": {
@@ -439,45 +424,47 @@
     {
       "date": "2026-02-23",
       "domains": {
-        "essentials.com": 925,
-        "essentials.net": 167,
+        "essentials.com": 930,
+        "essentials.net": 168,
         "essentials.co.uk": 154,
         "essentials.uk": 109,
-        "essentials.eu": 87,
+        "essentials.eu": 88,
         "essentials.us": 122,
-        "essentials.fr": 100,
+        "essentials.fr": 102,
         "essentials.hk": 110,
         "essentials.tw": 155,
         "essentials.mobi": 84
       }
+    },
+    {
+      "date": "2026-02-24",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 3232,
-    "MobileSafari": 440,
+    "Unknown": 2691,
+    "MobileSafari": 437,
     "Chrome": 379,
-    "ChromeMobile": 156,
-    "Firefox": 60,
-    "Edge": 50,
-    "Safari": 40,
-    "Curl": 26,
-    "GoogleBot": 20,
-    "Opera": 15,
-    "YandexBot": 12,
+    "ChromeMobile": 145,
+    "Firefox": 61,
+    "Edge": 57,
+    "Safari": 38,
+    "Curl": 28,
+    "GoogleBot": 14,
+    "YandexBot": 14,
+    "Opera": 11,
     "BingBot": 5,
-    "ChromeMobileWebview": 5,
-    "SamsungInternet": 4,
-    "ChromeDerivative": 4,
-    "Yandex": 3,
-    "ChromeHeadless": 3,
-    "AppleBot": 2,
-    "MobileSafariWebview": 2,
-    "UCBrowserMobile": 2,
-    "YandexSearchApp": 2,
+    "ChromeMobileWebview": 4,
+    "Yandex": 4,
+    "TwitterBot": 4,
+    "SamsungInternet": 3,
+    "ChromeDerivative": 3,
+    "MobileSafariWebview": 3,
     "OperaMobile": 2,
-    "IE": 1,
+    "ChromeHeadless": 2,
     "Facebook": 1,
-    "TwitterBot": 1,
+    "AppleBot": 1,
+    "IE": 0,
     "Silk": 0,
     "Wget": 0,
     "Brave": 0
