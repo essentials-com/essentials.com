@@ -4,198 +4,230 @@
     {
       "date": "2026-01-27",
       "domains": {
-        "essentials.fr": 94
+        "essentials.eu": 93,
+        "essentials.tw": 89
       }
     },
     {
       "date": "2026-01-28",
       "domains": {
-        "essentials.fr": 77
+        "essentials.eu": 69,
+        "essentials.tw": 75
       }
     },
     {
       "date": "2026-01-29",
       "domains": {
-        "essentials.fr": 96
+        "essentials.eu": 142,
+        "essentials.tw": 162
       }
     },
     {
       "date": "2026-01-30",
       "domains": {
-        "essentials.fr": 103
+        "essentials.eu": 102,
+        "essentials.tw": 75
       }
     },
     {
       "date": "2026-01-31",
       "domains": {
-        "essentials.fr": 98
+        "essentials.eu": 106,
+        "essentials.tw": 162
       }
     },
     {
       "date": "2026-02-01",
       "domains": {
-        "essentials.fr": 136
+        "essentials.eu": 83,
+        "essentials.tw": 158
       }
     },
     {
       "date": "2026-02-02",
       "domains": {
-        "essentials.fr": 86
+        "essentials.eu": 87,
+        "essentials.tw": 113
       }
     },
     {
       "date": "2026-02-03",
       "domains": {
-        "essentials.fr": 126
+        "essentials.eu": 174,
+        "essentials.tw": 159
       }
     },
     {
       "date": "2026-02-04",
       "domains": {
-        "essentials.fr": 121
+        "essentials.eu": 107,
+        "essentials.tw": 168
       }
     },
     {
       "date": "2026-02-05",
       "domains": {
-        "essentials.fr": 168
+        "essentials.eu": 134,
+        "essentials.tw": 120
       }
     },
     {
       "date": "2026-02-06",
       "domains": {
-        "essentials.fr": 104
+        "essentials.eu": 118,
+        "essentials.tw": 140
       }
     },
     {
       "date": "2026-02-07",
       "domains": {
-        "essentials.fr": 112
+        "essentials.eu": 99,
+        "essentials.tw": 107
       }
     },
     {
       "date": "2026-02-08",
       "domains": {
-        "essentials.fr": 118
+        "essentials.eu": 102,
+        "essentials.tw": 110
       }
     },
     {
       "date": "2026-02-09",
       "domains": {
-        "essentials.fr": 107
+        "essentials.eu": 101,
+        "essentials.tw": 104
       }
     },
     {
       "date": "2026-02-10",
       "domains": {
-        "essentials.fr": 106
+        "essentials.eu": 92,
+        "essentials.tw": 94
       }
     },
     {
       "date": "2026-02-11",
       "domains": {
-        "essentials.fr": 102
+        "essentials.eu": 109,
+        "essentials.tw": 235
       }
     },
     {
       "date": "2026-02-12",
       "domains": {
-        "essentials.fr": 118
+        "essentials.eu": 102,
+        "essentials.tw": 208
       }
     },
     {
       "date": "2026-02-13",
       "domains": {
-        "essentials.fr": 126
+        "essentials.eu": 136,
+        "essentials.tw": 278
       }
     },
     {
       "date": "2026-02-14",
       "domains": {
-        "essentials.fr": 82
+        "essentials.eu": 100,
+        "essentials.tw": 436
       }
     },
     {
       "date": "2026-02-15",
       "domains": {
-        "essentials.fr": 96
+        "essentials.eu": 103,
+        "essentials.tw": 630
       }
     },
     {
       "date": "2026-02-16",
       "domains": {
-        "essentials.fr": 149
+        "essentials.eu": 119,
+        "essentials.tw": 691
       }
     },
     {
       "date": "2026-02-17",
       "domains": {
-        "essentials.fr": 98
+        "essentials.eu": 95,
+        "essentials.tw": 672
       }
     },
     {
       "date": "2026-02-18",
       "domains": {
-        "essentials.fr": 115
+        "essentials.eu": 107,
+        "essentials.tw": 713
       }
     },
     {
       "date": "2026-02-19",
       "domains": {
-        "essentials.fr": 132
+        "essentials.eu": 117,
+        "essentials.tw": 677
       }
     },
     {
       "date": "2026-02-20",
       "domains": {
-        "essentials.fr": 119
+        "essentials.eu": 107,
+        "essentials.tw": 66
       }
     },
     {
       "date": "2026-02-21",
       "domains": {
-        "essentials.fr": 103
+        "essentials.eu": 104,
+        "essentials.tw": 78
       }
     },
     {
       "date": "2026-02-22",
       "domains": {
-        "essentials.fr": 126
+        "essentials.eu": 107,
+        "essentials.tw": 120
       }
     },
     {
       "date": "2026-02-23",
       "domains": {
-        "essentials.fr": 103
+        "essentials.eu": 88,
+        "essentials.tw": 155
       }
     },
     {
       "date": "2026-02-24",
       "domains": {
-        "essentials.fr": 152
+        "essentials.eu": 87,
+        "essentials.tw": 153
       }
     },
     {
       "date": "2026-02-25",
       "domains": {
-        "essentials.fr": 95
+        "essentials.eu": 72,
+        "essentials.tw": 296
       }
     }
   ],
   "browsers": {
-    "Unknown": 29,
-    "Chrome": 16,
-    "MobileSafari": 10,
-    "Edge": 3,
-    "ChromeMobile": 2,
-    "Curl": 1,
+    "Unknown": 710,
+    "Chrome": 29,
+    "MobileSafari": 20,
+    "Edge": 4,
+    "Curl": 4,
+    "ChromeMobile": 4,
+    "YandexBot": 3,
+    "Firefox": 3,
+    "GoogleBot": 2,
     "Safari": 1,
-    "Firefox": 1,
-    "Opera": 0,
-    "YandexBot": 0,
-    "ChromeDerivative": 0,
-    "ChromeHeadless": 0,
+    "Opera": 1,
     "OperaMobile": 0,
-    "GoogleBot": 0
+    "BingBot": 0,
+    "ChromeDerivative": 0,
+    "Yandex": 0,
+    "ChromeMobileWebview": 0
   }
 }
