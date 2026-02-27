@@ -439,10 +439,11 @@
     {
       "date": "2026-02-27",
       "domains": {
-        "essentials.com": 5,
+        "essentials.com": 6,
         "essentials.co.uk": 1,
         "essentials.uk": 1,
-        "essentials.tw": 4
+        "essentials.tw": 4,
+        "essentials.mobi": 1
       }
     }
   ],
