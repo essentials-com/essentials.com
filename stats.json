@@ -1,21 +1,6 @@
 {
-  "date": "2026-02-26",
+  "date": "2026-02-27",
   "domains": [
-    {
-      "date": "2026-01-28",
-      "domains": {
-        "essentials.com": 1326,
-        "essentials.net": 117,
-        "essentials.co.uk": 128,
-        "essentials.uk": 77,
-        "essentials.eu": 69,
-        "essentials.us": 90,
-        "essentials.fr": 77,
-        "essentials.hk": 143,
-        "essentials.tw": 75,
-        "essentials.mobi": 78
-      }
-    },
     {
       "date": "2026-01-29",
       "domains": {
@@ -440,45 +425,50 @@
       "date": "2026-02-26",
       "domains": {
         "essentials.com": 899,
-        "essentials.net": 145,
+        "essentials.net": 146,
         "essentials.co.uk": 150,
-        "essentials.uk": 91,
+        "essentials.uk": 92,
         "essentials.eu": 107,
         "essentials.us": 103,
         "essentials.fr": 100,
         "essentials.hk": 141,
-        "essentials.tw": 289,
+        "essentials.tw": 293,
         "essentials.mobi": 108
       }
+    },
+    {
+      "date": "2026-02-27",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 1226,
-    "MobileSafari": 420,
-    "Chrome": 409,
-    "ChromeMobile": 148,
-    "Firefox": 71,
-    "Safari": 63,
+    "Unknown": 651,
+    "MobileSafari": 404,
+    "Chrome": 392,
+    "ChromeMobile": 144,
+    "Safari": 64,
+    "Firefox": 64,
     "Edge": 57,
-    "Curl": 21,
-    "GoogleBot": 17,
-    "Opera": 10,
-    "YandexBot": 10,
-    "BingBot": 6,
-    "ChromeMobileWebview": 5,
-    "ChromeDerivative": 5,
+    "Curl": 18,
+    "GoogleBot": 16,
+    "YandexBot": 7,
+    "Opera": 6,
+    "ChromeMobileWebview": 6,
+    "BingBot": 5,
     "TwitterBot": 4,
+    "SamsungInternet": 4,
     "MobileSafariWebview": 3,
-    "SamsungInternet": 3,
-    "Yandex": 3,
-    "OperaMobile": 2,
+    "OperaMobile": 3,
+    "Yandex": 2,
     "ChromeHeadless": 2,
+    "ChromeDerivative": 2,
     "AppleBot": 1,
     "Facebook": 1,
     "Brave": 1,
-    "Wget": 0,
     "Silk": 0,
     "IE": 0,
-    "Instagram": 0
+    "Instagram": 0,
+    "Wget": 0,
+    "LinkedInBot": 0
   }
 }
