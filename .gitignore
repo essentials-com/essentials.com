@@ -2,3 +2,10 @@
 node_modules/
 .osgrep
 .agent/
+
+# aidevops runtime artifacts
+.agents/loop-state/
+.agents/tmp/
+.agents/memory/
+.aidevops.json
+.beads
