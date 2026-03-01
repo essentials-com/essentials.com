@@ -54,8 +54,11 @@ Compatible with [todo-md](https://github.com/todo-md/todo-md), [todomd](https://
 
 ## Backlog
 
-<!--TOON:backlog[0]{id,desc,owner,tags,est,risk,logged,status}:
+<!--TOON:backlog[1]{id,desc,owner,tags,est,risk,logged,status}:
+t004,Audit README.md — ensure product descriptions and feature list and setup/deploy instructions match current state,marcus,docs audit,~30m,,2026-03-01,pending
 -->
+
+- [ ] t004 Audit README.md — ensure product descriptions, feature list, setup/deploy instructions match current state. #docs #audit #auto-dispatch ~30m model:sonnet logged:2026-03-01
 
 ## In Progress
 
