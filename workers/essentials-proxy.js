@@ -1,3 +1,29 @@
+// Security headers applied to all responses
+const securityHeaders = {
+  "X-Frame-Options": "DENY",
+  "X-Content-Type-Options": "nosniff",
+  "Referrer-Policy": "strict-origin-when-cross-origin",
+  "Permissions-Policy": "camera=(), microphone=(), geolocation=(), payment=()",
+  "Content-Security-Policy":
+    "default-src 'self'; " +
+    "script-src 'self' 'unsafe-inline' https://analytics.ahrefs.com https://static.cloudflareinsights.com; " +
+    "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; " +
+    "font-src 'self' https://fonts.gstatic.com https://fonts.googleapis.com; " +
+    "img-src 'self' data:; " +
+    "connect-src 'self' https://raw.githubusercontent.com https://analytics.ahrefs.com https://cloudflareinsights.com; " +
+    "frame-src 'none'; " +
+    "object-src 'none'; " +
+    "base-uri 'self'; " +
+    "form-action 'self'",
+};
+
+function applySecurityHeaders(headers) {
+  for (const [key, value] of Object.entries(securityHeaders)) {
+    headers[key] = value;
+  }
+  return headers;
+}
+
 export default {
   async fetch(request) {
     const url = new URL(request.url);
@@ -35,10 +61,10 @@ export default {
   </url>
 </urlset>`;
       return new Response(sitemap, {
-        headers: {
+        headers: applySecurityHeaders({
           "Content-Type": "application/xml",
           "Cache-Control": "public, max-age=86400",
-        },
+        }),
       });
     }
     
@@ -50,10 +76,10 @@ Allow: /
 
 Sitemap: https://${wwwHost}/sitemap.xml`;
       return new Response(robots, {
-        headers: {
+        headers: applySecurityHeaders({
           "Content-Type": "text/plain",
           "Cache-Control": "public, max-age=86400",
-        },
+        }),
       });
     }
     
@@ -102,7 +128,6 @@ Sitemap: https://${wwwHost}/sitemap.xml`;
 
     // Clone the response and modify headers
     const newHeaders = new Headers(response.headers);
-    newHeaders.delete("x-frame-options");
     
     // Add a header so the JavaScript can detect the original domain
     newHeaders.set("X-Original-Host", originalHost);
@@ -110,6 +135,11 @@ Sitemap: https://${wwwHost}/sitemap.xml`;
     // Allow Cloudflare to compress the response (gzip/brotli)
     // HTMLRewriter handles beacon injection, so no-transform is not needed
     newHeaders.set("Cache-Control", "public");
+    
+    // Security headers
+    for (const [key, value] of Object.entries(securityHeaders)) {
+      newHeaders.set(key, value);
+    }
     
     // Check if this is HTML content that needs beacon injection
     const contentType = response.headers.get("content-type") || "";
