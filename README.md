@@ -6,15 +6,29 @@ Feel free to fork and use for your own similar needs.
 
 ## Features
 
-- Responsive single-page design with dark/light mode
+- Responsive single-page design with dark/light mode (persisted in localStorage)
 - Interactive domain showcase with styled typography
 - Real-time visitor statistics powered by Cloudflare Zone Analytics
 - Bot-filtered unique visitor counts (real users only)
-- Browser breakdown pie chart (7-day average daily pageviews)
-- Modal with portfolio details and contact information
-- Automatic stats updates every 5 minutes via Cloudflare Workers
-- Page prefetching on hover for faster navigation
-- Mobile-optimized with non-sticky header
+- 30-day stacked bar chart with per-domain breakdown and tooltips
+- Browser breakdown pie chart (7-day average daily pageviews, bots excluded)
+- Stats auto-update every 5 minutes via Cloudflare Workers
+- Modal with portfolio details, prospectus, valuation references, and contact info
+- Obfuscated contact email to prevent scraping
+- Logo click cycles case (UPPER → Title → lower)
+- Extension click navigates to next domain (skips unavailable TLDs)
+- Dot color randomizes on click with WCAG AA contrast enforcement
+- Fade-in rise animation on logo (initial load only)
+- Page prefetching on hover over domain links
+- Font prefetching on hover over navigation
+- Size-adjusted font fallbacks to minimize layout shift
+- Dynamic SEO meta tags updated per domain (title, description, canonical, Open Graph, Twitter)
+- hreflang tags for international SEO across all TLDs
+- Structured data (JSON-LD: WebSite, WebPage/Offer, Organization)
+- Ahrefs analytics integration with per-domain keys
+- Mobile-optimized with non-sticky header and touch support for charts
+- Minimum 16px font size throughout
+- Local testing mode with `?domain=` URL parameter
 
 ## Live Demo
 
@@ -72,6 +86,7 @@ For each domain you want to track:
 See [workers/README.md](workers/README.md) for detailed setup instructions.
 
 **Quick start:**
+
 ```bash
 cd workers
 
@@ -94,58 +109,14 @@ wrangler secret put GITHUB_TOKEN -c wrangler-stats.toml
 ### 5. Customize
 
 Edit `index.html` to update:
-- Domain list in the `allDomains` array
-- Modal content with your portfolio details
-- Contact email
-- Meta tags and structured data
 
-## Customization
-
-### Adding/Removing Domains
-
-Update the `allDomains` array in `index.html`:
-
-```javascript
-const allDomains = [
-    { name: 'YOURDOMAIN.COM', url: 'https://www.yourdomain.com' },
-    { name: 'YOURDOMAIN.NET', url: 'https://www.yourdomain.net' },
-    // Add more domains...
-];
-```
-
-### Choosing Your Font
-
-Choose a font that suits your domain name's personality. Update the Google Fonts import in `index.html`:
-
-```html
-<link href="https://fonts.googleapis.com/css2?family=YourFont:wght@400;900&display=swap" rel="stylesheet">
-```
-
-Then update the CSS font-family declarations:
-
-```css
-body {
-    font-family: 'YourFont', sans-serif;
-}
-
-.logo {
-    font-family: 'YourFont', sans-serif;
-}
-```
-
-Browse fonts at [fonts.google.com](https://fonts.google.com) - consider bold, impactful fonts for domain showcases.
-
-### Choosing Your Primary Color
-
-Pick a color that complements your brand. Modify the `--dot-color` CSS variable:
-
-```css
-:root {
-    --dot-color: #FF6A00; /* Change to your preferred color */
-}
-```
-
-This color is used for the dot in domain names, chart accents, and interactive elements. Choose something that stands out against both light and dark backgrounds.
+- **Domains** — the `allDomains` array with your domain names and URLs
+- **Modal content** — portfolio details, prospectus, and contact email
+- **Meta tags** — title, description, Open Graph, Twitter, and structured data
+- **hreflang tags** — match each domain to its language/region
+- **Primary color** — the `--dot-color` CSS variable (default: `#DAA520` light / `#FFD700` dark)
+- **Font** — the Google Fonts import and `font-family` declarations
+- **Ahrefs keys** — the per-domain analytics keys, or remove the Ahrefs script block
 
 ## More Projects
 
@@ -159,4 +130,4 @@ MIT License. See [LICENSE](LICENSE) for details.
 
 ---
 
-© 2025 Marcus Quinn
+© 2026 Marcus Quinn
