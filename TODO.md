@@ -58,7 +58,7 @@ Compatible with [todo-md](https://github.com/todo-md/todo-md), [todomd](https://
 t004,Audit README.md — ensure product descriptions and feature list and setup/deploy instructions match current state,marcus,docs audit,~30m,,2026-03-01,pending
 -->
 
-- [ ] t004 Audit README.md — ensure product descriptions, feature list, setup/deploy instructions match current state. #docs #audit #auto-dispatch ~30m model:sonnet ref:GH#9 logged:2026-03-01
+- [x] t004 Audit README.md — ensure product descriptions, feature list, setup/deploy instructions match current state. #docs #audit #auto-dispatch ~30m model:sonnet ref:GH#9 logged:2026-03-01 pr:#10 completed:2026-03-01
 
 ## In Progress
 
