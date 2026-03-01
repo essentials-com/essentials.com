@@ -1,3 +1,5 @@
+import { getZones } from "./domains.js";
+
 export default {
   async scheduled(event, env, ctx) {
     await updateStats(env);
@@ -23,21 +25,9 @@ export default {
 };
 
 async function updateStats(env) {
-  // Zone IDs for Zone Analytics (httpRequests1dGroups)
+  // Zone IDs from shared config (used for Zone Analytics httpRequests1dGroups)
   // Note: Using uniq.uniques for unique visitor counts (filters out bots)
-  const zones = {
-    "essentials.com": "3962b136d6e3492bdb570478899847b2",
-    "essentials.net": "d2bb7fe3fdb1217b844ef3c61deaf7e0",
-    "essentials.co.uk": "f5df3dc2776423f4653d4f58f7bf819c",
-    "essentials.uk": "5dd34def9f2ad086dd54afef45abc7c5",
-    "essentials.eu": "75a68625aff272cfcd14be528568774e",
-    "essentials.us": "0030f0ca87bb371396df88f626f40f51",
-    "essentials.fr": "51bd9812a67450597344caaba49dcf0c",
-    "essentials.cn": "9c657d9a33c65cf08f7388bac27567fb",
-    "essentials.hk": "eba3476c1545e7921a74afd94910ef7a",
-    "essentials.tw": "fa860897d24799154c196c1a3df49d68",
-    "essentials.mobi": "dc698847dff06bf68ff8356605228d82"
-  };
+  const zones = getZones();
 
   const endDate = new Date();
   const startDate = new Date();

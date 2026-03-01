@@ -1232,20 +1232,10 @@
         </div>
     </footer>
 
-    <script>
-        const allDomains = [
-            { name: 'ESSENTIALS.COM', url: 'https://www.essentials.com/', canonical: 'https://www.essentials.com/', hreflang: 'en' },
-            { name: 'ESSENTIALS.CO.UK', url: 'https://www.essentials.co.uk/', canonical: 'https://www.essentials.co.uk/', hreflang: 'en-GB' },
-            { name: 'ESSENTIALS.UK', url: 'https://www.essentials.uk/', canonical: 'https://www.essentials.uk/', hreflang: 'en' },
-            { name: 'ESSENTIALS.NET', url: 'https://www.essentials.net/', canonical: 'https://www.essentials.net/', hreflang: 'en' },
-            { name: 'ESSENTIALS.EU', url: 'https://www.essentials.eu/', canonical: 'https://www.essentials.eu/', hreflang: 'de' },
-            { name: 'ESSENTIALS.US', url: 'https://www.essentials.us/', canonical: 'https://www.essentials.us/', hreflang: 'en-US' },
-            { name: 'ESSENTIALS.FR', url: 'https://www.essentials.fr/', canonical: 'https://www.essentials.fr/', hreflang: 'fr' },
-            { name: 'ESSENTIALS.CN', url: 'https://www.essentials.com/', canonical: 'https://www.essentials.com/', hreflang: 'zh-CN' },
-            { name: 'ESSENTIALS.HK', url: 'https://www.essentials.hk/', canonical: 'https://www.essentials.hk/', hreflang: 'zh-HK' },
-            { name: 'ESSENTIALS.TW', url: 'https://www.essentials.tw/', canonical: 'https://www.essentials.tw/', hreflang: 'zh-TW' },
-            { name: 'ESSENTIALS.MOBI', url: 'https://www.essentials.mobi/', canonical: 'https://www.essentials.mobi/', hreflang: 'en' }
-        ];
+    <script type="module">
+        // Domain config imported from shared single source of truth (workers/domains.js)
+        import { getAllDomains, getSkipDomains, getDomainList } from './workers/domains.js';
+        const allDomains = getAllDomains();
 
         const isLocal = ['localhost', '127.0.0.1', ''].includes(window.location.hostname) || 
                         window.location.protocol === 'file:';
@@ -1443,19 +1433,7 @@
             
             // Generate colors based on current dot-color with brightness variations
             function getDomainColors() {
-                const domains = [
-                    'essentials.com',
-                    'essentials.net', 
-                    'essentials.co.uk',
-                    'essentials.uk',
-                    'essentials.eu',
-                    'essentials.us',
-                    'essentials.fr',
-                    'essentials.cn',
-                    'essentials.hk',
-                    'essentials.tw',
-                    'essentials.mobi'
-                ];
+                const domains = getDomainList();
                 
                 const isDark = root.getAttribute('data-theme') === 'dark' || 
                     (!root.getAttribute('data-theme') && window.matchMedia('(prefers-color-scheme: dark)').matches);
@@ -1959,8 +1937,8 @@
                 return dotIndex !== -1 && targetIndex > dotIndex;
             }
 
-            // Domains to skip in rotation (DNS not available)
-            const skipDomains = ['ESSENTIALS.CN'];
+            // Domains to skip in rotation (DNS not available) — derived from shared config
+            const skipDomains = getSkipDomains();
             
             function navigateToNextDomain() {
                 const currentDomain = getCurrentDomain();
