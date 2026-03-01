@@ -2,11 +2,19 @@
 
 This directory contains Cloudflare Workers for the domain portfolio landing page.
 
+## Shared Configuration
+
+### domains.js
+
+Single source of truth for all domain data: TLDs, Cloudflare Zone IDs, Web Analytics tokens, and hreflang mappings. Imported by both workers and by `index.html`.
+
+To add or remove a domain, edit the `DOMAINS` array in `domains.js`. All consumers derive their data from this one file.
+
 ## Workers
 
 ### essentials-proxy
 
-Serves content from the primary domain (www.essentials.com) to all domain aliases. Injects per-domain Cloudflare Web Analytics beacons.
+Serves content from the primary domain (www.essentials.com) to all domain aliases. Injects per-domain Cloudflare Web Analytics beacons. Imports `getValidHosts()` and `getSiteTokens()` from `domains.js`.
 
 **Deploy:**
 ```bash
@@ -14,13 +22,13 @@ wrangler deploy -c wrangler-proxy.toml
 ```
 
 **Configuration needed:**
-1. Update `siteTokens` object with your domain Web Analytics tokens
+1. Update `domains.js` with your domain TLDs, Zone IDs, and Web Analytics tokens
 2. Update the `targetUrl` to your primary domain
 3. Add routes in Cloudflare dashboard for each domain
 
 ### essentials-stats
 
-Fetches Zone Analytics from Cloudflare GraphQL API for all domains and commits stats to GitHub. Runs on a cron schedule.
+Fetches Zone Analytics from Cloudflare GraphQL API for all domains and commits stats to GitHub. Runs on a cron schedule. Imports `getZones()` from `domains.js`.
 
 **Deploy:**
 ```bash
@@ -34,7 +42,7 @@ wrangler secret put GITHUB_TOKEN -c wrangler-stats.toml
 ```
 
 **Configuration needed:**
-1. Update `zones` object with your domain Zone IDs
+1. Domain Zone IDs are read from `domains.js` (no per-worker config needed)
 2. Update GitHub repo path in the commit URL
 
 ## Adapting for Your Domain Collection
@@ -63,14 +71,13 @@ For each domain:
 - Go to GitHub Settings > Developer settings > Personal access tokens
 - Permissions: repo (for private) or public_repo (for public)
 
-### 4. Update Worker Code
+### 4. Update Domain Configuration
 
-**essentials-proxy.js:**
-- Update `siteTokens` with your domains and tokens
-- Update `targetUrl` to your primary domain
+**domains.js:**
+- Update the `DOMAINS` array with your domain TLDs, Zone IDs, site tokens, and hreflang codes
+- Set `dnsUnavailable: true` for any domains without active DNS
 
 **essentials-stats.js:**
-- Update `zones` with your domains and Zone IDs
 - Update GitHub repo path in fetch URLs
 
 ### 5. Deploy

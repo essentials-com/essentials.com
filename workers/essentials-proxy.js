@@ -1,3 +1,8 @@
+import { getValidHosts, getSiteTokens } from "./domains.js";
+
+const validHosts = getValidHosts();
+const siteTokens = getSiteTokens();
+
 // Security headers applied to all responses
 const securityHeaders = {
   "X-Frame-Options": "DENY",
@@ -28,21 +33,6 @@ export default {
   async fetch(request) {
     const url = new URL(request.url);
     const originalHost = url.host;
-    
-    // Valid hosts (root and www only)
-    const validHosts = [
-      "essentials.com", "www.essentials.com",
-      "essentials.net", "www.essentials.net",
-      "essentials.co.uk", "www.essentials.co.uk",
-      "essentials.uk", "www.essentials.uk",
-      "essentials.eu", "www.essentials.eu",
-      "essentials.us", "www.essentials.us",
-      "essentials.fr", "www.essentials.fr",
-      "essentials.cn", "www.essentials.cn",
-      "essentials.hk", "www.essentials.hk",
-      "essentials.tw", "www.essentials.tw",
-      "essentials.mobi", "www.essentials.mobi",
-    ];
     
     // 301 redirect unknown subdomains to www.essentials.com
     if (!validHosts.includes(originalHost)) {
@@ -82,33 +72,6 @@ Sitemap: https://${wwwHost}/sitemap.xml`;
         }),
       });
     }
-    
-    // Site tokens for each domain (Cloudflare Web Analytics beacon)
-    // Note: site_token is used in the beacon script, site_tag is used in GraphQL API queries
-    const siteTokens = {
-      "essentials.com": "9c7ff93ede994719be16a87fdbbdb6d0",
-      "www.essentials.com": "9c7ff93ede994719be16a87fdbbdb6d0",
-      "essentials.net": "af1f8e9509494fdc9296748bccfa4f67",
-      "www.essentials.net": "af1f8e9509494fdc9296748bccfa4f67",
-      "essentials.co.uk": "bd2ac6db233d4b7a80528a70e8765961",
-      "www.essentials.co.uk": "bd2ac6db233d4b7a80528a70e8765961",
-      "essentials.uk": "dafd69ae431245e59bf2658de918385d",
-      "www.essentials.uk": "dafd69ae431245e59bf2658de918385d",
-      "essentials.eu": "ea6290a203dd479eb29129f67a63a707",
-      "www.essentials.eu": "ea6290a203dd479eb29129f67a63a707",
-      "essentials.us": "0cf65acf96c340bf97f088b639741fac",
-      "www.essentials.us": "0cf65acf96c340bf97f088b639741fac",
-      "essentials.fr": "2a2a52689b9846b2b982cf22cd060758",
-      "www.essentials.fr": "2a2a52689b9846b2b982cf22cd060758",
-      "essentials.cn": "91fea634621d4b7a8603cabadaf4d669",
-      "www.essentials.cn": "91fea634621d4b7a8603cabadaf4d669",
-      "essentials.hk": "81b6f31ee014450c92c7941f3d963d9b",
-      "www.essentials.hk": "81b6f31ee014450c92c7941f3d963d9b",
-      "essentials.tw": "ced9f723c52f4518928c063a63151baa",
-      "www.essentials.tw": "ced9f723c52f4518928c063a63151baa",
-      "essentials.mobi": "141ccb0338744ec5aa52bc614d034937",
-      "www.essentials.mobi": "141ccb0338744ec5aa52bc614d034937",
-    };
     
     // Get the correct site token for this domain
     const siteToken = siteTokens[originalHost] || siteTokens["essentials.com"];
