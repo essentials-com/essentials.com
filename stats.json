@@ -1,21 +1,6 @@
 {
-  "date": "2026-03-03",
+  "date": "2026-03-04",
   "domains": [
-    {
-      "date": "2026-02-02",
-      "domains": {
-        "essentials.com": 1353,
-        "essentials.net": 102,
-        "essentials.co.uk": 182,
-        "essentials.uk": 98,
-        "essentials.eu": 87,
-        "essentials.us": 94,
-        "essentials.fr": 86,
-        "essentials.hk": 150,
-        "essentials.tw": 113,
-        "essentials.mobi": 107
-      }
-    },
     {
       "date": "2026-02-03",
       "domains": {
@@ -439,10 +424,10 @@
     {
       "date": "2026-03-03",
       "domains": {
-        "essentials.com": 1124,
+        "essentials.com": 1125,
         "essentials.net": 126,
         "essentials.co.uk": 175,
-        "essentials.uk": 109,
+        "essentials.uk": 110,
         "essentials.eu": 112,
         "essentials.us": 106,
         "essentials.fr": 142,
@@ -450,34 +435,38 @@
         "essentials.tw": 109,
         "essentials.mobi": 96
       }
+    },
+    {
+      "date": "2026-03-04",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 614,
-    "MobileSafari": 342,
-    "Chrome": 337,
-    "ChromeMobile": 138,
-    "Firefox": 65,
-    "Safari": 58,
-    "Edge": 48,
-    "GoogleBot": 13,
-    "Curl": 11,
+    "Unknown": 583,
+    "MobileSafari": 340,
+    "Chrome": 301,
+    "ChromeMobile": 150,
+    "Edge": 49,
+    "Firefox": 47,
+    "Safari": 39,
+    "GoogleBot": 12,
+    "Curl": 10,
+    "ChromeMobileWebview": 7,
+    "Opera": 7,
+    "ChromeDerivative": 6,
     "BingBot": 5,
-    "ChromeMobileWebview": 5,
-    "ChromeDerivative": 5,
-    "Opera": 4,
+    "SamsungInternet": 5,
     "YandexBot": 4,
-    "SamsungInternet": 4,
-    "OperaMobile": 3,
-    "MobileSafariWebview": 2,
-    "Yandex": 2,
-    "AppleBot": 1,
-    "Facebook": 1,
-    "ChromeHeadless": 1,
+    "OperaMobile": 4,
+    "Yandex": 3,
+    "Facebook": 2,
     "Silk": 1,
+    "AppleBot": 1,
+    "MobileSafariWebview": 1,
     "Brave": 1,
+    "Instagram": 1,
+    "ChromeHeadless": 1,
     "TwitterBot": 1,
-    "Instagram": 0,
     "Wget": 0,
     "LinkedInBot": 0,
     "IE": 0,
