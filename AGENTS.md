@@ -52,11 +52,19 @@ To add or remove a domain, edit `workers/domains.js` — all other files import 
 
 ### Workers
 - **essentials-proxy**: Routes all domain aliases to fetch content from www.essentials.com. Uses `HTMLRewriter` to inject the correct Web Analytics beacon for each domain (tokens from `workers/domains.js`).
-- **essentials-stats**: Cron-triggered (every 5 mins), queries Zone Analytics (`httpRequests1dGroups`) for all 11 domains (zone IDs from `workers/domains.js`), commits stats.json to GitHub
+- **essentials-stats**: Cron-triggered (every 5 mins), queries Zone Analytics (`httpRequests1dGroups`) for all configured domains (zone IDs from `workers/domains.js`), commits stats.json to GitHub
 
 ### Zone IDs & Web Analytics Tokens
 
-All per-domain Cloudflare Zone IDs and Web Analytics site tokens are defined in `workers/domains.js` (the `DOMAINS` array). Each entry contains `zoneId` and `siteToken` fields. These are public identifiers, not secrets.
+All per-domain configuration is defined in `workers/domains.js` (the `DOMAINS` array). Each entry contains:
+
+- `tld` — bare domain (e.g. `essentials.com`)
+- `zoneId` — Cloudflare Zone ID for Zone Analytics
+- `siteToken` — Cloudflare Web Analytics beacon token
+- `hreflang` — hreflang language code for SEO
+- `dnsUnavailable` (optional) — `true` if DNS is not active (e.g. `essentials.cn`)
+
+All fields except `dnsUnavailable` are required. Zone IDs and site tokens are public identifiers, not secrets.
 
 ### Analytics
 - Stats use Zone Analytics (`httpRequests1dGroups`) with `uniq.uniques` for unique visitor counts
@@ -74,7 +82,7 @@ The `/day`, `/week`, `/month`, `/year` stats are calculated from **complete days
 - 30-day stacked bar chart showing per-domain breakdown
 
 ### Browser Pie Chart
-- 7-day average daily pageviews from all 11 domains
+- 7-day average daily pageviews from all configured domains
 - Excludes today (partial day) - uses 7 complete days
 - Filters out bots (GoogleBot, BingBot, etc.), Unknown, Curl, ChromeHeadless
 - Shows top 6 browsers with hover details on legend
