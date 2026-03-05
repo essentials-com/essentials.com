@@ -6,28 +6,39 @@ Feel free to fork and use for your own similar needs.
 
 ## Features
 
+**UI & Interaction**
+
 - Responsive single-page design with dark/light mode (persisted in localStorage)
 - Interactive domain showcase with styled typography
+- Modal with portfolio details, prospectus, valuation references, and contact info
+- Logo click cycles case (UPPER → Title → lower)
+- Extension click navigates to next domain (skips unavailable TLDs)
+- Dot color randomizes on click with WCAG AA contrast enforcement
+- Fade-in rise animation on logo (initial load only)
+- Mobile-optimized with non-sticky header and touch support for charts
+- Minimum 16px font size throughout
+
+**Analytics & Stats**
+
 - Real-time visitor statistics powered by Cloudflare Zone Analytics
 - Bot-filtered unique visitor counts (real users only)
 - 30-day stacked bar chart with per-domain breakdown and tooltips
 - Browser breakdown pie chart (7-day average daily pageviews, bots excluded)
 - Stats auto-update every 5 minutes via Cloudflare Workers
-- Modal with portfolio details, prospectus, valuation references, and contact info
-- Obfuscated contact email to prevent scraping
-- Logo click cycles case (UPPER → Title → lower)
-- Extension click navigates to next domain (skips unavailable TLDs)
-- Dot color randomizes on click with WCAG AA contrast enforcement
-- Fade-in rise animation on logo (initial load only)
+- Ahrefs analytics integration with per-domain keys
+
+**Performance**
+
 - Page prefetching on hover over domain links
 - Font prefetching on hover over navigation
 - Size-adjusted font fallbacks to minimize layout shift
+
+**SEO & Security**
+
 - Dynamic SEO meta tags updated per domain (title, description, canonical, Open Graph, Twitter)
 - hreflang tags for international SEO across all TLDs
 - Structured data (JSON-LD: WebSite, WebPage/Offer, Organization)
-- Ahrefs analytics integration with per-domain keys
-- Mobile-optimized with non-sticky header and touch support for charts
-- Minimum 16px font size throughout
+- Obfuscated contact email to prevent scraping
 - Local testing mode with `?domain=` URL parameter
 
 ## Live Demo

@@ -1873,8 +1873,8 @@
                     }
                     attempts++;
                 }
-                // Fallback to original orange
-                return '#FF6A00';
+                // Fallback to default dot-color
+                return isDark ? '#FFD700' : '#DAA520';
             }
 
             // Add click handler to logo dots
