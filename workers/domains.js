@@ -20,6 +20,15 @@
  * @property {boolean} [dnsUnavailable] - true if DNS is not active (e.g. essentials.cn)
  */
 
+// Zone IDs and Web Analytics site tokens are public identifiers, not secrets.
+// Zone IDs are visible in any DNS lookup; site tokens are client-side beacon IDs
+// embedded in public HTML by design. Actual secrets (CF_API_TOKEN, GITHUB_TOKEN)
+// are stored via `wrangler secret put` and accessed through the Worker env object.
+// Ref: PR #16 review — Gemini critical finding dismissed as false positive.
+
+/** Fallback URL for domains with unavailable DNS. */
+const FALLBACK_URL = "https://www.essentials.com/";
+
 /** @type {DomainEntry[]} */
 export const DOMAINS = [
   { tld: "essentials.com",   zoneId: "3962b136d6e3492bdb570478899847b2", siteToken: "9c7ff93ede994719be16a87fdbbdb6d0", hreflang: "en" },
@@ -40,11 +49,7 @@ export const DOMAINS = [
  * @returns {string[]}
  */
 export function getValidHosts() {
-  const hosts = [];
-  for (const d of DOMAINS) {
-    hosts.push(d.tld, `www.${d.tld}`);
-  }
-  return hosts;
+  return DOMAINS.flatMap(d => [d.tld, `www.${d.tld}`]);
 }
 
 /**
@@ -52,12 +57,11 @@ export function getValidHosts() {
  * @returns {Record<string, string>}
  */
 export function getSiteTokens() {
-  const tokens = {};
-  for (const d of DOMAINS) {
+  return DOMAINS.reduce((tokens, d) => {
     tokens[d.tld] = d.siteToken;
     tokens[`www.${d.tld}`] = d.siteToken;
-  }
-  return tokens;
+    return tokens;
+  }, {});
 }
 
 /**
@@ -65,11 +69,7 @@ export function getSiteTokens() {
  * @returns {Record<string, string>}
  */
 export function getZones() {
-  const zones = {};
-  for (const d of DOMAINS) {
-    zones[d.tld] = d.zoneId;
-  }
-  return zones;
+  return Object.fromEntries(DOMAINS.map(d => [d.tld, d.zoneId]));
 }
 
 /**
@@ -80,9 +80,8 @@ export function getZones() {
 export function getAllDomains() {
   return DOMAINS.map(d => {
     const name = d.tld.toUpperCase();
-    const fallbackUrl = "https://www.essentials.com/";
-    const url = d.dnsUnavailable ? fallbackUrl : `https://www.${d.tld}/`;
-    const canonical = d.dnsUnavailable ? fallbackUrl : `https://www.${d.tld}/`;
+    const url = d.dnsUnavailable ? FALLBACK_URL : `https://www.${d.tld}/`;
+    const canonical = d.dnsUnavailable ? FALLBACK_URL : `https://www.${d.tld}/`;
     return { name, url, canonical, hreflang: d.hreflang };
   });
 }
