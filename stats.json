@@ -1,21 +1,6 @@
 {
-  "date": "2026-03-04",
+  "date": "2026-03-05",
   "domains": [
-    {
-      "date": "2026-02-03",
-      "domains": {
-        "essentials.com": 959,
-        "essentials.net": 140,
-        "essentials.co.uk": 159,
-        "essentials.uk": 150,
-        "essentials.eu": 174,
-        "essentials.us": 128,
-        "essentials.fr": 126,
-        "essentials.hk": 92,
-        "essentials.tw": 159,
-        "essentials.mobi": 115
-      }
-    },
     {
       "date": "2026-02-04",
       "domains": {
@@ -439,8 +424,8 @@
     {
       "date": "2026-03-04",
       "domains": {
-        "essentials.com": 1292,
-        "essentials.net": 139,
+        "essentials.com": 1293,
+        "essentials.net": 140,
         "essentials.co.uk": 141,
         "essentials.uk": 86,
         "essentials.eu": 105,
@@ -450,37 +435,42 @@
         "essentials.tw": 149,
         "essentials.mobi": 96
       }
+    },
+    {
+      "date": "2026-03-05",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 583,
-    "MobileSafari": 340,
-    "Chrome": 301,
-    "ChromeMobile": 150,
-    "Edge": 49,
+    "Unknown": 568,
+    "MobileSafari": 341,
+    "Chrome": 284,
+    "ChromeMobile": 137,
     "Firefox": 47,
-    "Safari": 39,
-    "GoogleBot": 12,
-    "Curl": 10,
-    "ChromeMobileWebview": 7,
+    "Edge": 43,
+    "Safari": 36,
+    "GoogleBot": 14,
+    "Curl": 11,
     "Opera": 7,
-    "ChromeDerivative": 6,
+    "ChromeMobileWebview": 6,
     "BingBot": 5,
     "SamsungInternet": 5,
-    "YandexBot": 4,
     "OperaMobile": 4,
+    "ChromeDerivative": 4,
+    "YandexBot": 3,
     "Yandex": 3,
+    "MobileSafariWebview": 2,
     "Facebook": 2,
-    "Silk": 1,
-    "AppleBot": 1,
-    "MobileSafariWebview": 1,
-    "Brave": 1,
-    "Instagram": 1,
-    "ChromeHeadless": 1,
     "TwitterBot": 1,
-    "Wget": 0,
+    "Brave": 1,
+    "ChromeHeadless": 1,
+    "AppleBot": 1,
     "LinkedInBot": 0,
+    "Instagram": 0,
+    "Wget": 0,
     "IE": 0,
-    "UCBrowserMobile": 0
+    "Silk": 0,
+    "UCBrowserMobile": 0,
+    "FirefoxMobile": 0
   }
 }
