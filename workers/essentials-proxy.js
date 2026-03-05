@@ -95,9 +95,9 @@ Sitemap: https://${wwwHost}/sitemap.xml`;
     // Add a header so the JavaScript can detect the original domain
     newHeaders.set("X-Original-Host", originalHost);
     
-    // Allow Cloudflare to compress the response (gzip/brotli)
-    // HTMLRewriter handles beacon injection, so no-transform is not needed
-    newHeaders.set("Cache-Control", "public");
+    // Prevent intermediate proxies from modifying the response body
+    // (protects HTMLRewriter beacon injection from Cloudflare edge transforms)
+    newHeaders.set("Cache-Control", "public, no-transform");
     
     // Security headers
     for (const [key, value] of Object.entries(securityHeaders)) {
