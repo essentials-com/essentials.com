@@ -1838,6 +1838,10 @@
 
         // Random dot color on click
         (function() {
+            // Default dot colors matching CSS --dot-color per theme
+            const DOT_COLOR_DARK = '#FFD700';
+            const DOT_COLOR_LIGHT = '#DAA520';
+
             // Calculate relative luminance for contrast ratio
             function getLuminance(r, g, b) {
                 const [rs, gs, bs] = [r, g, b].map(c => {
@@ -1875,7 +1879,7 @@
                     attempts++;
                 }
                 // Fallback to default dot-color
-                return isDark ? '#FFD700' : '#DAA520';
+                return isDark ? DOT_COLOR_DARK : DOT_COLOR_LIGHT;
             }
 
             // Add click handler to logo dots
