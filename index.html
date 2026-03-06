@@ -1874,16 +1874,20 @@
                     }
                     attempts++;
                 }
-                // Fallback to default dot-color
-                return isDark ? '#FFD700' : '#DAA520';
+                // Fallback: let CSS cascade apply the theme default
+                return null;
             }
 
             // Add click handler to logo dots
             document.getElementById('main-logo').addEventListener('click', (e) => {
                 if (e.target.classList.contains('dot')) {
                     const newColor = getRandomContrastColor();
-                    document.documentElement.style.setProperty('--dot-color', newColor);
-                    // Update chart colors to match
+                    if (newColor) {
+                        document.documentElement.style.setProperty('--dot-color', newColor);
+                    } else {
+                        // Revert to theme default from stylesheet
+                        document.documentElement.style.removeProperty('--dot-color');
+                    }
                     if (window.refreshChartColors) window.refreshChartColors();
                 }
             });
