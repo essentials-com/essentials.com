@@ -863,7 +863,7 @@
         <nav class="domains" id="domains-nav"></nav>
     </header>
     <div class="logo-container">
-        <h1 class="logo" id="main-logo">essentials</h1>
+        <h1 class="logo" id="main-logo" data-needs-animation="true">essentials</h1>
     </div>
     <div class="cta-section">
         <button class="cta" id="open-modal">Domain collection for sale</button>
@@ -1293,11 +1293,12 @@
 
             // Render main logo
             const logoEl = document.getElementById('main-logo');
-            const isFirstRender = logoEl.innerHTML === '';
+            const isFirstRender = logoEl.dataset.needsAnimation === 'true';
             logoEl.innerHTML = '';
             logoEl.appendChild(createStyledText(currentDomain.name));
             if (isFirstRender) {
                 logoEl.classList.add('animate');
+                delete logoEl.dataset.needsAnimation;
             }
 
             // Update page title and SEO meta tags
