@@ -14,6 +14,7 @@ export default {
           headers: { "Content-Type": "application/json" }
         });
       } catch (e) {
+        console.error("Stats update failed:", e);
         return new Response(JSON.stringify({ error: "Internal server error" }), { 
           status: 500,
           headers: { "Content-Type": "application/json" }
@@ -123,7 +124,8 @@ async function updateStats(env) {
         });
       }
     } catch (e) {
-      errors.push({ domain, error: e.message });
+      console.error(`Failed to fetch stats for ${domain}:`, e);
+      errors.push({ domain, error: "Failed to fetch domain data" });
     }
   }
 
@@ -160,7 +162,9 @@ async function updateStats(env) {
       const fileData = await getFile.json();
       sha = fileData.sha;
     }
-  } catch (e) {}
+  } catch (e) {
+    console.error("Failed to fetch existing stats.json SHA:", e);
+  }
 
   const commitBody = {
     message: `Update stats ${formatDate(endDate)}`,
