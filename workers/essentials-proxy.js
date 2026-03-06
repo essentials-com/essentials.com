@@ -126,9 +126,18 @@ Sitemap: https://${wwwHost}/sitemap.xml`;
     // Add a header so the JavaScript can detect the original domain
     newHeaders.set("X-Original-Host", originalHost);
 
-    // Prevent intermediate proxies from modifying the response body
-    // (protects HTMLRewriter beacon injection from Cloudflare edge transforms)
-    newHeaders.set("Cache-Control", "public, no-transform");
+    // Preserve upstream Cache-Control directives, ensuring 'public' is present.
+    // Previous versions used 'no-transform' here to protect HTMLRewriter beacon
+    // injection from Cloudflare edge transforms (Rocket Loader, auto-minify).
+    // However, no-transform also disables Cloudflare's Brotli/Gzip compression,
+    // causing a performance regression. Instead, the beacon script uses
+    // data-cfasync="false" to opt out of Rocket Loader specifically.
+    const upstreamCC = response.headers.get("Cache-Control") || "";
+    const directives = upstreamCC.split(",").map((d) => d.trim()).filter(Boolean);
+    if (!directives.some((d) => d.startsWith("public") || d.startsWith("private"))) {
+      directives.push("public");
+    }
+    newHeaders.set("Cache-Control", directives.join(", ") || "public");
 
     // Check if this is HTML content that needs beacon injection + nonces
     const contentType = response.headers.get("content-type") || "";
@@ -161,7 +170,7 @@ Sitemap: https://${wwwHost}/sitemap.xml`;
       r: 1,
       send: { to: "https://cloudflareinsights.com/cdn-cgi/rum" },
     };
-    const beaconScript = `<script nonce="${nonce}" defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='${JSON.stringify(beaconConfig)}'></script>`;
+    const beaconScript = `<script nonce="${nonce}" data-cfasync="false" defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='${JSON.stringify(beaconConfig)}'></script>`;
 
     // Use HTMLRewriter to:
     // 1. Remove any existing Cloudflare beacon scripts (auto-injected by Cloudflare for essentials.com)
