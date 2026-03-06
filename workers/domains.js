@@ -57,11 +57,7 @@ export function getValidHosts() {
  * @returns {Record<string, string>}
  */
 export function getSiteTokens() {
-  return DOMAINS.reduce((tokens, d) => {
-    tokens[d.tld] = d.siteToken;
-    tokens[`www.${d.tld}`] = d.siteToken;
-    return tokens;
-  }, {});
+  return Object.fromEntries(DOMAINS.flatMap(d => [[d.tld, d.siteToken], [`www.${d.tld}`, d.siteToken]]));
 }
 
 /**
@@ -81,8 +77,7 @@ export function getAllDomains() {
   return DOMAINS.map(d => {
     const name = d.tld.toUpperCase();
     const url = d.dnsUnavailable ? FALLBACK_URL : `https://www.${d.tld}/`;
-    const canonical = d.dnsUnavailable ? FALLBACK_URL : `https://www.${d.tld}/`;
-    return { name, url, canonical, hreflang: d.hreflang };
+    return { name, url, canonical: url, hreflang: d.hreflang };
   });
 }
 
