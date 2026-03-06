@@ -134,10 +134,10 @@ Sitemap: https://${wwwHost}/sitemap.xml`;
     // data-cfasync="false" to opt out of Rocket Loader specifically.
     const upstreamCC = response.headers.get("Cache-Control") || "";
     const directives = upstreamCC.split(",").map((d) => d.trim()).filter(Boolean);
-    if (!directives.some((d) => d.startsWith("public") || d.startsWith("private"))) {
+    if (!directives.some((d) => /^(public|private)/i.test(d))) {
       directives.push("public");
     }
-    newHeaders.set("Cache-Control", directives.join(", ") || "public");
+    newHeaders.set("Cache-Control", directives.join(", "));
 
     // Check if this is HTML content that needs beacon injection + nonces
     const contentType = response.headers.get("content-type") || "";
