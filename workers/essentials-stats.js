@@ -161,6 +161,8 @@ async function updateStats(env) {
     if (getFile.ok) {
       const fileData = await getFile.json();
       sha = fileData.sha;
+    } else {
+      console.error(`Failed to fetch stats.json SHA: HTTP ${getFile.status} ${getFile.statusText}`);
     }
   } catch (e) {
     console.error("Failed to fetch existing stats.json SHA:", e);
