@@ -57,8 +57,10 @@ function buildCsp(nonce) {
   const scriptSrc = `script-src 'self' ${nonceToken}https://analytics.ahrefs.com https://static.cloudflareinsights.com`;
   // 'unsafe-inline' is required because chart JS sets element.style properties
   // (conic-gradient on pie chart, segment heights, tooltip positioning) which
-  // cannot carry nonces. The nonce still protects <style> elements.
-  const styleSrc = `style-src 'self' 'unsafe-inline' ${nonceToken}https://fonts.googleapis.com`;
+  // cannot carry nonces. Per CSP Level 3, 'unsafe-inline' is ignored when a
+  // nonce is present, so we intentionally omit the nonce from style-src.
+  // The nonce on script-src still protects against XSS via inline scripts.
+  const styleSrc = `style-src 'self' 'unsafe-inline' https://fonts.googleapis.com`;
 
   return [...cspBase, scriptSrc, styleSrc].join("; ");
 }
