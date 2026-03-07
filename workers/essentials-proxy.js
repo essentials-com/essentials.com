@@ -31,12 +31,9 @@ const cspBase = [
  * no nonce is needed and a restrictive static policy is used.
  */
 function buildCsp(nonce) {
-  const scriptSrc = nonce
-    ? `script-src 'self' 'nonce-${nonce}' https://analytics.ahrefs.com https://static.cloudflareinsights.com`
-    : "script-src 'self' https://analytics.ahrefs.com https://static.cloudflareinsights.com";
-  const styleSrc = nonce
-    ? `style-src 'self' 'nonce-${nonce}' https://fonts.googleapis.com`
-    : "style-src 'self' https://fonts.googleapis.com";
+  const nonceToken = nonce ? `'nonce-${nonce}' ` : "";
+  const scriptSrc = `script-src 'self' ${nonceToken}https://analytics.ahrefs.com https://static.cloudflareinsights.com`;
+  const styleSrc = `style-src 'self' ${nonceToken}https://fonts.googleapis.com`;
 
   return [...cspBase, scriptSrc, styleSrc].join("; ");
 }
