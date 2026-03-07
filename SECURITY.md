@@ -29,7 +29,7 @@ Include:
 
 ## Scope
 
-This policy covers the essentials.com website, its Cloudflare Workers (proxy and stats), and any scripts distributed in this repository. Third-party dependencies are out of scope but will be reported upstream.
+This policy covers the essentials.com website, its Cloudflare Workers (proxy and stats), any scripts distributed in this repository, and vulnerabilities in dependency versions used by those components. Vulnerabilities in third-party services we do not operate are out of scope, though we may report them upstream where appropriate.
 
 ## Security Practices
 
