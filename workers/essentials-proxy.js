@@ -1,7 +1,29 @@
-import { getValidHosts, getSiteTokens } from "./domains.js";
+import { getValidHosts, getSiteTokens, getAllDomains } from "./domains.js";
 
 const validHosts = getValidHosts();
 const siteTokens = getSiteTokens();
+
+// Build hreflang link tags once at init from the single source of truth (domains.js).
+// These are identical for every response — the full set of language-region alternates
+// plus x-default. Domains with hreflang: null are skipped (no unique language-region).
+const hreflangHtml = (() => {
+  const domains = getAllDomains();
+  let links = "";
+  let defaultHref = "";
+  for (const domain of domains) {
+    if (domain.hreflang) {
+      links += `<link rel="alternate" hreflang="${domain.hreflang}" href="${domain.url}" />\n`;
+    }
+    // The primary domain (ESSENTIALS.COM) is x-default
+    if (domain.name === "ESSENTIALS.COM") {
+      defaultHref = domain.url;
+    }
+  }
+  if (defaultHref) {
+    links += `<link rel="alternate" hreflang="x-default" href="${defaultHref}" />\n`;
+  }
+  return links;
+})();
 
 // Static security headers applied to all responses
 const securityHeaders = {
@@ -170,10 +192,17 @@ Sitemap: https://${wwwHost}/sitemap.xml`;
     const beaconScript = `<script nonce="${nonce}" data-cfasync="false" defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='${JSON.stringify(beaconConfig)}'></script>`;
 
     // Use HTMLRewriter to:
-    // 1. Remove any existing Cloudflare beacon scripts (auto-injected by Cloudflare for essentials.com)
-    // 2. Add nonce attributes to all inline <script> and <style> elements (CSP compliance)
-    // 3. Inject the correct beacon for this domain (with nonce)
+    // 1. Inject hreflang alternate links into <head> (generated from domains.js)
+    // 2. Remove any existing Cloudflare beacon scripts (auto-injected by Cloudflare for essentials.com)
+    // 3. Add nonce attributes to all inline <script> and <style> elements (CSP compliance)
+    // 4. Inject the correct beacon for this domain (with nonce)
     const rewriter = new HTMLRewriter()
+      .on("head", {
+        element(element) {
+          // Inject hreflang links after the opening <head> tag
+          element.append(hreflangHtml, { html: true });
+        },
+      })
       .on("script[src*='cloudflareinsights.com/beacon']", {
         element(element) {
           // Remove auto-injected beacon scripts

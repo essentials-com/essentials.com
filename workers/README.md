@@ -14,7 +14,7 @@ To add or remove a domain, edit the `DOMAINS` array in `domains.js`. All consume
 
 ### essentials-proxy
 
-Serves content from the primary domain (www.essentials.com) to all domain aliases. Injects per-domain Cloudflare Web Analytics beacons. Imports `getValidHosts()` and `getSiteTokens()` from `domains.js`.
+Serves content from the primary domain (www.essentials.com) to all domain aliases. Injects per-domain Cloudflare Web Analytics beacons and hreflang alternate links. Imports `getValidHosts()`, `getSiteTokens()`, and `getAllDomains()` from `domains.js`.
 
 **Deploy:**
 ```bash
