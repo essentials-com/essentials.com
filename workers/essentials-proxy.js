@@ -60,6 +60,8 @@ function buildCsp(nonce) {
   // cannot carry nonces. Per CSP Level 3, 'unsafe-inline' is ignored when a
   // nonce is present, so we intentionally omit the nonce from style-src.
   // The nonce on script-src still protects against XSS via inline scripts.
+  // TODO: Refactor client-side JS to use nonced <style> tags with CSS classes
+  // instead of element.style, allowing removal of 'unsafe-inline' from style-src.
   const styleSrc = `style-src 'self' 'unsafe-inline' https://fonts.googleapis.com`;
 
   return [...cspBase, scriptSrc, styleSrc].join("; ");
