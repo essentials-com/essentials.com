@@ -26,3 +26,9 @@ Create `.md` files in this directory for domain-specific context:
 ```
 
 Each file is read on demand by AI assistants when relevant to the task.
+
+## Security
+
+This is a content/e-commerce site. No AI/LLM dependencies. Standard web security practices apply (CSP headers, input sanitization, dependency auditing, payment security).
+
+If AI-powered features are added in the future (product recommendations, search, chatbot, content generation), integrate [`@stackone/defender`](https://www.npmjs.com/package/@stackone/defender) as middleware for prompt injection defense. See the [aidevops framework docs](https://github.com/marcusquinn/aidevops) `tools/security/prompt-injection-defender.md`.
