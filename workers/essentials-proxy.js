@@ -55,7 +55,10 @@ const cspBase = [
 function buildCsp(nonce) {
   const nonceToken = nonce ? `'nonce-${nonce}' ` : "";
   const scriptSrc = `script-src 'self' ${nonceToken}https://analytics.ahrefs.com https://static.cloudflareinsights.com`;
-  const styleSrc = `style-src 'self' ${nonceToken}https://fonts.googleapis.com`;
+  // 'unsafe-inline' is required because chart JS sets element.style properties
+  // (conic-gradient on pie chart, segment heights, tooltip positioning) which
+  // cannot carry nonces. The nonce still protects <style> elements.
+  const styleSrc = `style-src 'self' 'unsafe-inline' ${nonceToken}https://fonts.googleapis.com`;
 
   return [...cspBase, scriptSrc, styleSrc].join("; ");
 }
