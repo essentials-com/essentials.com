@@ -1,10 +1,24 @@
 import { getZones } from "./domains.js";
 
 export default {
+  /**
+   * Cron-triggered handler that fetches Zone Analytics for all configured
+   * domains and commits the aggregated stats to the GitHub stats branch.
+   * @param {ScheduledEvent} event - Cloudflare scheduled event
+   * @param {object} env - Worker environment bindings (CF_API_TOKEN, GITHUB_TOKEN)
+   * @param {ExecutionContext} ctx - Execution context for waitUntil
+   */
   async scheduled(event, env, ctx) {
     await updateStats(env);
   },
-  
+
+  /**
+   * HTTP handler for manual stats updates. Accepts POST requests to trigger
+   * an immediate stats refresh; returns JSON with the update result.
+   * @param {Request} request - Incoming HTTP request
+   * @param {object} env - Worker environment bindings (CF_API_TOKEN, GITHUB_TOKEN)
+   * @returns {Promise<Response>} JSON response with update result or usage hint
+   */
   async fetch(request, env) {
     if (request.method === "POST") {
       try {
@@ -25,6 +39,14 @@ export default {
   }
 };
 
+/**
+ * Fetch 30-day Zone Analytics (unique visitors and browser stats) for all
+ * configured domains via the Cloudflare GraphQL API, then commit the
+ * aggregated results as stats.json to the GitHub stats branch.
+ * @param {object} env - Worker environment bindings (CF_API_TOKEN, GITHUB_TOKEN)
+ * @returns {Promise<{success: boolean, date: string, errors: Array, dataPoints: number}>}
+ * @throws {Error} If the GitHub commit fails
+ */
 async function updateStats(env) {
   // Zone IDs from shared config (used for Zone Analytics httpRequests1dGroups)
   // Note: Using uniq.uniques for unique visitor counts (filters out bots)
