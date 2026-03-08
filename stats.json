@@ -441,14 +441,14 @@
       "domains": {
         "essentials.com": 690,
         "essentials.net": 109,
-        "essentials.co.uk": 124,
+        "essentials.co.uk": 125,
         "essentials.uk": 98,
         "essentials.eu": 84,
-        "essentials.us": 117,
+        "essentials.us": 118,
         "essentials.fr": 100,
         "essentials.hk": 97,
-        "essentials.tw": 69,
-        "essentials.mobi": 58
+        "essentials.tw": 74,
+        "essentials.mobi": 59
       }
     }
   ],
