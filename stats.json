@@ -439,9 +439,11 @@
     {
       "date": "2026-03-08",
       "domains": {
-        "essentials.com": 9,
-        "essentials.us": 1,
-        "essentials.fr": 1
+        "essentials.com": 11,
+        "essentials.co.uk": 1,
+        "essentials.us": 2,
+        "essentials.fr": 1,
+        "essentials.tw": 1
       }
     }
   ],
