@@ -87,6 +87,14 @@ function applySecurityHeaders(headers, nonce) {
 }
 
 export default {
+  /**
+   * Handle incoming requests for all essentials.* domain aliases.
+   * Redirects unknown hosts, serves dynamic sitemap/robots, and proxies
+   * HTML from www.essentials.com with per-domain analytics beacons,
+   * hreflang tags, and CSP nonces injected via HTMLRewriter.
+   * @param {Request} request - Incoming Cloudflare Worker request
+   * @returns {Promise<Response>} Proxied response with injected headers and content
+   */
   async fetch(request) {
     const url = new URL(request.url);
     const originalHost = url.host;
