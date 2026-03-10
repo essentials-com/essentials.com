@@ -1,21 +1,6 @@
 {
-  "date": "2026-03-09",
+  "date": "2026-03-10",
   "domains": [
-    {
-      "date": "2026-02-08",
-      "domains": {
-        "essentials.com": 1047,
-        "essentials.net": 116,
-        "essentials.co.uk": 147,
-        "essentials.uk": 170,
-        "essentials.eu": 102,
-        "essentials.us": 134,
-        "essentials.fr": 118,
-        "essentials.hk": 113,
-        "essentials.tw": 110,
-        "essentials.mobi": 83
-      }
-    },
     {
       "date": "2026-02-09",
       "domains": {
@@ -439,48 +424,52 @@
     {
       "date": "2026-03-09",
       "domains": {
-        "essentials.com": 919,
+        "essentials.com": 923,
         "essentials.net": 135,
-        "essentials.co.uk": 149,
+        "essentials.co.uk": 150,
         "essentials.uk": 105,
-        "essentials.eu": 124,
+        "essentials.eu": 125,
         "essentials.us": 133,
         "essentials.fr": 151,
         "essentials.hk": 121,
         "essentials.tw": 108,
         "essentials.mobi": 106
       }
+    },
+    {
+      "date": "2026-03-10",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 743,
-    "Chrome": 325,
-    "MobileSafari": 310,
-    "ChromeMobile": 121,
-    "Firefox": 54,
-    "Safari": 46,
-    "Edge": 29,
-    "GoogleBot": 13,
+    "Unknown": 737,
+    "Chrome": 322,
+    "MobileSafari": 305,
+    "ChromeMobile": 122,
+    "Firefox": 53,
+    "Safari": 47,
+    "Edge": 26,
+    "GoogleBot": 12,
     "YandexBot": 9,
     "Curl": 7,
-    "ChromeDerivative": 6,
     "Opera": 6,
-    "BingBot": 5,
+    "ChromeDerivative": 5,
+    "BingBot": 4,
     "ChromeMobileWebview": 4,
-    "SamsungInternet": 4,
+    "SamsungInternet": 3,
     "OperaMobile": 3,
     "MobileSafariWebview": 2,
     "Facebook": 2,
     "ChromeHeadless": 2,
     "Yandex": 2,
-    "TwitterBot": 1,
     "Brave": 1,
     "AppleBot": 1,
-    "IE": 0,
-    "Silk": 0,
+    "TwitterBot": 1,
+    "UCBrowserMobile": 1,
     "Instagram": 0,
     "FirefoxMobile": 0,
     "Wget": 0,
-    "UCBrowserMobile": 0
+    "Silk": 0,
+    "IE": 0
   }
 }
