@@ -424,7 +424,7 @@
     {
       "date": "2026-03-17",
       "domains": {
-        "essentials.com": 1292,
+        "essentials.com": 1293,
         "essentials.net": 113,
         "essentials.co.uk": 131,
         "essentials.uk": 102,
@@ -449,7 +449,7 @@
     "Safari": 32,
     "Firefox": 31,
     "Edge": 19,
-    "GoogleBot": 17,
+    "GoogleBot": 18,
     "ChromeDerivative": 5,
     "Curl": 5,
     "BingBot": 4,
