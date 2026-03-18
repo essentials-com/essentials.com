@@ -1,21 +1,6 @@
 {
-  "date": "2026-03-17",
+  "date": "2026-03-18",
   "domains": [
-    {
-      "date": "2026-02-16",
-      "domains": {
-        "essentials.com": 981,
-        "essentials.net": 161,
-        "essentials.co.uk": 169,
-        "essentials.uk": 135,
-        "essentials.eu": 119,
-        "essentials.us": 115,
-        "essentials.fr": 149,
-        "essentials.hk": 119,
-        "essentials.tw": 691,
-        "essentials.mobi": 128
-      }
-    },
     {
       "date": "2026-02-17",
       "domains": {
@@ -439,48 +424,52 @@
     {
       "date": "2026-03-17",
       "domains": {
-        "essentials.com": 1284,
+        "essentials.com": 1292,
         "essentials.net": 113,
         "essentials.co.uk": 131,
         "essentials.uk": 102,
         "essentials.eu": 112,
         "essentials.us": 102,
-        "essentials.fr": 116,
-        "essentials.hk": 135,
+        "essentials.fr": 118,
+        "essentials.hk": 136,
         "essentials.tw": 123,
         "essentials.mobi": 85
       }
+    },
+    {
+      "date": "2026-03-18",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 852,
-    "Chrome": 354,
-    "MobileSafari": 276,
-    "ChromeMobile": 118,
-    "Firefox": 32,
-    "Safari": 29,
-    "Edge": 21,
-    "GoogleBot": 15,
+    "Unknown": 879,
+    "Chrome": 362,
+    "MobileSafari": 275,
+    "ChromeMobile": 124,
+    "Safari": 32,
+    "Firefox": 31,
+    "Edge": 19,
+    "GoogleBot": 17,
+    "ChromeDerivative": 5,
     "Curl": 5,
+    "BingBot": 4,
     "SamsungInternet": 4,
-    "ChromeDerivative": 4,
     "ChromeMobileWebview": 3,
-    "BingBot": 3,
     "Opera": 3,
     "YandexBot": 3,
     "MobileSafariWebview": 2,
     "Facebook": 2,
-    "ChromeHeadless": 2,
     "Yandex": 2,
-    "Silk": 1,
     "TwitterBot": 1,
     "Brave": 1,
+    "ChromeHeadless": 1,
     "Instagram": 1,
-    "OperaMobile": 0,
+    "AppleBot": 1,
     "Wget": 0,
     "FirefoxMobile": 0,
-    "AppleBot": 0,
+    "Silk": 0,
     "YandexMobile": 0,
+    "OperaMobile": 0,
     "UCBrowserMobile": 0
   }
 }
