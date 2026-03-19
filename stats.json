@@ -1,21 +1,6 @@
 {
-  "date": "2026-03-18",
+  "date": "2026-03-19",
   "domains": [
-    {
-      "date": "2026-02-17",
-      "domains": {
-        "essentials.com": 959,
-        "essentials.net": 109,
-        "essentials.co.uk": 159,
-        "essentials.uk": 104,
-        "essentials.eu": 95,
-        "essentials.us": 94,
-        "essentials.fr": 98,
-        "essentials.hk": 123,
-        "essentials.tw": 672,
-        "essentials.mobi": 82
-      }
-    },
     {
       "date": "2026-02-18",
       "domains": {
@@ -439,48 +424,52 @@
     {
       "date": "2026-03-18",
       "domains": {
-        "essentials.com": 1173,
+        "essentials.com": 1177,
         "essentials.net": 125,
-        "essentials.co.uk": 140,
-        "essentials.uk": 109,
-        "essentials.eu": 121,
+        "essentials.co.uk": 141,
+        "essentials.uk": 112,
+        "essentials.eu": 122,
         "essentials.us": 85,
         "essentials.fr": 104,
         "essentials.hk": 76,
         "essentials.tw": 124,
         "essentials.mobi": 79
       }
+    },
+    {
+      "date": "2026-03-19",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 879,
-    "Chrome": 362,
-    "MobileSafari": 275,
-    "ChromeMobile": 124,
-    "Safari": 32,
+    "Unknown": 830,
+    "Chrome": 360,
+    "MobileSafari": 271,
+    "ChromeMobile": 121,
+    "Safari": 31,
     "Firefox": 31,
-    "Edge": 19,
-    "GoogleBot": 18,
-    "ChromeDerivative": 5,
+    "Edge": 17,
+    "GoogleBot": 16,
+    "YandexBot": 7,
     "Curl": 5,
+    "Opera": 4,
     "BingBot": 4,
     "SamsungInternet": 4,
+    "ChromeDerivative": 4,
     "ChromeMobileWebview": 3,
-    "Opera": 3,
-    "YandexBot": 3,
     "MobileSafariWebview": 2,
-    "Facebook": 2,
     "Yandex": 2,
+    "Facebook": 2,
     "TwitterBot": 1,
-    "Brave": 1,
-    "ChromeHeadless": 1,
     "Instagram": 1,
+    "Silk": 1,
     "AppleBot": 1,
-    "Wget": 0,
+    "ChromeHeadless": 1,
+    "OperaMobile": 1,
     "FirefoxMobile": 0,
-    "Silk": 0,
     "YandexMobile": 0,
-    "OperaMobile": 0,
-    "UCBrowserMobile": 0
+    "Brave": 0,
+    "Wget": 0,
+    "IE": 0
   }
 }
