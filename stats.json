@@ -1,21 +1,6 @@
 {
-  "date": "2026-03-19",
+  "date": "2026-03-20",
   "domains": [
-    {
-      "date": "2026-02-18",
-      "domains": {
-        "essentials.com": 1100,
-        "essentials.net": 131,
-        "essentials.co.uk": 126,
-        "essentials.uk": 103,
-        "essentials.eu": 107,
-        "essentials.us": 104,
-        "essentials.fr": 115,
-        "essentials.hk": 83,
-        "essentials.tw": 713,
-        "essentials.mobi": 66
-      }
-    },
     {
       "date": "2026-02-19",
       "domains": {
@@ -439,7 +424,7 @@
     {
       "date": "2026-03-19",
       "domains": {
-        "essentials.com": 1074,
+        "essentials.com": 1076,
         "essentials.net": 125,
         "essentials.co.uk": 168,
         "essentials.uk": 130,
@@ -447,37 +432,40 @@
         "essentials.us": 122,
         "essentials.fr": 167,
         "essentials.hk": 161,
-        "essentials.tw": 132,
+        "essentials.tw": 133,
         "essentials.mobi": 108
       }
+    },
+    {
+      "date": "2026-03-20",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 830,
-    "Chrome": 361,
-    "MobileSafari": 272,
-    "ChromeMobile": 121,
-    "Safari": 31,
-    "Firefox": 31,
-    "Edge": 17,
-    "GoogleBot": 16,
-    "YandexBot": 7,
-    "Curl": 5,
-    "Opera": 4,
-    "BingBot": 4,
-    "SamsungInternet": 4,
+    "Unknown": 815,
+    "Chrome": 386,
+    "MobileSafari": 275,
+    "ChromeMobile": 138,
+    "Safari": 32,
+    "Firefox": 32,
+    "GoogleBot": 17,
+    "Edge": 16,
+    "YandexBot": 6,
+    "Curl": 6,
+    "SamsungInternet": 5,
+    "Facebook": 5,
+    "ChromeMobileWebview": 4,
     "ChromeDerivative": 4,
-    "ChromeMobileWebview": 3,
+    "BingBot": 3,
+    "Opera": 3,
     "MobileSafariWebview": 2,
     "Yandex": 2,
-    "Facebook": 2,
-    "TwitterBot": 1,
-    "Instagram": 1,
     "Silk": 1,
     "AppleBot": 1,
+    "Instagram": 1,
+    "TwitterBot": 1,
     "ChromeHeadless": 1,
     "OperaMobile": 1,
-    "FirefoxMobile": 0,
     "YandexMobile": 0,
     "Brave": 0,
     "Wget": 0,
