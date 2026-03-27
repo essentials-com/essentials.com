@@ -1,21 +1,6 @@
 {
-  "date": "2026-03-26",
+  "date": "2026-03-27",
   "domains": [
-    {
-      "date": "2026-02-25",
-      "domains": {
-        "essentials.com": 832,
-        "essentials.net": 125,
-        "essentials.co.uk": 180,
-        "essentials.uk": 134,
-        "essentials.eu": 90,
-        "essentials.us": 101,
-        "essentials.fr": 149,
-        "essentials.hk": 116,
-        "essentials.tw": 426,
-        "essentials.mobi": 116
-      }
-    },
     {
       "date": "2026-02-26",
       "domains": {
@@ -439,48 +424,52 @@
     {
       "date": "2026-03-26",
       "domains": {
-        "essentials.com": 968,
+        "essentials.com": 970,
         "essentials.net": 159,
-        "essentials.co.uk": 182,
-        "essentials.uk": 124,
+        "essentials.co.uk": 183,
+        "essentials.uk": 125,
         "essentials.eu": 123,
         "essentials.us": 97,
-        "essentials.fr": 112,
+        "essentials.fr": 115,
         "essentials.hk": 102,
         "essentials.tw": 96,
         "essentials.mobi": 99
       }
+    },
+    {
+      "date": "2026-03-27",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 439,
-    "MobileSafari": 277,
-    "Chrome": 265,
-    "ChromeMobile": 137,
+    "Unknown": 460,
+    "MobileSafari": 274,
+    "Chrome": 239,
+    "ChromeMobile": 120,
     "Safari": 29,
-    "Firefox": 27,
+    "Firefox": 25,
     "Edge": 21,
-    "GoogleBot": 11,
+    "GoogleBot": 14,
+    "Curl": 14,
     "BingBot": 4,
     "ChromeMobileWebview": 4,
-    "SamsungInternet": 4,
-    "Facebook": 4,
     "Opera": 3,
     "YandexBot": 3,
-    "Curl": 3,
+    "SamsungInternet": 3,
+    "MobileSafariWebview": 2,
     "ChromeDerivative": 2,
     "ChromeHeadless": 2,
-    "OperaMobile": 1,
+    "Facebook": 2,
     "TwitterBot": 1,
-    "MobileSafariWebview": 1,
     "Instagram": 1,
-    "Wget": 0,
+    "OperaMobile": 1,
     "AppleBot": 0,
     "Brave": 0,
     "IE": 0,
     "Silk": 0,
     "FirefoxMobile": 0,
     "Chromium": 0,
-    "UCBrowserMobile": 0
+    "UCBrowserMobile": 0,
+    "Yandex": 0
   }
 }
