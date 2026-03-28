@@ -438,7 +438,11 @@
     },
     {
       "date": "2026-03-28",
-      "domains": {}
+      "domains": {
+        "essentials.com": 1,
+        "essentials.uk": 1,
+        "essentials.hk": 3
+      }
     }
   ],
   "browsers": {
