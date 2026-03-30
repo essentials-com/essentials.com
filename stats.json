@@ -440,8 +440,10 @@
       "date": "2026-03-30",
       "domains": {
         "essentials.com": 3,
-        "essentials.net": 2,
-        "essentials.eu": 1
+        "essentials.net": 8,
+        "essentials.eu": 1,
+        "essentials.fr": 2,
+        "essentials.mobi": 1
       }
     }
   ],
