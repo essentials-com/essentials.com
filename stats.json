@@ -10,6 +10,7 @@
         "essentials.uk": 112,
         "essentials.eu": 145,
         "essentials.us": 118,
+        "essentials.fr": 141,
         "essentials.hk": 226,
         "essentials.tw": 128,
         "essentials.mobi": 100
@@ -24,6 +25,7 @@
         "essentials.uk": 89,
         "essentials.eu": 116,
         "essentials.us": 108,
+        "essentials.fr": 108,
         "essentials.hk": 84,
         "essentials.tw": 62,
         "essentials.mobi": 115
@@ -38,6 +40,7 @@
         "essentials.uk": 106,
         "essentials.eu": 108,
         "essentials.us": 97,
+        "essentials.fr": 113,
         "essentials.hk": 79,
         "essentials.tw": 67,
         "essentials.mobi": 79
@@ -52,6 +55,7 @@
         "essentials.uk": 108,
         "essentials.eu": 96,
         "essentials.us": 127,
+        "essentials.fr": 109,
         "essentials.hk": 113,
         "essentials.tw": 80,
         "essentials.mobi": 72
@@ -66,6 +70,7 @@
         "essentials.uk": 105,
         "essentials.eu": 125,
         "essentials.us": 133,
+        "essentials.fr": 151,
         "essentials.hk": 121,
         "essentials.tw": 108,
         "essentials.mobi": 106
@@ -80,6 +85,7 @@
         "essentials.uk": 103,
         "essentials.eu": 116,
         "essentials.us": 92,
+        "essentials.fr": 132,
         "essentials.hk": 165,
         "essentials.tw": 109,
         "essentials.mobi": 87
@@ -94,6 +100,7 @@
         "essentials.uk": 79,
         "essentials.eu": 88,
         "essentials.us": 118,
+        "essentials.fr": 101,
         "essentials.hk": 91,
         "essentials.tw": 127,
         "essentials.mobi": 71
@@ -108,6 +115,7 @@
         "essentials.uk": 117,
         "essentials.eu": 127,
         "essentials.us": 106,
+        "essentials.fr": 136,
         "essentials.hk": 167,
         "essentials.tw": 141,
         "essentials.mobi": 96
@@ -122,6 +130,7 @@
         "essentials.uk": 100,
         "essentials.eu": 100,
         "essentials.us": 95,
+        "essentials.fr": 116,
         "essentials.hk": 79,
         "essentials.tw": 137,
         "essentials.mobi": 90
@@ -136,6 +145,7 @@
         "essentials.uk": 106,
         "essentials.eu": 124,
         "essentials.us": 86,
+        "essentials.fr": 96,
         "essentials.hk": 129,
         "essentials.tw": 116,
         "essentials.mobi": 74
@@ -150,6 +160,7 @@
         "essentials.uk": 97,
         "essentials.eu": 133,
         "essentials.us": 135,
+        "essentials.fr": 99,
         "essentials.hk": 106,
         "essentials.tw": 137,
         "essentials.mobi": 74
@@ -164,6 +175,7 @@
         "essentials.uk": 81,
         "essentials.eu": 115,
         "essentials.us": 106,
+        "essentials.fr": 98,
         "essentials.hk": 134,
         "essentials.tw": 104,
         "essentials.mobi": 77
@@ -178,6 +190,7 @@
         "essentials.uk": 102,
         "essentials.eu": 112,
         "essentials.us": 102,
+        "essentials.fr": 118,
         "essentials.hk": 136,
         "essentials.tw": 123,
         "essentials.mobi": 85
@@ -192,6 +205,7 @@
         "essentials.uk": 113,
         "essentials.eu": 122,
         "essentials.us": 85,
+        "essentials.fr": 104,
         "essentials.hk": 76,
         "essentials.tw": 124,
         "essentials.mobi": 79
@@ -206,6 +220,7 @@
         "essentials.uk": 130,
         "essentials.eu": 142,
         "essentials.us": 124,
+        "essentials.fr": 168,
         "essentials.hk": 161,
         "essentials.tw": 133,
         "essentials.mobi": 108
@@ -220,6 +235,7 @@
         "essentials.uk": 108,
         "essentials.eu": 93,
         "essentials.us": 105,
+        "essentials.fr": 86,
         "essentials.hk": 100,
         "essentials.tw": 84,
         "essentials.mobi": 91
@@ -234,6 +250,7 @@
         "essentials.uk": 72,
         "essentials.eu": 84,
         "essentials.us": 93,
+        "essentials.fr": 92,
         "essentials.hk": 71,
         "essentials.tw": 85,
         "essentials.mobi": 81
@@ -248,6 +265,7 @@
         "essentials.uk": 95,
         "essentials.eu": 108,
         "essentials.us": 120,
+        "essentials.fr": 98,
         "essentials.hk": 67,
         "essentials.tw": 87,
         "essentials.mobi": 68
@@ -262,6 +280,7 @@
         "essentials.uk": 96,
         "essentials.eu": 105,
         "essentials.us": 93,
+        "essentials.fr": 121,
         "essentials.hk": 96,
         "essentials.tw": 101,
         "essentials.mobi": 84
@@ -276,6 +295,7 @@
         "essentials.uk": 104,
         "essentials.eu": 134,
         "essentials.us": 198,
+        "essentials.fr": 134,
         "essentials.hk": 142,
         "essentials.tw": 76,
         "essentials.mobi": 85
@@ -290,6 +310,7 @@
         "essentials.uk": 92,
         "essentials.eu": 118,
         "essentials.us": 100,
+        "essentials.fr": 109,
         "essentials.hk": 95,
         "essentials.tw": 69,
         "essentials.mobi": 98
@@ -304,6 +325,7 @@
         "essentials.uk": 125,
         "essentials.eu": 123,
         "essentials.us": 97,
+        "essentials.fr": 115,
         "essentials.hk": 102,
         "essentials.tw": 96,
         "essentials.mobi": 99
@@ -318,6 +340,7 @@
         "essentials.uk": 102,
         "essentials.eu": 108,
         "essentials.us": 123,
+        "essentials.fr": 126,
         "essentials.hk": 84,
         "essentials.tw": 85,
         "essentials.mobi": 84
@@ -332,6 +355,7 @@
         "essentials.uk": 93,
         "essentials.eu": 94,
         "essentials.us": 93,
+        "essentials.fr": 123,
         "essentials.hk": 82,
         "essentials.tw": 59,
         "essentials.mobi": 76
@@ -346,6 +370,7 @@
         "essentials.uk": 107,
         "essentials.eu": 147,
         "essentials.us": 151,
+        "essentials.fr": 92,
         "essentials.hk": 71,
         "essentials.tw": 70,
         "essentials.mobi": 88
@@ -360,6 +385,7 @@
         "essentials.uk": 79,
         "essentials.eu": 99,
         "essentials.us": 119,
+        "essentials.fr": 102,
         "essentials.hk": 75,
         "essentials.tw": 50,
         "essentials.mobi": 74
@@ -374,6 +400,7 @@
         "essentials.uk": 85,
         "essentials.eu": 127,
         "essentials.us": 94,
+        "essentials.fr": 98,
         "essentials.hk": 78,
         "essentials.tw": 63,
         "essentials.mobi": 86
@@ -388,6 +415,7 @@
         "essentials.uk": 82,
         "essentials.eu": 112,
         "essentials.us": 125,
+        "essentials.fr": 124,
         "essentials.hk": 96,
         "essentials.tw": 58,
         "essentials.mobi": 120
@@ -402,6 +430,7 @@
         "essentials.uk": 149,
         "essentials.eu": 118,
         "essentials.us": 91,
+        "essentials.fr": 156,
         "essentials.hk": 94,
         "essentials.tw": 87,
         "essentials.mobi": 120
@@ -410,12 +439,13 @@
     {
       "date": "2026-04-03",
       "domains": {
-        "essentials.com": 473,
+        "essentials.com": 480,
         "essentials.net": 84,
         "essentials.co.uk": 86,
         "essentials.uk": 86,
         "essentials.eu": 78,
         "essentials.us": 75,
+        "essentials.fr": 66,
         "essentials.hk": 61,
         "essentials.tw": 69,
         "essentials.mobi": 58
@@ -423,15 +453,15 @@
     }
   ],
   "browsers": {
-    "Unknown": 442,
-    "MobileSafari": 261,
-    "Chrome": 189,
-    "ChromeMobile": 109,
-    "Firefox": 33,
-    "Safari": 25,
-    "Edge": 21,
-    "Curl": 19,
-    "GoogleBot": 16,
+    "Unknown": 461,
+    "MobileSafari": 272,
+    "Chrome": 201,
+    "ChromeMobile": 112,
+    "Firefox": 36,
+    "Safari": 26,
+    "Edge": 22,
+    "Curl": 21,
+    "GoogleBot": 18,
     "BingBot": 7,
     "SamsungInternet": 5,
     "ChromeMobileWebview": 3,
@@ -441,11 +471,11 @@
     "OperaMobile": 2,
     "Opera": 2,
     "ChromeDerivative": 2,
+    "IE": 1,
     "AppleBot": 1,
     "Brave": 1,
     "ChromeHeadless": 1,
     "Yandex": 1,
-    "IE": 0,
     "Silk": 0,
     "Wget": 0,
     "FirefoxMobile": 0,
