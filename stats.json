@@ -1,21 +1,6 @@
 {
-  "date": "2026-04-06",
+  "date": "2026-04-07",
   "domains": [
-    {
-      "date": "2026-03-08",
-      "domains": {
-        "essentials.com": 802,
-        "essentials.net": 121,
-        "essentials.co.uk": 138,
-        "essentials.uk": 108,
-        "essentials.eu": 96,
-        "essentials.us": 127,
-        "essentials.fr": 109,
-        "essentials.hk": 113,
-        "essentials.tw": 80,
-        "essentials.mobi": 72
-      }
-    },
     {
       "date": "2026-03-09",
       "domains": {
@@ -439,8 +424,8 @@
     {
       "date": "2026-04-06",
       "domains": {
-        "essentials.com": 839,
-        "essentials.net": 132,
+        "essentials.com": 841,
+        "essentials.net": 134,
         "essentials.co.uk": 133,
         "essentials.uk": 96,
         "essentials.eu": 133,
@@ -448,39 +433,44 @@
         "essentials.fr": 136,
         "essentials.hk": 137,
         "essentials.tw": 78,
-        "essentials.mobi": 89
+        "essentials.mobi": 90
       }
+    },
+    {
+      "date": "2026-04-07",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 493,
-    "Chrome": 273,
-    "MobileSafari": 270,
-    "ChromeMobile": 116,
+    "Unknown": 496,
+    "Chrome": 314,
+    "MobileSafari": 267,
+    "ChromeMobile": 117,
     "Firefox": 39,
-    "Safari": 28,
-    "Edge": 17,
+    "Safari": 27,
     "GoogleBot": 15,
+    "Edge": 15,
     "BingBot": 6,
     "SamsungInternet": 6,
-    "YandexBot": 5,
-    "ChromeHeadless": 5,
-    "ChromeMobileWebview": 4,
-    "Curl": 3,
-    "Opera": 2,
+    "ChromeMobileWebview": 5,
+    "Curl": 5,
+    "ChromeHeadless": 4,
+    "YandexBot": 3,
     "ChromeDerivative": 2,
-    "MobileSafariWebview": 1,
-    "Brave": 1,
+    "MobileSafariWebview": 2,
+    "Yandex": 2,
     "OperaMobile": 1,
+    "Opera": 1,
     "UCBrowserMobile": 1,
-    "Yandex": 1,
     "IE": 0,
     "Wget": 0,
     "Silk": 0,
     "Facebook": 0,
     "FirefoxMobile": 0,
+    "Brave": 0,
     "AppleBot": 0,
     "TwitterBot": 0,
-    "Instagram": 0
+    "Instagram": 0,
+    "MsnBot": 0
   }
 }
