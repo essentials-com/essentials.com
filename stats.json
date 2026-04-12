@@ -1,21 +1,6 @@
 {
-  "date": "2026-04-11",
+  "date": "2026-04-12",
   "domains": [
-    {
-      "date": "2026-03-13",
-      "domains": {
-        "essentials.com": 896,
-        "essentials.net": 131,
-        "essentials.co.uk": 124,
-        "essentials.uk": 100,
-        "essentials.eu": 100,
-        "essentials.us": 95,
-        "essentials.fr": 116,
-        "essentials.hk": 79,
-        "essentials.tw": 137,
-        "essentials.mobi": 90
-      }
-    },
     {
       "date": "2026-03-14",
       "domains": {
@@ -129,7 +114,7 @@
         "essentials.co.uk": 115,
         "essentials.uk": 72,
         "essentials.eu": 84,
-        "essentials.us": 94,
+        "essentials.us": 93,
         "essentials.fr": 92,
         "essentials.hk": 71,
         "essentials.tw": 85,
@@ -442,7 +427,7 @@
         "essentials.com": 853,
         "essentials.net": 125,
         "essentials.co.uk": 126,
-        "essentials.uk": 90,
+        "essentials.uk": 91,
         "essentials.eu": 147,
         "essentials.us": 120,
         "essentials.fr": 128,
@@ -450,25 +435,29 @@
         "essentials.tw": 80,
         "essentials.mobi": 79
       }
+    },
+    {
+      "date": "2026-04-12",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 530,
-    "Chrome": 444,
-    "MobileSafari": 266,
-    "ChromeMobile": 130,
+    "Unknown": 502,
+    "Chrome": 457,
+    "MobileSafari": 264,
+    "ChromeMobile": 133,
     "Firefox": 47,
     "Safari": 26,
-    "Edge": 15,
-    "GoogleBot": 11,
+    "Edge": 16,
+    "GoogleBot": 10,
     "Curl": 7,
     "BingBot": 6,
-    "ChromeMobileWebview": 5,
+    "ChromeMobileWebview": 4,
     "SamsungInternet": 4,
     "ChromeHeadless": 4,
     "ChromeDerivative": 3,
-    "MobileSafariWebview": 2,
     "YandexBot": 2,
+    "MobileSafariWebview": 2,
     "Yandex": 2,
     "UCBrowserMobile": 1,
     "OperaMobile": 1,
@@ -476,12 +465,12 @@
     "Brave": 1,
     "Opera": 1,
     "TwitterBot": 1,
-    "Instagram": 0,
-    "Wget": 0,
     "Silk": 0,
     "IE": 0,
+    "Wget": 0,
     "AppleBot": 0,
     "FirefoxMobile": 0,
+    "Instagram": 0,
     "MsnBot": 0
   }
 }
