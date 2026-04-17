@@ -1,21 +1,6 @@
 {
-  "date": "2026-04-16",
+  "date": "2026-04-17",
   "domains": [
-    {
-      "date": "2026-03-18",
-      "domains": {
-        "essentials.com": 1181,
-        "essentials.net": 125,
-        "essentials.co.uk": 143,
-        "essentials.uk": 113,
-        "essentials.eu": 122,
-        "essentials.us": 85,
-        "essentials.fr": 104,
-        "essentials.hk": 76,
-        "essentials.tw": 124,
-        "essentials.mobi": 79
-      }
-    },
     {
       "date": "2026-03-19",
       "domains": {
@@ -439,48 +424,52 @@
     {
       "date": "2026-04-16",
       "domains": {
-        "essentials.com": 915,
+        "essentials.com": 917,
         "essentials.net": 151,
         "essentials.co.uk": 192,
         "essentials.uk": 98,
         "essentials.eu": 179,
         "essentials.us": 118,
-        "essentials.fr": 126,
+        "essentials.fr": 131,
         "essentials.hk": 80,
         "essentials.tw": 126,
         "essentials.mobi": 73
       }
+    },
+    {
+      "date": "2026-04-17",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 495,
-    "Chrome": 374,
+    "Unknown": 491,
+    "Chrome": 381,
     "MobileSafari": 267,
-    "ChromeMobile": 109,
-    "Firefox": 47,
-    "Safari": 25,
+    "ChromeMobile": 108,
+    "Firefox": 45,
+    "Safari": 23,
     "Edge": 17,
-    "GoogleBot": 13,
-    "BingBot": 4,
+    "GoogleBot": 15,
+    "SamsungInternet": 5,
     "YandexBot": 4,
-    "SamsungInternet": 4,
-    "ChromeMobileWebview": 3,
+    "ChromeMobileWebview": 4,
+    "Curl": 4,
     "OperaMobile": 3,
+    "BingBot": 3,
     "Opera": 2,
     "Facebook": 2,
     "ChromeDerivative": 2,
     "ChromeHeadless": 2,
-    "Curl": 2,
-    "Brave": 1,
-    "Wget": 1,
+    "AppleBot": 1,
     "FirefoxMobile": 1,
     "MobileSafariWebview": 1,
-    "IE": 0,
-    "AppleBot": 0,
-    "Instagram": 0,
+    "Instagram": 1,
+    "Brave": 1,
+    "Yandex": 1,
+    "Wget": 0,
     "Silk": 0,
+    "IE": 0,
     "TwitterBot": 0,
-    "Chromium": 0,
-    "Yandex": 0
+    "Chromium": 0
   }
 }
