@@ -109,3 +109,41 @@ The `/day`, `/week`, `/month`, `/year` stats are calculated from **complete days
 - After making changes, purge Cloudflare cache for affected domains
 - Zone IDs and Web Analytics tokens are public identifiers (not secrets)
 - Actual API secrets stored via `wrangler secret put` (CF_API_TOKEN, GITHUB_TOKEN)
+
+## Worker Guidance
+
+Recurring error patterns observed in this repo (from contributor-insight tracking). Address these before starting any edit session.
+
+### File Discovery (prevents `read:file_not_found`)
+
+Always verify file paths before reading. Use `git ls-files` — do not guess paths.
+
+Confirmed tracked files for common tasks:
+
+```
+index.html                  — UI, CSS, JS (single file, ~80KB)
+workers/domains.js          — domain config (single source of truth)
+workers/essentials-proxy.js — proxy Worker source
+workers/essentials-stats.js — stats Worker source
+workers/wrangler-proxy.toml — proxy wrangler config
+workers/wrangler-stats.toml — stats wrangler config
+workers/README.md           — Worker deployment guide
+AGENTS.md                   — this file
+TODO.md                     — task tracking
+```
+
+`stats.json` lives on the `stats` branch, not `main`. Do not attempt to read it from the working tree unless on that branch.
+
+### Read Before Edit (prevents `edit:not_read_first` and `edit:edit_stale_read`)
+
+1. **Always read a file before editing it** — even if you believe you know its contents.
+2. **Re-read after any other tool modifies the same file** — another bash command or edit invalidates your prior read.
+3. **`index.html` is large (~80KB).** Read only the section you need using offset/limit. Provide at least 5 lines of surrounding context in `oldString` for edits.
+4. **`workers/domains.js` is the single source of truth.** Any domain-related change starts here; downstream files import from it and should not be modified directly for domain config.
+
+### Common Bash Pitfalls (reduces `bash:other`)
+
+- Worker files use ES module syntax (`import`/`export`). Do not run them with Node.js directly; use `wrangler dev` for local testing.
+- `wrangler` commands require `CF_API_TOKEN` set in the environment or via `wrangler secret`. Never hardcode tokens.
+- GitHub Pages serves from `main` branch root. Changes to `index.html` are live after push (within ~30s CDN propagation).
+- Cloudflare cache purge after edits: requires `CF_API_TOKEN` and the Zone ID from `workers/domains.js`.
