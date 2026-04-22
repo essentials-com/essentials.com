@@ -141,6 +141,15 @@ TODO.md                     — task tracking
 3. **`index.html` is large (~80KB).** Read only the section you need using offset/limit. Provide at least 5 lines of surrounding context in `oldString` for edits.
 4. **`workers/domains.js` is the single source of truth.** Any domain-related change starts here; downstream files import from it and should not be modified directly for domain config.
 
+### Git Workflow (prevents direct-main edits)
+
+All code changes go through a worktree and PR — never directly on `main`. No exceptions.
+
+- Interactive sessions: `wt switch -c feature/<name>` from the canonical repo on `main` creates a linked worktree at `~/Git/essentials.com-<branch-name>/`.
+- Headless workers: the dispatcher pre-creates the worktree; `$WORKER_WORKTREE_PATH` is set in the environment. If not set, create one via `worktree-helper.sh add`.
+- The canonical directory (`~/Git/essentials.com/`) stays on `main` always.
+- `TODO.md`, `AGENTS.md`, and `README.md` edits from headless sessions may be pushed to `main` directly (planning exception), but code and worker edits always need a PR.
+
 ### Common Bash Pitfalls (reduces `bash:other`)
 
 - Worker files use ES module syntax (`import`/`export`). Do not run them with Node.js directly; use `wrangler dev` for local testing.
