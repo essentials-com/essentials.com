@@ -143,10 +143,10 @@ TODO.md                     — task tracking
 
 ### Git Workflow (prevents direct-main edits)
 
-All code changes go through a worktree and PR — never directly on `main`. No exceptions.
+All code changes go through a worktree and PR — never directly on `main`, except for the planning files noted below.
 
 - Interactive sessions: `wt switch -c feature/<name>` from the canonical repo on `main` creates a linked worktree at `~/Git/essentials.com-<branch-name>/`.
-- Headless workers: the dispatcher pre-creates the worktree; `$WORKER_WORKTREE_PATH` is set in the environment. If not set, create one via `worktree-helper.sh add`.
+- Headless workers: the dispatcher pre-creates the worktree; `$WORKER_WORKTREE_PATH` is set in the environment. If not set, create one via `worktree-helper.sh add` (external aidevops framework tool — not tracked in this repo; available at `~/.aidevops/agents/scripts/worktree-helper.sh`).
 - The canonical directory (`~/Git/essentials.com/`) stays on `main` always.
 - `TODO.md`, `AGENTS.md`, and `README.md` edits from headless sessions may be pushed to `main` directly (planning exception), but code and worker edits always need a PR.
 
