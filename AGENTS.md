@@ -157,6 +157,6 @@ All code changes go through a worktree and PR — never directly on `main`, exce
 - GitHub Pages serves from `main` branch root. Changes to `index.html` are live after push (within ~30s CDN propagation).
 - Cloudflare cache purge after edits: requires `CF_API_TOKEN` and the Zone ID from `workers/domains.js`.
 - **`workers/domains.js` is JavaScript, not JSON** — do not pipe it to `jq` or parse it with shell JSON tools; they will fail. Use the Read tool to inspect domain configuration directly.
-- **No `package.json` at the repo root** — do not run `npm install` at the project root. Workers have no local npm dependency tree; they run on Cloudflare's runtime.
+- **No `package.json` at the repo root** — do not run `npm install` at the project root. This repository does not use a local npm dependency tree for its Cloudflare Workers; they are designed to run without external node dependencies.
 - **`stats.json` on `main` is a historical snapshot** — it is not updated in real time. Live stats are served from the `stats` branch. Do not try to update or process `stats.json` from `main`.
 - **`index.html` is ~80KB** — avoid shell text-processing tools (`grep`, `sed`, `awk`, `echo`) on it; they are unreliable at this size. Use the Read tool with `offset`/`limit` to find the section you need, and the Edit tool with `oldString`/`newString` for precise changes.
