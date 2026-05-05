@@ -439,7 +439,8 @@
     {
       "date": "2026-05-05",
       "domains": {
-        "essentials.com": 2,
+        "essentials.com": 5,
+        "essentials.net": 1,
         "essentials.co.uk": 1,
         "essentials.fr": 1,
         "essentials.hk": 1
