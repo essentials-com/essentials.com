@@ -1,21 +1,6 @@
 {
-  "date": "2026-05-07",
+  "date": "2026-05-08",
   "domains": [
-    {
-      "date": "2026-04-08",
-      "domains": {
-        "essentials.com": 921,
-        "essentials.net": 135,
-        "essentials.co.uk": 136,
-        "essentials.uk": 124,
-        "essentials.eu": 169,
-        "essentials.us": 105,
-        "essentials.fr": 139,
-        "essentials.hk": 120,
-        "essentials.tw": 98,
-        "essentials.mobi": 118
-      }
-    },
     {
       "date": "2026-04-09",
       "domains": {
@@ -439,47 +424,50 @@
     {
       "date": "2026-05-07",
       "domains": {
-        "essentials.com": 936,
+        "essentials.com": 939,
         "essentials.net": 134,
         "essentials.co.uk": 152,
-        "essentials.uk": 119,
-        "essentials.eu": 185,
+        "essentials.uk": 121,
+        "essentials.eu": 186,
         "essentials.us": 125,
         "essentials.fr": 116,
-        "essentials.hk": 87,
+        "essentials.hk": 89,
         "essentials.tw": 95,
-        "essentials.mobi": 106
+        "essentials.mobi": 108
       }
+    },
+    {
+      "date": "2026-05-08",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 427,
-    "Chrome": 364,
-    "MobileSafari": 248,
-    "ChromeMobile": 101,
-    "Firefox": 61,
-    "Safari": 36,
-    "Edge": 18,
-    "GoogleBot": 13,
-    "Curl": 10,
+    "Unknown": 431,
+    "Chrome": 403,
+    "MobileSafari": 260,
+    "ChromeMobile": 107,
+    "Firefox": 78,
+    "Safari": 39,
+    "Edge": 19,
+    "GoogleBot": 14,
+    "Curl": 9,
     "ChromeMobileWebview": 8,
+    "BingBot": 7,
     "SamsungInternet": 5,
-    "BingBot": 5,
-    "YandexBot": 3,
+    "YandexBot": 5,
+    "ChromeDerivative": 2,
     "Opera": 2,
     "UCBrowserMobile": 2,
-    "Silk": 1,
     "AppleBot": 1,
     "MobileSafariWebview": 1,
-    "Facebook": 1,
-    "ChromeHeadless": 1,
     "OperaMobile": 1,
-    "ChromeDerivative": 1,
+    "Facebook": 1,
+    "Silk": 1,
     "YandexMobile": 1,
     "Yandex": 1,
+    "Brave": 1,
+    "ChromeHeadless": 1,
     "LinkedInBot": 0,
-    "Microsoft365": 0,
-    "Brave": 0,
     "Instagram": 0,
     "Wget": 0,
     "FirefoxMobile": 0,
