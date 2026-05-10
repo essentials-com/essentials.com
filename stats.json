@@ -439,9 +439,10 @@
     {
       "date": "2026-05-10",
       "domains": {
-        "essentials.com": 5,
-        "essentials.uk": 1,
-        "essentials.mobi": 1
+        "essentials.com": 6,
+        "essentials.co.uk": 2,
+        "essentials.uk": 2,
+        "essentials.mobi": 2
       }
     }
   ],
