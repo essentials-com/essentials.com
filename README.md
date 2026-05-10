@@ -117,6 +117,12 @@ wrangler secret put GITHUB_TOKEN -c wrangler-stats.toml
 
 **Note:** Stats are committed to a separate `stats` branch to avoid triggering GitHub Pages rebuilds.
 
+### 4.1 Supervisor Health Dashboard
+
+This repository also has an aidevops supervisor health dashboard issue. The dashboard is refreshed by the local aidevops `stats-wrapper.sh` scheduler, not by the Cloudflare stats Worker.
+
+If the dashboard becomes stale while the launch agent is installed, check `~/.aidevops/logs/stats.log` for `Health issue: skipping creation` lines. That message means the cached dashboard issue pointer is missing or unreadable for the current aidevops identity, so the activity guard may skip resolving the existing pinned dashboard. Restore the relevant `~/.aidevops/logs/health-issue-*essentials-com-essentials.com` cache entry to the dashboard issue number, then run a targeted health dashboard refresh and verify the body contains a current `last_refresh:` marker.
+
 ### 5. Customize
 
 Edit `index.html` to update:
