@@ -121,7 +121,7 @@ wrangler secret put GITHUB_TOKEN -c wrangler-stats.toml
 
 This repository also uses a GitHub Issue as an aidevops supervisor health dashboard. The dashboard is refreshed by the local aidevops `stats-wrapper.sh` scheduler, not by the Cloudflare stats Worker.
 
-If the dashboard becomes stale while the launch agent is installed, check `~/.aidevops/logs/stats.log` for `Health issue: skipping creation` lines. That message means the cached dashboard issue pointer is missing or unreadable for the current aidevops identity, so the activity guard may skip resolving the existing pinned dashboard. To recover, update the relevant `~/.aidevops/logs/health-issue-*essentials-com-essentials.com` cache file so it contains the numeric GitHub Issue ID for the dashboard, then run a targeted health dashboard refresh and verify the body contains a current `last_refresh:` marker.
+If the dashboard becomes stale while the launch agent is installed, check `~/.aidevops/logs/stats.log` for `Health issue: skipping creation` lines. That message means the cached dashboard issue pointer is missing or unreadable for the current aidevops identity, so the activity guard may skip resolving the existing pinned dashboard. To recover, update the relevant `~/.aidevops/logs/health-issue-*essentials-com-essentials.com` cache file so it contains the GitHub Issue number for the dashboard, then run a targeted health dashboard refresh and verify the body contains a current `last_refresh:` marker.
 
 ### 5. Customize
 
