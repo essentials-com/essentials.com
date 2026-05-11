@@ -1,21 +1,6 @@
 {
-  "date": "2026-05-10",
+  "date": "2026-05-11",
   "domains": [
-    {
-      "date": "2026-04-11",
-      "domains": {
-        "essentials.com": 853,
-        "essentials.net": 125,
-        "essentials.co.uk": 126,
-        "essentials.uk": 99,
-        "essentials.eu": 147,
-        "essentials.us": 120,
-        "essentials.fr": 128,
-        "essentials.hk": 84,
-        "essentials.tw": 80,
-        "essentials.mobi": 79
-      }
-    },
     {
       "date": "2026-04-12",
       "domains": {
@@ -439,7 +424,7 @@
     {
       "date": "2026-05-10",
       "domains": {
-        "essentials.com": 874,
+        "essentials.com": 875,
         "essentials.net": 129,
         "essentials.co.uk": 163,
         "essentials.uk": 90,
@@ -447,42 +432,44 @@
         "essentials.us": 133,
         "essentials.fr": 113,
         "essentials.hk": 96,
-        "essentials.tw": 63,
+        "essentials.tw": 65,
         "essentials.mobi": 86
       }
+    },
+    {
+      "date": "2026-05-11",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 485,
-    "Chrome": 453,
-    "MobileSafari": 268,
-    "ChromeMobile": 101,
-    "Firefox": 83,
-    "Safari": 41,
-    "Edge": 19,
-    "GoogleBot": 10,
-    "BingBot": 8,
-    "Curl": 8,
-    "ChromeMobileWebview": 6,
+    "Chrome": 746,
+    "Unknown": 518,
+    "MobileSafari": 266,
+    "ChromeMobile": 98,
+    "Firefox": 86,
+    "Safari": 40,
+    "Edge": 20,
+    "GoogleBot": 13,
+    "ChromeMobileWebview": 7,
+    "BingBot": 6,
+    "Curl": 6,
     "SamsungInternet": 5,
-    "YandexBot": 2,
+    "YandexBot": 3,
     "Opera": 2,
     "OperaMobile": 2,
     "ChromeDerivative": 2,
     "UCBrowserMobile": 2,
     "AppleBot": 2,
-    "Silk": 1,
-    "MobileSafariWebview": 1,
     "Facebook": 1,
-    "Brave": 1,
+    "Silk": 1,
     "ChromeHeadless": 1,
-    "LinkedInBot": 0,
-    "Yandex": 0,
-    "Instagram": 0,
-    "Wget": 0,
+    "MobileSafariWebview": 1,
     "FirefoxMobile": 0,
+    "Brave": 0,
     "IE": 0,
+    "Wget": 0,
     "TwitterBot": 0,
-    "Chromium": 0
+    "Chromium": 0,
+    "Yandex": 0
   }
 }
