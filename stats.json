@@ -1,21 +1,6 @@
 {
-  "date": "2026-05-11",
+  "date": "2026-05-12",
   "domains": [
-    {
-      "date": "2026-04-12",
-      "domains": {
-        "essentials.com": 816,
-        "essentials.net": 135,
-        "essentials.co.uk": 150,
-        "essentials.uk": 105,
-        "essentials.eu": 128,
-        "essentials.us": 154,
-        "essentials.fr": 158,
-        "essentials.hk": 105,
-        "essentials.tw": 119,
-        "essentials.mobi": 94
-      }
-    },
     {
       "date": "2026-04-13",
       "domains": {
@@ -439,48 +424,53 @@
     {
       "date": "2026-05-11",
       "domains": {
-        "essentials.com": 920,
+        "essentials.com": 923,
         "essentials.net": 125,
-        "essentials.co.uk": 180,
-        "essentials.uk": 89,
-        "essentials.eu": 148,
+        "essentials.co.uk": 181,
+        "essentials.uk": 91,
+        "essentials.eu": 149,
         "essentials.us": 117,
         "essentials.fr": 123,
         "essentials.hk": 113,
         "essentials.tw": 87,
         "essentials.mobi": 123
       }
+    },
+    {
+      "date": "2026-05-12",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Chrome": 750,
-    "Unknown": 518,
+    "Chrome": 791,
+    "Unknown": 531,
     "MobileSafari": 266,
-    "ChromeMobile": 98,
-    "Firefox": 86,
-    "Safari": 40,
-    "Edge": 20,
-    "GoogleBot": 13,
-    "ChromeMobileWebview": 7,
+    "ChromeMobile": 97,
+    "Firefox": 80,
+    "Safari": 45,
+    "Edge": 19,
+    "GoogleBot": 15,
     "BingBot": 6,
     "Curl": 6,
-    "SamsungInternet": 5,
+    "ChromeMobileWebview": 4,
+    "SamsungInternet": 4,
     "YandexBot": 3,
     "Opera": 2,
-    "OperaMobile": 2,
     "ChromeDerivative": 2,
     "UCBrowserMobile": 2,
+    "OperaMobile": 2,
+    "MobileSafariWebview": 2,
     "AppleBot": 2,
-    "Facebook": 1,
+    "IE": 1,
     "Silk": 1,
+    "Facebook": 1,
     "ChromeHeadless": 1,
-    "MobileSafariWebview": 1,
-    "FirefoxMobile": 0,
-    "Brave": 0,
-    "IE": 0,
     "Wget": 0,
     "TwitterBot": 0,
     "Chromium": 0,
+    "LinkedInBot": 0,
+    "Brave": 0,
+    "FirefoxMobile": 0,
     "Yandex": 0
   }
 }
