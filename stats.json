@@ -1,21 +1,6 @@
 {
-  "date": "2026-05-13",
+  "date": "2026-05-14",
   "domains": [
-    {
-      "date": "2026-04-14",
-      "domains": {
-        "essentials.com": 869,
-        "essentials.net": 125,
-        "essentials.co.uk": 203,
-        "essentials.uk": 87,
-        "essentials.eu": 103,
-        "essentials.us": 83,
-        "essentials.fr": 105,
-        "essentials.hk": 71,
-        "essentials.tw": 59,
-        "essentials.mobi": 61
-      }
-    },
     {
       "date": "2026-04-15",
       "domains": {
@@ -439,42 +424,43 @@
     {
       "date": "2026-05-13",
       "domains": {
-        "essentials.com": 867,
+        "essentials.com": 873,
         "essentials.net": 134,
         "essentials.co.uk": 165,
         "essentials.uk": 103,
         "essentials.eu": 176,
         "essentials.us": 110,
         "essentials.fr": 122,
-        "essentials.hk": 106,
+        "essentials.hk": 108,
         "essentials.tw": 99,
-        "essentials.mobi": 91
+        "essentials.mobi": 93
       }
+    },
+    {
+      "date": "2026-05-14",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Chrome": 812,
-    "Unknown": 531,
-    "MobileSafari": 273,
-    "ChromeMobile": 95,
-    "Firefox": 78,
-    "Safari": 45,
-    "Edge": 19,
-    "GoogleBot": 14,
-    "BingBot": 6,
-    "ChromeMobileWebview": 4,
-    "YandexBot": 4,
-    "SamsungInternet": 4,
-    "UCBrowserMobile": 2,
-    "OperaMobile": 2,
-    "Facebook": 2,
+    "Chrome": 836,
+    "Unknown": 509,
+    "MobileSafari": 268,
+    "ChromeMobile": 103,
+    "Firefox": 93,
+    "Safari": 64,
+    "Edge": 18,
+    "GoogleBot": 12,
+    "YandexBot": 6,
+    "BingBot": 5,
+    "SamsungInternet": 5,
+    "ChromeMobileWebview": 5,
+    "AppleBot": 3,
     "MobileSafariWebview": 2,
+    "Facebook": 2,
     "ChromeDerivative": 2,
-    "AppleBot": 2,
-    "Opera": 1,
-    "ChromeHeadless": 1,
+    "OperaMobile": 1,
     "Curl": 1,
-    "Wget": 0,
+    "Opera": 1,
     "IE": 0,
     "Silk": 0,
     "TwitterBot": 0,
@@ -482,6 +468,7 @@
     "LinkedInBot": 0,
     "Brave": 0,
     "FirefoxMobile": 0,
+    "ChromeHeadless": 0,
     "Yandex": 0
   }
 }
