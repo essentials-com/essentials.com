@@ -1,21 +1,6 @@
 {
-  "date": "2026-05-14",
+  "date": "2026-05-15",
   "domains": [
-    {
-      "date": "2026-04-15",
-      "domains": {
-        "essentials.com": 895,
-        "essentials.net": 121,
-        "essentials.co.uk": 178,
-        "essentials.uk": 69,
-        "essentials.eu": 130,
-        "essentials.us": 100,
-        "essentials.fr": 124,
-        "essentials.hk": 89,
-        "essentials.tw": 69,
-        "essentials.mobi": 84
-      }
-    },
     {
       "date": "2026-04-16",
       "domains": {
@@ -439,39 +424,43 @@
     {
       "date": "2026-05-14",
       "domains": {
-        "essentials.com": 984,
+        "essentials.com": 987,
         "essentials.net": 137,
-        "essentials.co.uk": 160,
+        "essentials.co.uk": 162,
         "essentials.uk": 100,
-        "essentials.eu": 126,
+        "essentials.eu": 127,
         "essentials.us": 109,
         "essentials.fr": 118,
         "essentials.hk": 99,
         "essentials.tw": 139,
         "essentials.mobi": 103
       }
+    },
+    {
+      "date": "2026-05-15",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Chrome": 836,
+    "Chrome": 838,
     "Unknown": 509,
-    "MobileSafari": 269,
-    "ChromeMobile": 103,
-    "Firefox": 93,
-    "Safari": 64,
+    "MobileSafari": 261,
+    "ChromeMobile": 98,
+    "Firefox": 79,
+    "Safari": 60,
     "Edge": 18,
-    "GoogleBot": 12,
-    "YandexBot": 6,
-    "BingBot": 5,
-    "SamsungInternet": 5,
-    "ChromeMobileWebview": 5,
-    "AppleBot": 3,
+    "GoogleBot": 13,
+    "ChromeMobileWebview": 6,
+    "YandexBot": 5,
+    "BingBot": 4,
+    "SamsungInternet": 4,
+    "Opera": 2,
+    "AppleBot": 2,
     "MobileSafariWebview": 2,
+    "OperaMobile": 2,
+    "Curl": 2,
     "Facebook": 2,
-    "ChromeDerivative": 2,
-    "OperaMobile": 1,
-    "Curl": 1,
-    "Opera": 1,
+    "ChromeDerivative": 1,
     "IE": 0,
     "Silk": 0,
     "TwitterBot": 0,
@@ -479,7 +468,6 @@
     "LinkedInBot": 0,
     "Brave": 0,
     "FirefoxMobile": 0,
-    "ChromeHeadless": 0,
-    "Yandex": 0
+    "ChromeHeadless": 0
   }
 }
