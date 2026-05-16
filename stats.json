@@ -439,8 +439,8 @@
     {
       "date": "2026-05-16",
       "domains": {
-        "essentials.com": 783,
-        "essentials.net": 127,
+        "essentials.com": 787,
+        "essentials.net": 128,
         "essentials.co.uk": 168,
         "essentials.uk": 74,
         "essentials.eu": 107,
@@ -455,7 +455,7 @@
   "browsers": {
     "Chrome": 843,
     "Unknown": 494,
-    "MobileSafari": 262,
+    "MobileSafari": 261,
     "ChromeMobile": 99,
     "Firefox": 76,
     "Safari": 60,
