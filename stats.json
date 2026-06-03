@@ -439,6 +439,7 @@
     {
       "date": "2026-06-03",
       "domains": {
+        "essentials.eu": 1,
         "essentials.fr": 1
       }
     }
