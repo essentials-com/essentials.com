@@ -1,21 +1,6 @@
 {
-  "date": "2026-06-08",
+  "date": "2026-06-09",
   "domains": [
-    {
-      "date": "2026-05-10",
-      "domains": {
-        "essentials.com": 876,
-        "essentials.net": 129,
-        "essentials.co.uk": 164,
-        "essentials.uk": 90,
-        "essentials.eu": 108,
-        "essentials.us": 133,
-        "essentials.fr": 113,
-        "essentials.hk": 96,
-        "essentials.tw": 65,
-        "essentials.mobi": 86
-      }
-    },
     {
       "date": "2026-05-11",
       "domains": {
@@ -439,44 +424,50 @@
     {
       "date": "2026-06-08",
       "domains": {
-        "essentials.com": 850,
+        "essentials.com": 853,
         "essentials.net": 128,
-        "essentials.co.uk": 157,
+        "essentials.co.uk": 158,
         "essentials.uk": 86,
         "essentials.eu": 132,
-        "essentials.us": 136,
-        "essentials.fr": 117,
+        "essentials.us": 137,
+        "essentials.fr": 118,
         "essentials.hk": 96,
-        "essentials.tw": 87,
-        "essentials.mobi": 105
+        "essentials.tw": 88,
+        "essentials.mobi": 106
       }
+    },
+    {
+      "date": "2026-06-09",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 511,
-    "MobileSafari": 307,
-    "Chrome": 291,
-    "ChromeMobile": 111,
-    "Firefox": 61,
-    "Safari": 28,
-    "GoogleBot": 23,
-    "Edge": 17,
-    "SamsungInternet": 7,
-    "ChromeMobileWebview": 6,
+    "Unknown": 490,
+    "MobileSafari": 305,
+    "Chrome": 292,
+    "ChromeMobile": 99,
+    "Firefox": 62,
+    "Safari": 32,
+    "GoogleBot": 20,
+    "Edge": 20,
+    "Curl": 6,
+    "ChromeMobileWebview": 5,
+    "SamsungInternet": 5,
     "BingBot": 4,
-    "Curl": 4,
     "YandexBot": 4,
     "Opera": 3,
     "MobileSafariWebview": 2,
-    "Facebook": 2,
-    "ChromeHeadless": 1,
     "OperaMobile": 1,
+    "Facebook": 1,
+    "ChromeHeadless": 1,
     "ChromeDerivative": 1,
     "Brave": 1,
     "Silk": 1,
     "AppleBot": 1,
     "Instagram": 1,
     "YandexMobile": 1,
-    "IE": 0
+    "IE": 0,
+    "MsnBot": 0,
+    "UCBrowserMobile": 0
   }
 }
