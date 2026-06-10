@@ -1,21 +1,6 @@
 {
-  "date": "2026-06-09",
+  "date": "2026-06-10",
   "domains": [
-    {
-      "date": "2026-05-11",
-      "domains": {
-        "essentials.com": 924,
-        "essentials.net": 125,
-        "essentials.co.uk": 181,
-        "essentials.uk": 92,
-        "essentials.eu": 149,
-        "essentials.us": 117,
-        "essentials.fr": 123,
-        "essentials.hk": 114,
-        "essentials.tw": 87,
-        "essentials.mobi": 123
-      }
-    },
     {
       "date": "2026-05-12",
       "domains": {
@@ -439,46 +424,52 @@
     {
       "date": "2026-06-09",
       "domains": {
-        "essentials.com": 1011,
+        "essentials.com": 1015,
         "essentials.net": 167,
-        "essentials.co.uk": 169,
+        "essentials.co.uk": 170,
         "essentials.uk": 86,
-        "essentials.eu": 165,
+        "essentials.eu": 166,
         "essentials.us": 150,
         "essentials.fr": 153,
         "essentials.hk": 95,
         "essentials.tw": 116,
         "essentials.mobi": 115
       }
+    },
+    {
+      "date": "2026-06-10",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 490,
-    "MobileSafari": 305,
-    "Chrome": 292,
-    "ChromeMobile": 99,
-    "Firefox": 62,
-    "Safari": 32,
-    "GoogleBot": 20,
-    "Edge": 20,
+    "Unknown": 469,
+    "MobileSafari": 309,
+    "Chrome": 285,
+    "ChromeMobile": 94,
+    "Firefox": 61,
+    "Safari": 30,
+    "Edge": 21,
+    "GoogleBot": 18,
+    "SamsungInternet": 6,
     "Curl": 6,
     "ChromeMobileWebview": 5,
-    "SamsungInternet": 5,
+    "YandexBot": 5,
     "BingBot": 4,
-    "YandexBot": 4,
-    "Opera": 3,
     "MobileSafariWebview": 2,
-    "OperaMobile": 1,
+    "OperaMobile": 2,
+    "ChromeDerivative": 2,
+    "Instagram": 2,
+    "Opera": 1,
     "Facebook": 1,
-    "ChromeHeadless": 1,
-    "ChromeDerivative": 1,
     "Brave": 1,
     "Silk": 1,
     "AppleBot": 1,
-    "Instagram": 1,
     "YandexMobile": 1,
+    "ChromeHeadless": 1,
     "IE": 0,
     "MsnBot": 0,
-    "UCBrowserMobile": 0
+    "UCBrowserMobile": 0,
+    "Wget": 0,
+    "Microsoft365": 0
   }
 }
