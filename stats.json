@@ -1,21 +1,6 @@
 {
-  "date": "2026-06-26",
+  "date": "2026-06-27",
   "domains": [
-    {
-      "date": "2026-05-28",
-      "domains": {
-        "essentials.com": 1686,
-        "essentials.net": 183,
-        "essentials.co.uk": 161,
-        "essentials.uk": 124,
-        "essentials.eu": 121,
-        "essentials.us": 116,
-        "essentials.fr": 130,
-        "essentials.hk": 132,
-        "essentials.tw": 113,
-        "essentials.mobi": 104
-      }
-    },
     {
       "date": "2026-05-29",
       "domains": {
@@ -439,42 +424,46 @@
     {
       "date": "2026-06-26",
       "domains": {
-        "essentials.com": 847,
-        "essentials.net": 136,
+        "essentials.com": 848,
+        "essentials.net": 137,
         "essentials.co.uk": 161,
         "essentials.uk": 113,
         "essentials.eu": 121,
         "essentials.us": 112,
-        "essentials.fr": 122,
-        "essentials.hk": 103,
+        "essentials.fr": 123,
+        "essentials.hk": 104,
         "essentials.tw": 84,
         "essentials.mobi": 107
       }
+    },
+    {
+      "date": "2026-06-27",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 620,
-    "Chrome": 409,
-    "MobileSafari": 272,
-    "ChromeMobile": 83,
-    "Firefox": 72,
-    "Safari": 65,
-    "Edge": 34,
-    "GoogleBot": 15,
-    "Curl": 12,
-    "YandexBot": 8,
+    "Unknown": 559,
+    "Chrome": 359,
+    "MobileSafari": 270,
+    "ChromeMobile": 82,
+    "Firefox": 67,
+    "Safari": 51,
+    "Edge": 27,
+    "GoogleBot": 16,
+    "Curl": 11,
+    "YandexBot": 9,
+    "SamsungInternet": 6,
     "BingBot": 4,
-    "SamsungInternet": 4,
-    "ChromeMobileWebview": 3,
+    "ChromeMobileWebview": 4,
+    "MobileSafariWebview": 2,
     "Opera": 2,
-    "UCBrowserMobile": 2,
-    "ChromeDerivative": 2,
     "ChromeHeadless": 2,
+    "UCBrowserMobile": 2,
     "IE": 1,
     "AppleBot": 1,
-    "MobileSafariWebview": 1,
     "OperaMobile": 1,
     "Facebook": 1,
+    "ChromeDerivative": 1,
     "YandexMobile": 1,
     "Brave": 1,
     "Silk": 0,
