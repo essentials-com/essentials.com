@@ -1,21 +1,6 @@
 {
-  "date": "2026-06-28",
+  "date": "2026-06-29",
   "domains": [
-    {
-      "date": "2026-05-30",
-      "domains": {
-        "essentials.com": 846,
-        "essentials.net": 136,
-        "essentials.co.uk": 147,
-        "essentials.uk": 100,
-        "essentials.eu": 90,
-        "essentials.us": 90,
-        "essentials.fr": 93,
-        "essentials.hk": 89,
-        "essentials.tw": 89,
-        "essentials.mobi": 78
-      }
-    },
     {
       "date": "2026-05-31",
       "domains": {
@@ -439,7 +424,7 @@
     {
       "date": "2026-06-28",
       "domains": {
-        "essentials.com": 794,
+        "essentials.com": 797,
         "essentials.net": 143,
         "essentials.co.uk": 142,
         "essentials.uk": 103,
@@ -447,41 +432,44 @@
         "essentials.us": 122,
         "essentials.fr": 156,
         "essentials.hk": 93,
-        "essentials.tw": 127,
+        "essentials.tw": 128,
         "essentials.mobi": 76
       }
+    },
+    {
+      "date": "2026-06-29",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 571,
-    "Chrome": 322,
-    "MobileSafari": 260,
-    "ChromeMobile": 84,
-    "Firefox": 59,
-    "Safari": 39,
-    "Edge": 21,
-    "GoogleBot": 16,
-    "Curl": 11,
-    "YandexBot": 10,
+    "Unknown": 580,
+    "Chrome": 318,
+    "MobileSafari": 259,
+    "ChromeMobile": 91,
+    "Firefox": 52,
+    "Safari": 27,
+    "Edge": 18,
+    "GoogleBot": 13,
+    "YandexBot": 12,
+    "Curl": 10,
     "ChromeMobileWebview": 5,
     "SamsungInternet": 5,
-    "BingBot": 4,
+    "BingBot": 5,
     "ChromeHeadless": 3,
-    "Opera": 2,
     "MobileSafariWebview": 2,
     "YandexMobile": 2,
+    "Opera": 2,
     "UCBrowserMobile": 2,
-    "OperaMobile": 1,
-    "ChromeDerivative": 1,
     "Facebook": 1,
+    "ChromeDerivative": 1,
     "IE": 1,
+    "OperaMobile": 1,
     "Brave": 1,
-    "AppleBot": 0,
     "Wget": 0,
     "Silk": 0,
     "Instagram": 0,
     "Chromium": 0,
-    "FirefoxMobile": 0,
-    "Yandex": 0
+    "AppleBot": 0,
+    "FirefoxMobile": 0
   }
 }
