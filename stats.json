@@ -1,21 +1,6 @@
 {
-  "date": "2026-06-30",
+  "date": "2026-07-01",
   "domains": [
-    {
-      "date": "2026-06-01",
-      "domains": {
-        "essentials.com": 917,
-        "essentials.net": 141,
-        "essentials.co.uk": 204,
-        "essentials.uk": 120,
-        "essentials.eu": 155,
-        "essentials.us": 148,
-        "essentials.fr": 155,
-        "essentials.hk": 131,
-        "essentials.tw": 114,
-        "essentials.mobi": 101
-      }
-    },
     {
       "date": "2026-06-02",
       "domains": {
@@ -440,47 +425,50 @@
       "date": "2026-06-30",
       "domains": {
         "essentials.com": 781,
-        "essentials.net": 140,
+        "essentials.net": 141,
         "essentials.co.uk": 182,
         "essentials.uk": 120,
-        "essentials.eu": 146,
+        "essentials.eu": 147,
         "essentials.us": 125,
         "essentials.fr": 125,
-        "essentials.hk": 100,
+        "essentials.hk": 101,
         "essentials.tw": 129,
         "essentials.mobi": 89
       }
+    },
+    {
+      "date": "2026-07-01",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 553,
-    "Chrome": 339,
-    "MobileSafari": 256,
-    "ChromeMobile": 91,
-    "Firefox": 56,
-    "Safari": 28,
-    "Edge": 21,
+    "Unknown": 567,
+    "Chrome": 357,
+    "MobileSafari": 255,
+    "ChromeMobile": 90,
+    "Firefox": 57,
+    "Safari": 31,
+    "Edge": 22,
     "GoogleBot": 14,
-    "Curl": 12,
+    "Curl": 13,
     "YandexBot": 10,
-    "ChromeMobileWebview": 5,
-    "SamsungInternet": 5,
+    "SamsungInternet": 7,
+    "ChromeMobileWebview": 6,
     "BingBot": 5,
-    "MobileSafariWebview": 3,
+    "Opera": 4,
     "ChromeHeadless": 3,
-    "YandexMobile": 2,
-    "ChromeDerivative": 2,
-    "Opera": 2,
+    "MobileSafariWebview": 2,
     "UCBrowserMobile": 2,
+    "ChromeDerivative": 2,
     "IE": 1,
     "OperaMobile": 1,
     "Facebook": 1,
     "Brave": 1,
-    "Silk": 0,
-    "Instagram": 0,
-    "Wget": 0,
+    "AppleBot": 1,
+    "YandexMobile": 1,
     "Chromium": 0,
-    "AppleBot": 0,
+    "Wget": 0,
+    "Instagram": 0,
     "FirefoxMobile": 0
   }
 }
