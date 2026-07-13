@@ -1,21 +1,6 @@
 {
-  "date": "2026-07-12",
+  "date": "2026-07-13",
   "domains": [
-    {
-      "date": "2026-06-13",
-      "domains": {
-        "essentials.com": 729,
-        "essentials.net": 145,
-        "essentials.co.uk": 187,
-        "essentials.uk": 90,
-        "essentials.eu": 112,
-        "essentials.us": 124,
-        "essentials.fr": 122,
-        "essentials.hk": 101,
-        "essentials.tw": 97,
-        "essentials.mobi": 100
-      }
-    },
     {
       "date": "2026-06-14",
       "domains": {
@@ -439,49 +424,52 @@
     {
       "date": "2026-07-12",
       "domains": {
-        "essentials.com": 701,
+        "essentials.com": 703,
         "essentials.net": 97,
         "essentials.co.uk": 120,
         "essentials.uk": 74,
         "essentials.eu": 85,
         "essentials.us": 112,
         "essentials.fr": 114,
-        "essentials.hk": 86,
-        "essentials.tw": 75,
+        "essentials.hk": 87,
+        "essentials.tw": 76,
         "essentials.mobi": 85
       }
+    },
+    {
+      "date": "2026-07-13",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 508,
-    "Curl": 459,
-    "Chrome": 425,
-    "Firefox": 379,
-    "MobileSafari": 285,
-    "ChromeMobile": 79,
-    "Safari": 28,
+    "Unknown": 465,
+    "Chrome": 390,
+    "Firefox": 380,
+    "MobileSafari": 281,
+    "ChromeMobile": 80,
+    "Curl": 32,
+    "Safari": 29,
+    "Edge": 14,
     "GoogleBot": 12,
-    "Edge": 12,
     "YandexBot": 9,
-    "BingBot": 5,
     "ChromeMobileWebview": 5,
-    "SamsungInternet": 5,
+    "BingBot": 4,
+    "SamsungInternet": 4,
     "ChromeDerivative": 2,
-    "MobileSafariWebview": 1,
-    "Brave": 1,
     "Opera": 1,
+    "MobileSafariWebview": 1,
     "Puffin": 1,
+    "Brave": 1,
     "YandexSearchApp": 1,
-    "Facebook": 1,
     "AppleBot": 1,
     "OperaMobile": 1,
-    "Instagram": 0,
-    "ChromeHeadless": 0,
     "Wget": 0,
     "Silk": 0,
     "TwitterBot": 0,
     "IE": 0,
+    "Facebook": 0,
     "FirefoxMobile": 0,
-    "LinkedInBot": 0
+    "LinkedInBot": 0,
+    "ChromeHeadless": 0
   }
 }
