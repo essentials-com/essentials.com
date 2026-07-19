@@ -424,7 +424,7 @@
     {
       "date": "2026-07-18",
       "domains": {
-        "essentials.com": 717,
+        "essentials.com": 718,
         "essentials.net": 145,
         "essentials.co.uk": 138,
         "essentials.uk": 101,
@@ -438,7 +438,12 @@
     },
     {
       "date": "2026-07-19",
-      "domains": {}
+      "domains": {
+        "essentials.com": 2,
+        "essentials.co.uk": 1,
+        "essentials.uk": 1,
+        "essentials.fr": 1
+      }
     }
   ],
   "browsers": {
