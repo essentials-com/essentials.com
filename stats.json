@@ -438,12 +438,15 @@
     },
     {
       "date": "2026-07-21",
-      "domains": {}
+      "domains": {
+        "essentials.com": 1,
+        "essentials.co.uk": 1
+      }
     }
   ],
   "browsers": {
     "Unknown": 652,
-    "Chrome": 420,
+    "Chrome": 421,
     "MobileSafari": 270,
     "Curl": 146,
     "ChromeMobile": 83,
