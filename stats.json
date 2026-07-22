@@ -1,21 +1,6 @@
 {
-  "date": "2026-07-21",
+  "date": "2026-07-22",
   "domains": [
-    {
-      "date": "2026-06-22",
-      "domains": {
-        "essentials.com": 800,
-        "essentials.net": 136,
-        "essentials.co.uk": 170,
-        "essentials.uk": 104,
-        "essentials.eu": 100,
-        "essentials.us": 108,
-        "essentials.fr": 141,
-        "essentials.hk": 110,
-        "essentials.tw": 87,
-        "essentials.mobi": 101
-      }
-    },
     {
       "date": "2026-06-23",
       "domains": {
@@ -439,46 +424,52 @@
     {
       "date": "2026-07-21",
       "domains": {
-        "essentials.com": 924,
+        "essentials.com": 925,
         "essentials.net": 125,
-        "essentials.co.uk": 136,
+        "essentials.co.uk": 138,
         "essentials.uk": 103,
         "essentials.eu": 149,
-        "essentials.us": 131,
+        "essentials.us": 132,
         "essentials.fr": 141,
-        "essentials.hk": 92,
+        "essentials.hk": 93,
         "essentials.tw": 149,
         "essentials.mobi": 7
       }
+    },
+    {
+      "date": "2026-07-22",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 652,
-    "Chrome": 421,
-    "MobileSafari": 270,
-    "Curl": 146,
-    "ChromeMobile": 83,
-    "Firefox": 34,
-    "Safari": 30,
-    "Edge": 21,
+    "Unknown": 655,
+    "Chrome": 417,
+    "MobileSafari": 267,
+    "Curl": 144,
+    "ChromeMobile": 121,
+    "Firefox": 39,
+    "Safari": 31,
+    "Edge": 22,
     "GoogleBot": 14,
-    "BingBot": 6,
     "YandexBot": 6,
-    "SamsungInternet": 3,
+    "BingBot": 6,
+    "SamsungInternet": 4,
     "Opera": 2,
-    "ChromeDerivative": 2,
     "MobileSafariWebview": 2,
-    "Silk": 1,
-    "AppleBot": 1,
-    "ChromeMobileWebview": 1,
+    "ChromeDerivative": 2,
     "OperaMobile": 1,
+    "Silk": 1,
+    "ChromeMobileWebview": 1,
+    "ChromeHeadless": 1,
+    "AppleBot": 1,
     "Facebook": 1,
     "Wget": 1,
-    "ChromeHeadless": 1,
     "IE": 0,
     "UCBrowserMobile": 0,
     "Brave": 0,
     "Instagram": 0,
-    "FirefoxMobile": 0
+    "TwitterBot": 0,
+    "FirefoxMobile": 0,
+    "Chromium": 0
   }
 }
