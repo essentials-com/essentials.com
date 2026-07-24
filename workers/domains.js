@@ -41,7 +41,6 @@ export const DOMAINS = [
   { tld: "essentials.cn",    zoneId: "9c657d9a33c65cf08f7388bac27567fb", siteToken: "91fea634621d4b7a8603cabadaf4d669", hreflang: "zh-CN", dnsUnavailable: true },
   { tld: "essentials.hk",    zoneId: "eba3476c1545e7921a74afd94910ef7a", siteToken: "81b6f31ee014450c92c7941f3d963d9b", hreflang: "zh-HK" },
   { tld: "essentials.tw",    zoneId: "fa860897d24799154c196c1a3df49d68", siteToken: "ced9f723c52f4518928c063a63151baa", hreflang: "zh-TW" },
-  { tld: "essentials.mobi",  zoneId: "dc698847dff06bf68ff8356605228d82", siteToken: "141ccb0338744ec5aa52bc614d034937", hreflang: null },
 ];
 
 /**
