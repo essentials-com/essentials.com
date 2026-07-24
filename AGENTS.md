@@ -29,7 +29,6 @@ To add or remove a domain, edit `workers/domains.js` — all other files import 
 - essentials.cn (DNS unavailable, links to essentials.com, skipped in logo rotation)
 - essentials.hk
 - essentials.tw
-- essentials.mobi
 
 ## Key Files
 

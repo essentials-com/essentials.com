@@ -53,7 +53,6 @@ Feel free to fork and use for your own similar needs.
 - [essentials.cn](https://essentials.cn)
 - [essentials.hk](https://essentials.hk)
 - [essentials.tw](https://essentials.tw)
-- [essentials.mobi](https://essentials.mobi)
 
 ## Setup Your Own
 
