@@ -410,15 +410,15 @@
     {
       "date": "2026-07-30",
       "domains": {
-        "essentials.com": 618,
-        "essentials.co.uk": 142,
+        "essentials.com": 621,
+        "essentials.co.uk": 143,
         "essentials.uk": 91,
         "essentials.net": 162,
-        "essentials.eu": 110,
-        "essentials.us": 92,
+        "essentials.eu": 112,
+        "essentials.us": 93,
         "essentials.fr": 121,
-        "essentials.hk": 105,
-        "essentials.tw": 72
+        "essentials.hk": 106,
+        "essentials.tw": 73
       }
     }
   ],
