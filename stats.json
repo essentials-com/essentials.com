@@ -3,200 +3,124 @@
   "domains": [
     {
       "date": "2026-07-02",
-      "domains": {
-        "essentials.us": 107
-      }
+      "domains": {}
     },
     {
       "date": "2026-07-03",
-      "domains": {
-        "essentials.us": 94
-      }
+      "domains": {}
     },
     {
       "date": "2026-07-04",
-      "domains": {
-        "essentials.us": 128
-      }
+      "domains": {}
     },
     {
       "date": "2026-07-05",
-      "domains": {
-        "essentials.us": 135
-      }
+      "domains": {}
     },
     {
       "date": "2026-07-06",
-      "domains": {
-        "essentials.us": 116
-      }
+      "domains": {}
     },
     {
       "date": "2026-07-07",
-      "domains": {
-        "essentials.us": 143
-      }
+      "domains": {}
     },
     {
       "date": "2026-07-08",
-      "domains": {
-        "essentials.us": 148
-      }
+      "domains": {}
     },
     {
       "date": "2026-07-09",
-      "domains": {
-        "essentials.us": 130
-      }
+      "domains": {}
     },
     {
       "date": "2026-07-10",
-      "domains": {
-        "essentials.us": 147
-      }
+      "domains": {}
     },
     {
       "date": "2026-07-11",
-      "domains": {
-        "essentials.us": 95
-      }
+      "domains": {}
     },
     {
       "date": "2026-07-12",
-      "domains": {
-        "essentials.us": 112
-      }
+      "domains": {}
     },
     {
       "date": "2026-07-13",
-      "domains": {
-        "essentials.us": 138
-      }
+      "domains": {}
     },
     {
       "date": "2026-07-14",
-      "domains": {
-        "essentials.us": 142
-      }
+      "domains": {}
     },
     {
       "date": "2026-07-15",
-      "domains": {
-        "essentials.us": 152
-      }
+      "domains": {}
     },
     {
       "date": "2026-07-16",
-      "domains": {
-        "essentials.us": 150
-      }
+      "domains": {}
     },
     {
       "date": "2026-07-17",
-      "domains": {
-        "essentials.us": 161
-      }
+      "domains": {}
     },
     {
       "date": "2026-07-18",
-      "domains": {
-        "essentials.us": 115
-      }
+      "domains": {}
     },
     {
       "date": "2026-07-19",
-      "domains": {
-        "essentials.us": 152
-      }
+      "domains": {}
     },
     {
       "date": "2026-07-20",
-      "domains": {
-        "essentials.us": 114
-      }
+      "domains": {}
     },
     {
       "date": "2026-07-21",
-      "domains": {
-        "essentials.us": 132
-      }
+      "domains": {}
     },
     {
       "date": "2026-07-22",
-      "domains": {
-        "essentials.us": 126
-      }
+      "domains": {}
     },
     {
       "date": "2026-07-23",
-      "domains": {
-        "essentials.us": 133
-      }
+      "domains": {}
     },
     {
       "date": "2026-07-24",
-      "domains": {
-        "essentials.us": 160
-      }
+      "domains": {}
     },
     {
       "date": "2026-07-25",
-      "domains": {
-        "essentials.us": 108
-      }
+      "domains": {}
     },
     {
       "date": "2026-07-26",
-      "domains": {
-        "essentials.us": 138
-      }
+      "domains": {}
     },
     {
       "date": "2026-07-27",
-      "domains": {
-        "essentials.us": 123
-      }
+      "domains": {}
     },
     {
       "date": "2026-07-28",
-      "domains": {
-        "essentials.us": 114
-      }
+      "domains": {}
     },
     {
       "date": "2026-07-29",
-      "domains": {
-        "essentials.us": 113
-      }
+      "domains": {}
     },
     {
       "date": "2026-07-30",
-      "domains": {
-        "essentials.us": 143
-      }
+      "domains": {}
     },
     {
       "date": "2026-07-31",
-      "domains": {
-        "essentials.us": 91
-      }
+      "domains": {}
     }
   ],
-  "browsers": {
-    "Unknown": 23,
-    "Chrome": 22,
-    "MobileSafari": 17,
-    "ChromeMobile": 4,
-    "Firefox": 2,
-    "Edge": 2,
-    "Safari": 1,
-    "BingBot": 1,
-    "GoogleBot": 1,
-    "Opera": 0,
-    "AppleBot": 0,
-    "ChromeMobileWebview": 0,
-    "SamsungInternet": 0,
-    "Facebook": 0,
-    "CocCoc": 0
-  }
+  "browsers": {}
 }
