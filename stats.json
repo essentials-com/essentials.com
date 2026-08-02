@@ -1,20 +1,6 @@
 {
-  "date": "2026-08-01",
+  "date": "2026-08-02",
   "domains": [
-    {
-      "date": "2026-07-03",
-      "domains": {
-        "essentials.com": 645,
-        "essentials.co.uk": 152,
-        "essentials.uk": 107,
-        "essentials.net": 158,
-        "essentials.eu": 115,
-        "essentials.us": 94,
-        "essentials.fr": 132,
-        "essentials.hk": 103,
-        "essentials.tw": 92
-      }
-    },
     {
       "date": "2026-07-04",
       "domains": {
@@ -410,47 +396,51 @@
     {
       "date": "2026-08-01",
       "domains": {
-        "essentials.com": 786,
-        "essentials.co.uk": 166,
-        "essentials.uk": 130,
+        "essentials.com": 787,
+        "essentials.co.uk": 168,
+        "essentials.uk": 131,
         "essentials.net": 159,
-        "essentials.eu": 132,
-        "essentials.us": 118,
-        "essentials.fr": 153,
-        "essentials.hk": 118,
+        "essentials.eu": 136,
+        "essentials.us": 119,
+        "essentials.fr": 154,
+        "essentials.hk": 129,
         "essentials.tw": 113
       }
+    },
+    {
+      "date": "2026-08-02",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 867,
-    "Chrome": 366,
-    "MobileSafari": 268,
-    "Curl": 147,
-    "ChromeMobile": 86,
+    "Unknown": 856,
+    "Chrome": 400,
+    "MobileSafari": 271,
+    "Curl": 150,
+    "ChromeMobile": 87,
     "Firefox": 40,
     "Safari": 22,
     "Edge": 19,
     "GoogleBot": 15,
-    "BingBot": 9,
-    "YandexBot": 8,
+    "BingBot": 10,
+    "YandexBot": 9,
     "ChromeMobileWebview": 5,
-    "SamsungInternet": 4,
+    "SamsungInternet": 5,
+    "Facebook": 4,
     "Microsoft365": 4,
     "ChromeDerivative": 3,
-    "Facebook": 3,
     "MobileSafariWebview": 2,
-    "ChromeHeadless": 1,
+    "Opera": 2,
     "Brave": 1,
-    "Opera": 1,
     "AppleBot": 1,
+    "ChromeHeadless": 1,
+    "FirefoxMobile": 1,
     "CocCoc": 1,
     "OperaMobile": 1,
     "IE": 0,
     "Instagram": 0,
     "Wget": 0,
     "TwitterBot": 0,
-    "Silk": 0,
-    "FirefoxMobile": 0
+    "Silk": 0
   }
 }
