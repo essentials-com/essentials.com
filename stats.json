@@ -396,11 +396,11 @@
     {
       "date": "2026-08-06",
       "domains": {
-        "essentials.com": 1006,
+        "essentials.com": 1010,
         "essentials.co.uk": 235,
         "essentials.uk": 165,
-        "essentials.net": 200,
-        "essentials.eu": 183,
+        "essentials.net": 201,
+        "essentials.eu": 184,
         "essentials.us": 137,
         "essentials.fr": 153,
         "essentials.hk": 157,
@@ -409,13 +409,15 @@
     },
     {
       "date": "2026-08-07",
-      "domains": {}
+      "domains": {
+        "essentials.com": 1
+      }
     }
   ],
   "browsers": {
     "Unknown": 856,
     "Chrome": 547,
-    "MobileSafari": 270,
+    "MobileSafari": 271,
     "ChromeMobile": 123,
     "Firefox": 56,
     "Safari": 33,
