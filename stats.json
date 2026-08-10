@@ -410,8 +410,10 @@
     {
       "date": "2026-08-10",
       "domains": {
+        "essentials.com": 1,
         "essentials.co.uk": 1,
-        "essentials.us": 1
+        "essentials.us": 1,
+        "essentials.hk": 1
       }
     }
   ],
