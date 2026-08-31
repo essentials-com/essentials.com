@@ -1,20 +1,6 @@
 {
-  "date": "2026-08-30",
+  "date": "2026-08-31",
   "domains": [
-    {
-      "date": "2026-08-01",
-      "domains": {
-        "essentials.com": 787,
-        "essentials.co.uk": 168,
-        "essentials.uk": 131,
-        "essentials.net": 159,
-        "essentials.eu": 137,
-        "essentials.us": 119,
-        "essentials.fr": 154,
-        "essentials.hk": 134,
-        "essentials.tw": 114
-      }
-    },
     {
       "date": "2026-08-02",
       "domains": {
@@ -410,46 +396,51 @@
     {
       "date": "2026-08-30",
       "domains": {
-        "essentials.com": 1098,
-        "essentials.co.uk": 176,
+        "essentials.com": 1102,
+        "essentials.co.uk": 177,
         "essentials.uk": 127,
-        "essentials.net": 183,
-        "essentials.eu": 125,
-        "essentials.us": 150,
-        "essentials.fr": 135,
+        "essentials.net": 186,
+        "essentials.eu": 126,
+        "essentials.us": 151,
+        "essentials.fr": 136,
         "essentials.hk": 122,
         "essentials.tw": 151
       }
+    },
+    {
+      "date": "2026-08-31",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 896,
-    "Chrome": 670,
-    "MobileSafari": 265,
-    "ChromeMobile": 99,
-    "Firefox": 59,
-    "Safari": 44,
+    "Unknown": 911,
+    "Chrome": 656,
+    "MobileSafari": 269,
+    "ChromeMobile": 101,
+    "Firefox": 57,
+    "Safari": 42,
     "Edge": 35,
-    "Curl": 21,
-    "GoogleBot": 20,
+    "Curl": 22,
+    "GoogleBot": 19,
+    "ChromeMobileWebview": 7,
     "BingBot": 6,
-    "ChromeMobileWebview": 6,
     "SamsungInternet": 5,
-    "Opera": 2,
     "MobileSafariWebview": 2,
     "ChromeDerivative": 2,
-    "Facebook": 1,
+    "YandexBot": 2,
+    "ChromeHeadless": 2,
     "OperaMobile": 1,
-    "YandexBot": 1,
     "UCBrowserMobile": 1,
-    "ChromeHeadless": 1,
+    "Opera": 1,
     "AppleBot": 1,
     "Chromium": 0,
+    "Facebook": 0,
     "Silk": 0,
     "TwitterBot": 0,
     "Brave": 0,
     "Wget": 0,
     "FirefoxMobile": 0,
+    "IE": 0,
     "Yandex": 0
   }
 }
