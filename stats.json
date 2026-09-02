@@ -1,20 +1,6 @@
 {
-  "date": "2026-09-01",
+  "date": "2026-09-02",
   "domains": [
-    {
-      "date": "2026-08-03",
-      "domains": {
-        "essentials.com": 900,
-        "essentials.co.uk": 193,
-        "essentials.uk": 150,
-        "essentials.net": 185,
-        "essentials.eu": 186,
-        "essentials.us": 165,
-        "essentials.fr": 180,
-        "essentials.hk": 160,
-        "essentials.tw": 138
-      }
-    },
     {
       "date": "2026-08-04",
       "domains": {
@@ -410,47 +396,51 @@
     {
       "date": "2026-09-01",
       "domains": {
-        "essentials.com": 1047,
-        "essentials.co.uk": 202,
-        "essentials.uk": 118,
-        "essentials.net": 225,
+        "essentials.com": 1050,
+        "essentials.co.uk": 205,
+        "essentials.uk": 120,
+        "essentials.net": 226,
         "essentials.eu": 121,
-        "essentials.us": 125,
-        "essentials.fr": 149,
-        "essentials.hk": 110,
-        "essentials.tw": 125
+        "essentials.us": 126,
+        "essentials.fr": 152,
+        "essentials.hk": 112,
+        "essentials.tw": 126
       }
+    },
+    {
+      "date": "2026-09-02",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 956,
-    "Chrome": 702,
+    "Unknown": 861,
+    "Chrome": 827,
     "MobileSafari": 271,
-    "ChromeMobile": 102,
-    "Firefox": 56,
-    "Safari": 43,
-    "Edge": 37,
-    "Curl": 23,
-    "GoogleBot": 16,
-    "ChromeMobileWebview": 8,
+    "ChromeMobile": 107,
+    "Firefox": 57,
+    "Safari": 46,
+    "Edge": 36,
+    "Curl": 20,
+    "GoogleBot": 14,
+    "ChromeMobileWebview": 7,
     "BingBot": 6,
     "SamsungInternet": 5,
-    "YandexBot": 3,
     "MobileSafariWebview": 2,
-    "ChromeDerivative": 2,
-    "ChromeHeadless": 2,
-    "OperaMobile": 1,
+    "Opera": 2,
+    "YandexBot": 2,
     "UCBrowserMobile": 1,
-    "Opera": 1,
+    "ChromeDerivative": 1,
+    "ChromeHeadless": 1,
     "AppleBot": 1,
-    "Chromium": 0,
-    "Facebook": 0,
+    "OperaMobile": 1,
     "Silk": 0,
     "TwitterBot": 0,
+    "Facebook": 0,
     "Brave": 0,
     "Wget": 0,
     "FirefoxMobile": 0,
     "IE": 0,
-    "Yandex": 0
+    "Yandex": 0,
+    "Chromium": 0
   }
 }
