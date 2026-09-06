@@ -1,20 +1,6 @@
 {
-  "date": "2026-09-05",
+  "date": "2026-09-06",
   "domains": [
-    {
-      "date": "2026-08-07",
-      "domains": {
-        "essentials.com": 1262,
-        "essentials.co.uk": 208,
-        "essentials.uk": 148,
-        "essentials.net": 163,
-        "essentials.eu": 201,
-        "essentials.us": 120,
-        "essentials.fr": 185,
-        "essentials.hk": 113,
-        "essentials.tw": 109
-      }
-    },
     {
       "date": "2026-08-08",
       "domains": {
@@ -410,46 +396,50 @@
     {
       "date": "2026-09-05",
       "domains": {
-        "essentials.com": 1054,
+        "essentials.com": 1057,
         "essentials.co.uk": 205,
         "essentials.uk": 129,
-        "essentials.net": 169,
+        "essentials.net": 170,
         "essentials.eu": 160,
-        "essentials.us": 156,
-        "essentials.fr": 140,
+        "essentials.us": 157,
+        "essentials.fr": 141,
         "essentials.hk": 130,
-        "essentials.tw": 116
+        "essentials.tw": 117
       }
+    },
+    {
+      "date": "2026-09-06",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 908,
-    "Chrome": 730,
-    "MobileSafari": 276,
-    "ChromeMobile": 114,
-    "Firefox": 44,
-    "Safari": 41,
-    "Edge": 26,
+    "Unknown": 893,
+    "Chrome": 713,
+    "MobileSafari": 278,
+    "ChromeMobile": 107,
+    "Firefox": 43,
+    "Safari": 42,
+    "Edge": 30,
     "GoogleBot": 17,
     "Curl": 9,
-    "ChromeMobileWebview": 8,
-    "BingBot": 6,
+    "BingBot": 7,
+    "ChromeMobileWebview": 6,
     "SamsungInternet": 5,
-    "MobileSafariWebview": 2,
+    "YandexBot": 3,
+    "MobileSafariWebview": 3,
     "OperaMobile": 2,
-    "YandexBot": 2,
     "AppleBot": 2,
-    "FirefoxMobile": 1,
     "ChromeHeadless": 1,
     "Opera": 1,
     "Silk": 1,
+    "FirefoxMobile": 1,
+    "Facebook": 1,
     "ChromeDerivative": 1,
     "Microsoft365": 1,
     "Brave": 1,
     "UCBrowserMobile": 1,
     "IE": 0,
     "Wget": 0,
-    "Facebook": 0,
     "Chromium": 0,
     "Yandex": 0
   }
