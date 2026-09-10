@@ -409,11 +409,15 @@
     },
     {
       "date": "2026-09-10",
-      "domains": {}
+      "domains": {
+        "essentials.com": 1,
+        "essentials.us": 1,
+        "essentials.tw": 1
+      }
     }
   ],
   "browsers": {
-    "Unknown": 801,
+    "Unknown": 802,
     "Chrome": 634,
     "MobileSafari": 292,
     "ChromeMobile": 111,
