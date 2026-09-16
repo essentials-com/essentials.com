@@ -1,20 +1,6 @@
 {
-  "date": "2026-09-15",
+  "date": "2026-09-16",
   "domains": [
-    {
-      "date": "2026-08-17",
-      "domains": {
-        "essentials.com": 909,
-        "essentials.co.uk": 151,
-        "essentials.uk": 148,
-        "essentials.net": 187,
-        "essentials.eu": 143,
-        "essentials.us": 121,
-        "essentials.fr": 128,
-        "essentials.hk": 170,
-        "essentials.tw": 98
-      }
-    },
     {
       "date": "2026-08-18",
       "domains": {
@@ -410,42 +396,46 @@
     {
       "date": "2026-09-15",
       "domains": {
-        "essentials.com": 884,
-        "essentials.co.uk": 156,
-        "essentials.uk": 101,
-        "essentials.net": 143,
+        "essentials.com": 894,
+        "essentials.co.uk": 157,
+        "essentials.uk": 105,
+        "essentials.net": 147,
         "essentials.eu": 182,
-        "essentials.us": 103,
+        "essentials.us": 108,
         "essentials.fr": 150,
-        "essentials.hk": 90,
-        "essentials.tw": 186
+        "essentials.hk": 98,
+        "essentials.tw": 188
       }
+    },
+    {
+      "date": "2026-09-16",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 703,
-    "Chrome": 682,
-    "MobileSafari": 289,
+    "Unknown": 695,
+    "Chrome": 637,
+    "MobileSafari": 282,
     "ChromeMobile": 105,
-    "Firefox": 64,
+    "Firefox": 65,
     "Safari": 58,
-    "Edge": 45,
-    "GoogleBot": 14,
+    "Edge": 44,
+    "GoogleBot": 12,
+    "BingBot": 8,
     "Curl": 8,
-    "BingBot": 7,
     "SamsungInternet": 6,
-    "YandexBot": 2,
-    "MobileSafariWebview": 2,
-    "ChromeDerivative": 2,
-    "FirefoxMobile": 1,
-    "Chromium": 1,
-    "Facebook": 1,
+    "MobileSafariWebview": 3,
+    "ChromeDerivative": 3,
+    "AppleBot": 2,
+    "ChromeMobileWebview": 2,
+    "YandexBot": 1,
     "UCBrowserMobile": 1,
-    "AppleBot": 1,
-    "ChromeMobileWebview": 1,
+    "Facebook": 1,
+    "FirefoxMobile": 1,
     "Brave": 1,
     "OperaMobile": 1,
     "Instagram": 0,
+    "Chromium": 0,
     "Silk": 0,
     "Opera": 0,
     "TwitterBot": 0,
