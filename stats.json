@@ -409,13 +409,17 @@
     },
     {
       "date": "2026-09-21",
-      "domains": {}
+      "domains": {
+        "essentials.com": 1,
+        "essentials.net": 1,
+        "essentials.us": 1
+      }
     }
   ],
   "browsers": {
     "Chrome": 675,
     "Unknown": 615,
-    "MobileSafari": 303,
+    "MobileSafari": 304,
     "ChromeMobile": 113,
     "Safari": 43,
     "Firefox": 42,
