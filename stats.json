@@ -1,20 +1,6 @@
 {
-  "date": "2026-09-24",
+  "date": "2026-09-25",
   "domains": [
-    {
-      "date": "2026-08-26",
-      "domains": {
-        "essentials.com": 1050,
-        "essentials.co.uk": 148,
-        "essentials.uk": 107,
-        "essentials.net": 159,
-        "essentials.eu": 176,
-        "essentials.us": 121,
-        "essentials.fr": 159,
-        "essentials.hk": 183,
-        "essentials.tw": 128
-      }
-    },
     {
       "date": "2026-08-27",
       "domains": {
@@ -410,44 +396,48 @@
     {
       "date": "2026-09-24",
       "domains": {
-        "essentials.com": 880,
+        "essentials.com": 883,
         "essentials.co.uk": 166,
-        "essentials.uk": 127,
-        "essentials.net": 181,
+        "essentials.uk": 128,
+        "essentials.net": 196,
         "essentials.eu": 135,
         "essentials.us": 136,
         "essentials.fr": 154,
-        "essentials.hk": 134,
-        "essentials.tw": 112
+        "essentials.hk": 135,
+        "essentials.tw": 113
       }
+    },
+    {
+      "date": "2026-09-25",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 598,
-    "Chrome": 521,
-    "MobileSafari": 310,
-    "ChromeMobile": 122,
+    "Unknown": 634,
+    "Chrome": 612,
+    "MobileSafari": 309,
+    "ChromeMobile": 114,
     "Firefox": 46,
     "Safari": 39,
     "Edge": 31,
-    "GoogleBot": 13,
-    "Curl": 11,
-    "ChromeDerivative": 8,
-    "SamsungInternet": 7,
-    "BingBot": 4,
-    "ChromeMobileWebview": 4,
+    "GoogleBot": 12,
+    "Curl": 12,
+    "SamsungInternet": 8,
+    "ChromeDerivative": 7,
+    "BingBot": 5,
     "MobileSafariWebview": 3,
-    "Opera": 1,
+    "ChromeMobileWebview": 3,
     "AppleBot": 1,
     "OperaMobile": 1,
+    "Opera": 1,
     "FirefoxMobile": 1,
     "UCBrowserMobile": 1,
     "ChromeHeadless": 1,
     "Brave": 1,
     "YandexBot": 1,
-    "Instagram": 0,
     "Facebook": 0,
     "IE": 0,
+    "Instagram": 0,
     "TwitterBot": 0,
     "Chromium": 0,
     "Silk": 0
