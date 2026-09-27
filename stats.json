@@ -412,13 +412,13 @@
       "domains": {
         "essentials.com": 317,
         "essentials.co.uk": 68,
-        "essentials.uk": 39,
+        "essentials.uk": 40,
         "essentials.net": 50,
         "essentials.eu": 51,
         "essentials.us": 70,
-        "essentials.fr": 52,
-        "essentials.hk": 27,
-        "essentials.tw": 38
+        "essentials.fr": 56,
+        "essentials.hk": 28,
+        "essentials.tw": 41
       }
     }
   ],
