@@ -1,20 +1,6 @@
 {
-  "date": "2026-09-30",
+  "date": "2026-10-01",
   "domains": [
-    {
-      "date": "2026-09-01",
-      "domains": {
-        "essentials.com": 1056,
-        "essentials.co.uk": 205,
-        "essentials.uk": 120,
-        "essentials.net": 227,
-        "essentials.eu": 123,
-        "essentials.us": 127,
-        "essentials.fr": 153,
-        "essentials.hk": 114,
-        "essentials.tw": 127
-      }
-    },
     {
       "date": "2026-09-02",
       "domains": {
@@ -410,45 +396,49 @@
     {
       "date": "2026-09-30",
       "domains": {
-        "essentials.com": 1065,
-        "essentials.co.uk": 179,
+        "essentials.com": 1070,
+        "essentials.co.uk": 180,
         "essentials.uk": 173,
-        "essentials.net": 215,
-        "essentials.eu": 192,
+        "essentials.net": 217,
+        "essentials.eu": 193,
         "essentials.us": 141,
-        "essentials.fr": 159,
+        "essentials.fr": 160,
         "essentials.hk": 146,
         "essentials.tw": 224
       }
+    },
+    {
+      "date": "2026-10-01",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 973,
-    "Chrome": 750,
-    "MobileSafari": 298,
-    "ChromeMobile": 113,
-    "Firefox": 61,
-    "Safari": 44,
-    "Edge": 37,
-    "Curl": 15,
-    "GoogleBot": 14,
+    "Curl": 1296,
+    "Unknown": 1019,
+    "Chrome": 811,
+    "MobileSafari": 300,
+    "ChromeMobile": 120,
+    "Firefox": 63,
+    "Safari": 45,
+    "Edge": 38,
+    "GoogleBot": 15,
     "BingBot": 7,
-    "SamsungInternet": 6,
+    "SamsungInternet": 7,
+    "ChromeMobileWebview": 7,
     "ChromeDerivative": 6,
-    "ChromeMobileWebview": 5,
     "MobileSafariWebview": 4,
     "Opera": 3,
     "OperaMobile": 3,
     "YandexBot": 2,
     "Facebook": 2,
-    "Silk": 1,
-    "ChromeHeadless": 1,
     "AppleBot": 1,
     "Brave": 1,
-    "IE": 0,
-    "FirefoxMobile": 0,
+    "Silk": 0,
     "Instagram": 0,
+    "FirefoxMobile": 0,
     "Wget": 0,
+    "IE": 0,
+    "ChromeHeadless": 0,
     "UCBrowserMobile": 0
   }
 }
