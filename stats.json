@@ -1,20 +1,6 @@
 {
-  "date": "2026-10-04",
+  "date": "2026-10-05",
   "domains": [
-    {
-      "date": "2026-09-05",
-      "domains": {
-        "essentials.com": 1057,
-        "essentials.co.uk": 205,
-        "essentials.uk": 130,
-        "essentials.net": 170,
-        "essentials.eu": 162,
-        "essentials.us": 157,
-        "essentials.fr": 141,
-        "essentials.hk": 130,
-        "essentials.tw": 117
-      }
-    },
     {
       "date": "2026-09-06",
       "domains": {
@@ -410,47 +396,51 @@
     {
       "date": "2026-10-04",
       "domains": {
-        "essentials.com": 1232,
+        "essentials.com": 1233,
         "essentials.co.uk": 187,
         "essentials.uk": 135,
-        "essentials.net": 169,
+        "essentials.net": 170,
         "essentials.eu": 124,
-        "essentials.us": 162,
+        "essentials.us": 163,
         "essentials.fr": 145,
         "essentials.hk": 124,
         "essentials.tw": 120
       }
+    },
+    {
+      "date": "2026-10-05",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Curl": 1295,
-    "Unknown": 1069,
-    "Chrome": 776,
-    "MobileSafari": 304,
-    "ChromeMobile": 129,
-    "Firefox": 100,
-    "Safari": 55,
-    "Edge": 45,
-    "GoogleBot": 17,
-    "BingBot": 8,
+    "Curl": 1294,
+    "Unknown": 1119,
+    "Chrome": 784,
+    "MobileSafari": 312,
+    "ChromeMobile": 130,
+    "Firefox": 116,
+    "Safari": 57,
+    "Edge": 49,
+    "GoogleBot": 18,
+    "BingBot": 7,
     "ChromeMobileWebview": 7,
-    "MobileSafariWebview": 5,
-    "SamsungInternet": 5,
+    "SamsungInternet": 6,
     "ChromeDerivative": 5,
-    "Opera": 4,
+    "MobileSafariWebview": 4,
+    "Opera": 3,
     "OperaMobile": 3,
-    "YandexBot": 2,
     "Facebook": 2,
-    "Brave": 1,
+    "YandexBot": 2,
     "FirefoxMobile": 1,
     "AppleBot": 1,
     "YandexSearchApp": 1,
-    "Instagram": 0,
+    "ChromeHeadless": 1,
+    "Brave": 1,
+    "UCBrowserMobile": 1,
     "Wget": 0,
     "IE": 0,
     "Silk": 0,
     "Chromium": 0,
-    "ChromeHeadless": 0,
-    "UCBrowserMobile": 0
+    "Instagram": 0
   }
 }
