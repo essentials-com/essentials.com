@@ -1,20 +1,6 @@
 {
-  "date": "2026-10-06",
+  "date": "2026-10-07",
   "domains": [
-    {
-      "date": "2026-09-07",
-      "domains": {
-        "essentials.com": 901,
-        "essentials.co.uk": 187,
-        "essentials.uk": 136,
-        "essentials.net": 191,
-        "essentials.eu": 133,
-        "essentials.us": 112,
-        "essentials.fr": 186,
-        "essentials.hk": 122,
-        "essentials.tw": 154
-      }
-    },
     {
       "date": "2026-09-08",
       "domains": {
@@ -410,48 +396,53 @@
     {
       "date": "2026-10-06",
       "domains": {
-        "essentials.com": 1382,
+        "essentials.com": 1385,
         "essentials.co.uk": 294,
-        "essentials.uk": 190,
-        "essentials.net": 188,
-        "essentials.eu": 158,
-        "essentials.us": 127,
-        "essentials.fr": 149,
+        "essentials.uk": 191,
+        "essentials.net": 191,
+        "essentials.eu": 161,
+        "essentials.us": 129,
+        "essentials.fr": 151,
         "essentials.hk": 127,
         "essentials.tw": 116
       }
+    },
+    {
+      "date": "2026-10-07",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Curl": 1293,
-    "Unknown": 1082,
-    "Chrome": 599,
-    "MobileSafari": 312,
-    "ChromeMobile": 140,
-    "Firefox": 114,
-    "Safari": 53,
-    "Edge": 46,
-    "GoogleBot": 18,
-    "ChromeMobileWebview": 8,
-    "SamsungInternet": 7,
+    "Curl": 1289,
+    "Unknown": 1031,
+    "Chrome": 609,
+    "MobileSafari": 311,
+    "ChromeMobile": 137,
+    "Firefox": 104,
+    "Safari": 50,
+    "Edge": 44,
+    "GoogleBot": 17,
+    "ChromeMobileWebview": 9,
+    "SamsungInternet": 6,
+    "ChromeDerivative": 6,
     "Opera": 5,
-    "ChromeDerivative": 5,
     "MobileSafariWebview": 5,
     "BingBot": 4,
     "OperaMobile": 3,
+    "AppleBot": 2,
     "YandexBot": 2,
-    "Facebook": 1,
     "IE": 1,
     "FirefoxMobile": 1,
+    "Facebook": 1,
     "Silk": 1,
-    "AppleBot": 1,
     "YandexSearchApp": 1,
     "ChromeHeadless": 1,
     "Brave": 1,
     "Instagram": 1,
     "UCBrowserMobile": 1,
-    "Wget": 0,
+    "YandexMobile": 1,
     "Chromium": 0,
-    "Yandex": 0
+    "Yandex": 0,
+    "Wget": 0
   }
 }
