@@ -1,20 +1,6 @@
 {
-  "date": "2026-10-08",
+  "date": "2026-10-09",
   "domains": [
-    {
-      "date": "2026-09-09",
-      "domains": {
-        "essentials.com": 1146,
-        "essentials.co.uk": 192,
-        "essentials.uk": 115,
-        "essentials.net": 187,
-        "essentials.eu": 183,
-        "essentials.us": 143,
-        "essentials.fr": 127,
-        "essentials.hk": 112,
-        "essentials.tw": 107
-      }
-    },
     {
       "date": "2026-09-10",
       "domains": {
@@ -410,39 +396,42 @@
     {
       "date": "2026-10-08",
       "domains": {
-        "essentials.com": 1355,
+        "essentials.com": 1357,
         "essentials.co.uk": 231,
         "essentials.uk": 148,
         "essentials.net": 195,
         "essentials.eu": 165,
-        "essentials.us": 139,
-        "essentials.fr": 193,
-        "essentials.hk": 210,
+        "essentials.us": 140,
+        "essentials.fr": 195,
+        "essentials.hk": 211,
         "essentials.tw": 164
       }
+    },
+    {
+      "date": "2026-10-09",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 1024,
-    "Chrome": 570,
-    "MobileSafari": 309,
+    "Unknown": 1099,
+    "Chrome": 587,
+    "MobileSafari": 304,
     "ChromeMobile": 134,
-    "Firefox": 103,
-    "Safari": 47,
-    "Edge": 43,
-    "GoogleBot": 18,
-    "ChromeMobileWebview": 9,
-    "SamsungInternet": 7,
-    "Curl": 7,
-    "ChromeDerivative": 6,
-    "Opera": 5,
+    "Firefox": 98,
+    "Safari": 46,
+    "Edge": 41,
+    "GoogleBot": 20,
+    "ChromeMobileWebview": 10,
+    "SamsungInternet": 8,
+    "BingBot": 5,
+    "ChromeDerivative": 5,
+    "Opera": 4,
     "MobileSafariWebview": 4,
-    "BingBot": 4,
     "AppleBot": 3,
-    "YandexBot": 2,
-    "OperaMobile": 2,
+    "YandexBot": 3,
+    "OperaMobile": 3,
+    "Curl": 3,
     "ChromeHeadless": 2,
-    "Silk": 1,
     "YandexSearchApp": 1,
     "Facebook": 1,
     "IE": 1,
@@ -450,9 +439,10 @@
     "Brave": 1,
     "Instagram": 1,
     "UCBrowserMobile": 1,
+    "Yandex": 1,
     "YandexMobile": 1,
     "Chromium": 0,
-    "Yandex": 0,
+    "Silk": 0,
     "Wget": 0
   }
 }
