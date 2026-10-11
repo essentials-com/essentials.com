@@ -1,20 +1,6 @@
 {
-  "date": "2026-10-10",
+  "date": "2026-10-11",
   "domains": [
-    {
-      "date": "2026-09-11",
-      "domains": {
-        "essentials.com": 1012,
-        "essentials.co.uk": 205,
-        "essentials.uk": 115,
-        "essentials.net": 185,
-        "essentials.eu": 145,
-        "essentials.us": 151,
-        "essentials.fr": 132,
-        "essentials.hk": 125,
-        "essentials.tw": 123
-      }
-    },
     {
       "date": "2026-09-12",
       "domains": {
@@ -410,48 +396,52 @@
     {
       "date": "2026-10-10",
       "domains": {
-        "essentials.com": 1140,
+        "essentials.com": 1141,
         "essentials.co.uk": 181,
-        "essentials.uk": 107,
-        "essentials.net": 158,
-        "essentials.eu": 129,
+        "essentials.uk": 109,
+        "essentials.net": 159,
+        "essentials.eu": 130,
         "essentials.us": 119,
-        "essentials.fr": 118,
-        "essentials.hk": 125,
-        "essentials.tw": 127
+        "essentials.fr": 120,
+        "essentials.hk": 126,
+        "essentials.tw": 129
       }
+    },
+    {
+      "date": "2026-10-11",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 1087,
-    "Chrome": 605,
-    "MobileSafari": 303,
-    "ChromeMobile": 135,
-    "Firefox": 87,
-    "Safari": 46,
-    "Edge": 39,
-    "GoogleBot": 23,
-    "ChromeMobileWebview": 12,
-    "SamsungInternet": 7,
+    "Unknown": 1086,
+    "Chrome": 597,
+    "MobileSafari": 302,
+    "ChromeMobile": 136,
+    "Firefox": 73,
+    "Safari": 44,
+    "Edge": 37,
+    "GoogleBot": 21,
+    "ChromeMobileWebview": 11,
+    "SamsungInternet": 8,
+    "Opera": 6,
     "BingBot": 6,
-    "ChromeDerivative": 6,
-    "Opera": 5,
     "AppleBot": 5,
-    "YandexBot": 4,
-    "MobileSafariWebview": 4,
+    "ChromeDerivative": 5,
+    "MobileSafariWebview": 3,
     "Curl": 3,
+    "YandexBot": 3,
     "OperaMobile": 2,
     "ChromeHeadless": 2,
-    "IE": 1,
-    "FirefoxMobile": 1,
-    "Facebook": 1,
+    "UCBrowserMobile": 1,
     "Brave": 1,
     "Instagram": 1,
-    "UCBrowserMobile": 1,
+    "IE": 1,
     "Yandex": 1,
     "YandexMobile": 1,
-    "Chromium": 0,
+    "Facebook": 1,
     "Silk": 0,
-    "Wget": 0
+    "Wget": 0,
+    "Chromium": 0,
+    "FirefoxMobile": 0
   }
 }
