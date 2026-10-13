@@ -1,20 +1,6 @@
 {
-  "date": "2026-10-12",
+  "date": "2026-10-13",
   "domains": [
-    {
-      "date": "2026-09-13",
-      "domains": {
-        "essentials.com": 889,
-        "essentials.co.uk": 178,
-        "essentials.uk": 122,
-        "essentials.net": 157,
-        "essentials.eu": 123,
-        "essentials.us": 158,
-        "essentials.fr": 126,
-        "essentials.hk": 98,
-        "essentials.tw": 139
-      }
-    },
     {
       "date": "2026-09-14",
       "domains": {
@@ -410,48 +396,52 @@
     {
       "date": "2026-10-12",
       "domains": {
-        "essentials.com": 1510,
+        "essentials.com": 1516,
         "essentials.co.uk": 198,
         "essentials.uk": 123,
-        "essentials.net": 175,
+        "essentials.net": 176,
         "essentials.eu": 127,
-        "essentials.us": 149,
+        "essentials.us": 150,
         "essentials.fr": 147,
         "essentials.hk": 124,
         "essentials.tw": 149
       }
+    },
+    {
+      "date": "2026-10-13",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 1048,
-    "Chrome": 594,
-    "MobileSafari": 300,
-    "ChromeMobile": 132,
-    "Firefox": 56,
-    "Safari": 43,
-    "Edge": 37,
-    "GoogleBot": 19,
-    "ChromeMobileWebview": 11,
-    "BingBot": 6,
+    "Unknown": 1069,
+    "Chrome": 579,
+    "MobileSafari": 304,
+    "ChromeMobile": 124,
+    "Firefox": 47,
+    "Safari": 44,
+    "Edge": 35,
+    "GoogleBot": 20,
+    "ChromeMobileWebview": 9,
+    "BingBot": 7,
     "SamsungInternet": 6,
-    "Opera": 5,
-    "ChromeDerivative": 4,
+    "ChromeDerivative": 5,
+    "Curl": 5,
+    "Opera": 4,
     "AppleBot": 4,
-    "MobileSafariWebview": 3,
-    "Curl": 3,
     "YandexBot": 3,
-    "OperaMobile": 2,
-    "IE": 1,
-    "Yandex": 1,
-    "Brave": 1,
+    "MobileSafariWebview": 2,
+    "Facebook": 2,
+    "YandexMobile": 1,
+    "OperaMobile": 1,
     "Instagram": 1,
     "ChromeHeadless": 1,
-    "YandexMobile": 1,
-    "Facebook": 1,
-    "Silk": 0,
+    "Brave": 1,
     "Wget": 0,
     "UCBrowserMobile": 0,
     "Chromium": 0,
+    "Yandex": 0,
+    "IE": 0,
+    "Silk": 0,
     "FirefoxMobile": 0
   }
 }
