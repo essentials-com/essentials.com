@@ -1,20 +1,6 @@
 {
-  "date": "2026-10-14",
+  "date": "2026-10-15",
   "domains": [
-    {
-      "date": "2026-09-15",
-      "domains": {
-        "essentials.com": 895,
-        "essentials.co.uk": 159,
-        "essentials.uk": 105,
-        "essentials.net": 147,
-        "essentials.eu": 182,
-        "essentials.us": 109,
-        "essentials.fr": 150,
-        "essentials.hk": 103,
-        "essentials.tw": 188
-      }
-    },
     {
       "date": "2026-09-16",
       "domains": {
@@ -410,46 +396,50 @@
     {
       "date": "2026-10-14",
       "domains": {
-        "essentials.com": 1503,
+        "essentials.com": 1507,
         "essentials.co.uk": 707,
         "essentials.uk": 125,
         "essentials.net": 230,
         "essentials.eu": 138,
-        "essentials.us": 135,
+        "essentials.us": 137,
         "essentials.fr": 156,
-        "essentials.hk": 147,
-        "essentials.tw": 119
+        "essentials.hk": 148,
+        "essentials.tw": 120
       }
+    },
+    {
+      "date": "2026-10-15",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 1107,
-    "Chrome": 556,
-    "MobileSafari": 304,
-    "ChromeMobile": 120,
-    "Firefox": 49,
-    "Safari": 43,
-    "Edge": 34,
+    "Unknown": 1091,
+    "Chrome": 565,
+    "MobileSafari": 308,
+    "ChromeMobile": 122,
+    "Safari": 46,
+    "Firefox": 45,
+    "Edge": 32,
     "GoogleBot": 22,
-    "ChromeMobileWebview": 8,
     "BingBot": 7,
-    "SamsungInternet": 6,
-    "ChromeDerivative": 5,
+    "ChromeMobileWebview": 7,
+    "ChromeDerivative": 6,
+    "SamsungInternet": 5,
     "Curl": 5,
     "Opera": 4,
-    "AppleBot": 3,
-    "MobileSafariWebview": 3,
     "YandexBot": 3,
+    "MobileSafariWebview": 3,
+    "AppleBot": 2,
     "Facebook": 2,
+    "Yandex": 1,
+    "Instagram": 1,
     "OperaMobile": 1,
     "Brave": 1,
-    "Instagram": 1,
     "ChromeHeadless": 1,
-    "Yandex": 1,
-    "UCBrowserMobile": 0,
     "Chromium": 0,
     "IE": 0,
     "Silk": 0,
-    "FirefoxMobile": 0
+    "FirefoxMobile": 0,
+    "UCBrowserMobile": 0
   }
 }
