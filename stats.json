@@ -403,13 +403,16 @@
         "essentials.eu": 156,
         "essentials.us": 133,
         "essentials.fr": 161,
-        "essentials.hk": 149,
-        "essentials.tw": 125
+        "essentials.hk": 150,
+        "essentials.tw": 126
       }
     },
     {
       "date": "2026-10-16",
-      "domains": {}
+      "domains": {
+        "essentials.com": 2,
+        "essentials.co.uk": 1
+      }
     }
   ],
   "browsers": {
