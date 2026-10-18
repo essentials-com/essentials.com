@@ -1,0 +1,100 @@
+{
+  "schema": "aidevops.repo-metrics.v1",
+  "schema_version": 1,
+  "generated_at": "2026-10-18T15:56:02Z",
+  "tool": {
+    "name": "aidevops repo-metrics",
+    "version": "1.0.0"
+  },
+  "repo": {
+    "name": "essentials.com",
+    "slug": "essentials-com/essentials.com"
+  },
+  "summary": {
+    "source_files": 21,
+    "code": 2883,
+    "comments": 167,
+    "blanks": 550,
+    "languages": 7,
+    "dependencies": 0
+  },
+  "languages": [
+    {
+      "name": "HTML",
+      "files": 1,
+      "code": 1770,
+      "comments": 2,
+      "blanks": 251,
+      "percentage": 61.39,
+      "color": "#e34c26"
+    },
+    {
+      "name": "Markdown",
+      "files": 11,
+      "code": 571,
+      "comments": 0,
+      "blanks": 234,
+      "percentage": 19.81,
+      "color": "#083fa1"
+    },
+    {
+      "name": "JavaScript",
+      "files": 3,
+      "code": 373,
+      "comments": 150,
+      "blanks": 59,
+      "percentage": 12.94,
+      "color": "#f1e05a"
+    },
+    {
+      "name": "JSON",
+      "files": 1,
+      "code": 130,
+      "comments": 0,
+      "blanks": 0,
+      "percentage": 4.51,
+      "color": "#292929"
+    },
+    {
+      "name": "YAML",
+      "files": 2,
+      "code": 23,
+      "comments": 11,
+      "blanks": 4,
+      "percentage": 0.8,
+      "color": "#cb171e"
+    },
+    {
+      "name": "TOML",
+      "files": 2,
+      "code": 8,
+      "comments": 4,
+      "blanks": 2,
+      "percentage": 0.28,
+      "color": "#9c4221"
+    },
+    {
+      "name": "XML",
+      "files": 1,
+      "code": 8,
+      "comments": 0,
+      "blanks": 0,
+      "percentage": 0.28,
+      "color": "#0060ac"
+    }
+  ],
+  "dependencies": {
+    "direct": 0,
+    "runtime": 0,
+    "dev": 0,
+    "locked": 0,
+    "total": 0,
+    "ecosystems": [],
+    "manifests": []
+  },
+  "refresh": {
+    "default_policy": "weekly scheduled refresh plus manual runs; skip generated outputs younger than 24h in managed workflows",
+    "cost_profile": "fast local git/unignored-file scan; no network by default",
+    "top_languages": 6
+  }
+}
