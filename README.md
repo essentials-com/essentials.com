@@ -1,5 +1,15 @@
 # Domain Collection Landing Page
 
+<!-- aidevops:badges:start -->
+<!-- managed by aidevops badges; edit the template, not this block -->
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/essentials-com/essentials.com/blob/main/LICENSE)
+
+[![Lines of code](docs/metrics/badges/loc.svg)](docs/metrics/repo-metrics.md)
+[![Dependencies](docs/metrics/badges/dependencies.svg)](docs/metrics/repo-metrics.md)
+
+[![Languages by lines of code](docs/metrics/badges/languages.svg)](docs/metrics/repo-metrics.md)
+<!-- aidevops:badges:end -->
+
 A clean, modern landing page designed for showcasing premium domain portfolios. Built because no one else seems to offer anything nice for domain collections.
 
 Feel free to fork and use for your own similar needs.
