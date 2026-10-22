@@ -1,20 +1,6 @@
 {
-  "date": "2026-10-21",
+  "date": "2026-10-22",
   "domains": [
-    {
-      "date": "2026-09-22",
-      "domains": {
-        "essentials.com": 1016,
-        "essentials.co.uk": 175,
-        "essentials.uk": 135,
-        "essentials.net": 150,
-        "essentials.eu": 125,
-        "essentials.us": 117,
-        "essentials.fr": 129,
-        "essentials.hk": 105,
-        "essentials.tw": 94
-      }
-    },
     {
       "date": "2026-09-23",
       "domains": {
@@ -410,47 +396,51 @@
     {
       "date": "2026-10-21",
       "domains": {
-        "essentials.com": 1428,
+        "essentials.com": 1433,
         "essentials.co.uk": 199,
-        "essentials.uk": 112,
+        "essentials.uk": 113,
         "essentials.net": 163,
-        "essentials.eu": 152,
+        "essentials.eu": 153,
         "essentials.us": 449,
-        "essentials.fr": 125,
+        "essentials.fr": 130,
         "essentials.hk": 105,
         "essentials.tw": 106
       }
+    },
+    {
+      "date": "2026-10-22",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 1011,
-    "Chrome": 604,
-    "MobileSafari": 309,
-    "ChromeMobile": 134,
-    "Firefox": 50,
-    "Safari": 46,
-    "Edge": 34,
-    "GoogleBot": 27,
-    "ChromeMobileWebview": 12,
+    "Unknown": 1004,
+    "Chrome": 609,
+    "MobileSafari": 313,
+    "ChromeMobile": 133,
+    "Firefox": 54,
+    "Safari": 45,
+    "Edge": 38,
+    "GoogleBot": 30,
+    "ChromeMobileWebview": 13,
     "ChromeDerivative": 10,
-    "SamsungInternet": 8,
+    "SamsungInternet": 9,
     "Curl": 6,
     "BingBot": 4,
-    "MobileSafariWebview": 3,
+    "MobileSafariWebview": 4,
+    "ChromeHeadless": 4,
+    "Opera": 3,
     "OperaMobile": 3,
-    "ChromeHeadless": 3,
-    "Opera": 2,
     "Facebook": 2,
     "Brave": 2,
+    "Instagram": 2,
     "AppleBot": 1,
-    "Instagram": 1,
     "FirefoxMobile": 1,
     "UCBrowserMobile": 1,
     "Yandex": 1,
     "IE": 1,
-    "Silk": 0,
     "Wget": 0,
     "TwitterBot": 0,
+    "Silk": 0,
     "Chromium": 0,
     "LinkedInBot": 0
   }
