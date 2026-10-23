@@ -270,7 +270,7 @@
     {
       "date": "2026-10-13",
       "domains": {
-        "essentials.com": 1477,
+        "essentials.com": 1478,
         "essentials.co.uk": 155,
         "essentials.uk": 117,
         "essentials.net": 203,
@@ -284,7 +284,7 @@
     {
       "date": "2026-10-14",
       "domains": {
-        "essentials.com": 1507,
+        "essentials.com": 1509,
         "essentials.co.uk": 707,
         "essentials.uk": 125,
         "essentials.net": 230,
@@ -358,7 +358,7 @@
         "essentials.co.uk": 242,
         "essentials.uk": 135,
         "essentials.net": 211,
-        "essentials.eu": 143,
+        "essentials.eu": 142,
         "essentials.us": 128,
         "essentials.fr": 157,
         "essentials.hk": 107,
@@ -368,7 +368,7 @@
     {
       "date": "2026-10-20",
       "domains": {
-        "essentials.com": 1277,
+        "essentials.com": 1278,
         "essentials.co.uk": 184,
         "essentials.uk": 135,
         "essentials.net": 160,
@@ -410,20 +410,20 @@
     {
       "date": "2026-10-23",
       "domains": {
-        "essentials.com": 346,
-        "essentials.co.uk": 52,
+        "essentials.com": 358,
+        "essentials.co.uk": 53,
         "essentials.uk": 25,
-        "essentials.net": 53,
+        "essentials.net": 54,
         "essentials.eu": 38,
         "essentials.us": 35,
-        "essentials.fr": 55,
+        "essentials.fr": 56,
         "essentials.hk": 26,
         "essentials.tw": 60
       }
     }
   ],
   "browsers": {
-    "Unknown": 993,
+    "Unknown": 994,
     "Chrome": 635,
     "MobileSafari": 328,
     "ChromeMobile": 140,
