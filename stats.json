@@ -1,20 +1,6 @@
 {
-  "date": "2026-10-25",
+  "date": "2026-10-26",
   "domains": [
-    {
-      "date": "2026-09-26",
-      "domains": {
-        "essentials.com": 960,
-        "essentials.co.uk": 146,
-        "essentials.uk": 151,
-        "essentials.net": 154,
-        "essentials.eu": 115,
-        "essentials.us": 145,
-        "essentials.fr": 120,
-        "essentials.hk": 107,
-        "essentials.tw": 106
-      }
-    },
     {
       "date": "2026-09-27",
       "domains": {
@@ -410,49 +396,53 @@
     {
       "date": "2026-10-25",
       "domains": {
-        "essentials.com": 2040,
-        "essentials.co.uk": 199,
+        "essentials.com": 2049,
+        "essentials.co.uk": 200,
         "essentials.uk": 138,
         "essentials.net": 164,
-        "essentials.eu": 150,
+        "essentials.eu": 151,
         "essentials.us": 142,
-        "essentials.fr": 212,
-        "essentials.hk": 147,
+        "essentials.fr": 213,
+        "essentials.hk": 148,
         "essentials.tw": 143
       }
+    },
+    {
+      "date": "2026-10-26",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 1009,
-    "Chrome": 604,
-    "MobileSafari": 323,
-    "ChromeMobile": 148,
-    "Firefox": 89,
-    "Safari": 53,
-    "Edge": 44,
+    "Unknown": 996,
+    "Chrome": 624,
+    "MobileSafari": 324,
+    "ChromeMobile": 152,
+    "Firefox": 133,
+    "Safari": 55,
+    "Edge": 46,
     "GoogleBot": 31,
-    "ChromeMobileWebview": 14,
+    "ChromeMobileWebview": 13,
     "SamsungInternet": 10,
     "ChromeDerivative": 9,
     "Curl": 8,
     "MobileSafariWebview": 5,
+    "OperaMobile": 4,
+    "ChromeHeadless": 4,
     "Opera": 4,
     "BingBot": 3,
-    "ChromeHeadless": 3,
-    "OperaMobile": 3,
-    "Facebook": 2,
-    "Instagram": 2,
     "Brave": 2,
     "Yandex": 2,
+    "Instagram": 2,
     "IE": 1,
+    "AppleBot": 1,
     "Silk": 1,
-    "TwitterBot": 0,
+    "Facebook": 1,
+    "YandexBot": 1,
+    "UCBrowserMobile": 1,
+    "Chromium": 0,
     "FirefoxMobile": 0,
     "Wget": 0,
-    "AppleBot": 0,
-    "Chromium": 0,
     "LinkedInBot": 0,
-    "YandexBot": 0,
-    "UCBrowserMobile": 0
+    "TwitterBot": 0
   }
 }
