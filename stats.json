@@ -1,20 +1,6 @@
 {
-  "date": "2026-10-26",
+  "date": "2026-10-27",
   "domains": [
-    {
-      "date": "2026-09-27",
-      "domains": {
-        "essentials.com": 924,
-        "essentials.co.uk": 173,
-        "essentials.uk": 109,
-        "essentials.net": 208,
-        "essentials.eu": 161,
-        "essentials.us": 167,
-        "essentials.fr": 137,
-        "essentials.hk": 95,
-        "essentials.tw": 110
-      }
-    },
     {
       "date": "2026-09-28",
       "domains": {
@@ -410,49 +396,53 @@
     {
       "date": "2026-10-26",
       "domains": {
-        "essentials.com": 1493,
-        "essentials.co.uk": 203,
+        "essentials.com": 1503,
+        "essentials.co.uk": 204,
         "essentials.uk": 121,
-        "essentials.net": 206,
+        "essentials.net": 208,
         "essentials.eu": 116,
         "essentials.us": 149,
         "essentials.fr": 202,
         "essentials.hk": 108,
         "essentials.tw": 120
       }
+    },
+    {
+      "date": "2026-10-27",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 996,
-    "Chrome": 624,
-    "MobileSafari": 324,
-    "ChromeMobile": 152,
-    "Firefox": 133,
-    "Safari": 55,
-    "Edge": 46,
-    "GoogleBot": 31,
+    "Unknown": 969,
+    "Chrome": 640,
+    "MobileSafari": 330,
+    "Firefox": 172,
+    "ChromeMobile": 141,
+    "Safari": 53,
+    "Edge": 47,
+    "GoogleBot": 30,
     "ChromeMobileWebview": 13,
-    "SamsungInternet": 10,
-    "ChromeDerivative": 9,
-    "Curl": 8,
-    "MobileSafariWebview": 5,
+    "SamsungInternet": 8,
+    "ChromeDerivative": 8,
+    "Curl": 7,
+    "MobileSafariWebview": 6,
     "OperaMobile": 4,
-    "ChromeHeadless": 4,
     "Opera": 4,
+    "ChromeHeadless": 4,
     "BingBot": 3,
-    "Brave": 2,
     "Yandex": 2,
+    "Facebook": 2,
     "Instagram": 2,
-    "IE": 1,
-    "AppleBot": 1,
     "Silk": 1,
-    "Facebook": 1,
+    "Brave": 1,
+    "AppleBot": 1,
     "YandexBot": 1,
     "UCBrowserMobile": 1,
     "Chromium": 0,
     "FirefoxMobile": 0,
     "Wget": 0,
     "LinkedInBot": 0,
-    "TwitterBot": 0
+    "TwitterBot": 0,
+    "IE": 0
   }
 }
