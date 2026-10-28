@@ -410,8 +410,9 @@
     {
       "date": "2026-10-28",
       "domains": {
-        "essentials.com": 9,
+        "essentials.com": 18,
         "essentials.uk": 1,
+        "essentials.net": 1,
         "essentials.eu": 1
       }
     }
