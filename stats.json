@@ -1,20 +1,6 @@
 {
-  "date": "2026-10-27",
+  "date": "2026-10-28",
   "domains": [
-    {
-      "date": "2026-09-28",
-      "domains": {
-        "essentials.com": 1186,
-        "essentials.co.uk": 197,
-        "essentials.uk": 193,
-        "essentials.net": 195,
-        "essentials.eu": 245,
-        "essentials.us": 228,
-        "essentials.fr": 172,
-        "essentials.hk": 99,
-        "essentials.tw": 167
-      }
-    },
     {
       "date": "2026-09-29",
       "domains": {
@@ -410,47 +396,51 @@
     {
       "date": "2026-10-27",
       "domains": {
-        "essentials.com": 1525,
+        "essentials.com": 1527,
         "essentials.co.uk": 226,
         "essentials.uk": 200,
-        "essentials.net": 187,
+        "essentials.net": 188,
         "essentials.eu": 137,
         "essentials.us": 165,
         "essentials.fr": 149,
         "essentials.hk": 125,
         "essentials.tw": 162
       }
+    },
+    {
+      "date": "2026-10-28",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 969,
-    "Chrome": 640,
-    "MobileSafari": 330,
-    "Firefox": 172,
-    "ChromeMobile": 141,
-    "Safari": 53,
-    "Edge": 47,
+    "Unknown": 971,
+    "Chrome": 664,
+    "MobileSafari": 331,
+    "Firefox": 180,
+    "ChromeMobile": 149,
+    "Safari": 56,
+    "Edge": 46,
     "GoogleBot": 30,
-    "ChromeMobileWebview": 13,
+    "ChromeMobileWebview": 15,
+    "ChromeDerivative": 9,
     "SamsungInternet": 8,
-    "ChromeDerivative": 8,
     "Curl": 7,
     "MobileSafariWebview": 6,
+    "ChromeHeadless": 6,
+    "Opera": 5,
     "OperaMobile": 4,
-    "Opera": 4,
-    "ChromeHeadless": 4,
-    "BingBot": 3,
-    "Yandex": 2,
-    "Facebook": 2,
-    "Instagram": 2,
-    "Silk": 1,
+    "BingBot": 4,
+    "Yandex": 3,
+    "Instagram": 3,
+    "Facebook": 1,
     "Brave": 1,
     "AppleBot": 1,
+    "Silk": 1,
     "YandexBot": 1,
     "UCBrowserMobile": 1,
-    "Chromium": 0,
     "FirefoxMobile": 0,
     "Wget": 0,
+    "Chromium": 0,
     "LinkedInBot": 0,
     "TwitterBot": 0,
     "IE": 0
