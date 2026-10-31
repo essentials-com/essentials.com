@@ -158,7 +158,7 @@
     {
       "date": "2026-10-13",
       "domains": {
-        "essentials.com": 1478,
+        "essentials.com": 1477,
         "essentials.co.uk": 155,
         "essentials.uk": 117,
         "essentials.net": 203,
@@ -172,7 +172,7 @@
     {
       "date": "2026-10-14",
       "domains": {
-        "essentials.com": 1509,
+        "essentials.com": 1507,
         "essentials.co.uk": 707,
         "essentials.uk": 125,
         "essentials.net": 230,
@@ -246,7 +246,7 @@
         "essentials.co.uk": 242,
         "essentials.uk": 135,
         "essentials.net": 211,
-        "essentials.eu": 142,
+        "essentials.eu": 143,
         "essentials.us": 128,
         "essentials.fr": 157,
         "essentials.hk": 107,
@@ -256,7 +256,7 @@
     {
       "date": "2026-10-20",
       "domains": {
-        "essentials.com": 1278,
+        "essentials.com": 1277,
         "essentials.co.uk": 184,
         "essentials.uk": 135,
         "essentials.net": 160,
@@ -334,7 +334,7 @@
         "essentials.us": 142,
         "essentials.fr": 213,
         "essentials.hk": 148,
-        "essentials.tw": 145
+        "essentials.tw": 143
       }
     },
     {
@@ -362,7 +362,7 @@
         "essentials.us": 165,
         "essentials.fr": 149,
         "essentials.hk": 125,
-        "essentials.tw": 161
+        "essentials.tw": 162
       }
     },
     {
@@ -410,15 +410,15 @@
     {
       "date": "2026-10-31",
       "domains": {
-        "essentials.com": 608,
-        "essentials.co.uk": 95,
+        "essentials.com": 609,
+        "essentials.co.uk": 97,
         "essentials.uk": 79,
-        "essentials.net": 99,
-        "essentials.eu": 51,
+        "essentials.net": 100,
+        "essentials.eu": 52,
         "essentials.us": 70,
         "essentials.fr": 69,
         "essentials.hk": 57,
-        "essentials.tw": 51
+        "essentials.tw": 52
       }
     }
   ],
@@ -426,7 +426,7 @@
     "Unknown": 858,
     "Chrome": 675,
     "MobileSafari": 313,
-    "Firefox": 155,
+    "Firefox": 154,
     "ChromeMobile": 144,
     "Safari": 47,
     "Edge": 40,
