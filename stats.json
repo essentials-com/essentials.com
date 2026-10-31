@@ -1,20 +1,6 @@
 {
-  "date": "2026-10-30",
+  "date": "2026-10-31",
   "domains": [
-    {
-      "date": "2026-10-01",
-      "domains": {
-        "essentials.com": 1145,
-        "essentials.co.uk": 239,
-        "essentials.uk": 142,
-        "essentials.net": 209,
-        "essentials.eu": 149,
-        "essentials.us": 134,
-        "essentials.fr": 162,
-        "essentials.hk": 150,
-        "essentials.tw": 158
-      }
-    },
     {
       "date": "2026-10-02",
       "domains": {
@@ -410,9 +396,9 @@
     {
       "date": "2026-10-30",
       "domains": {
-        "essentials.com": 1251,
-        "essentials.co.uk": 176,
-        "essentials.uk": 92,
+        "essentials.com": 1259,
+        "essentials.co.uk": 177,
+        "essentials.uk": 93,
         "essentials.net": 184,
         "essentials.eu": 123,
         "essentials.us": 139,
@@ -420,39 +406,43 @@
         "essentials.hk": 116,
         "essentials.tw": 113
       }
+    },
+    {
+      "date": "2026-10-31",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 904,
-    "Chrome": 682,
-    "MobileSafari": 318,
-    "Firefox": 167,
-    "ChromeMobile": 148,
-    "Safari": 50,
-    "Edge": 42,
-    "GoogleBot": 29,
-    "ChromeMobileWebview": 15,
+    "Unknown": 858,
+    "Chrome": 675,
+    "MobileSafari": 313,
+    "Firefox": 155,
+    "ChromeMobile": 144,
+    "Safari": 47,
+    "Edge": 40,
+    "GoogleBot": 27,
+    "ChromeMobileWebview": 12,
     "ChromeDerivative": 10,
-    "Curl": 8,
     "SamsungInternet": 7,
-    "Opera": 5,
-    "BingBot": 4,
+    "Curl": 6,
+    "BingBot": 5,
+    "Opera": 4,
     "MobileSafariWebview": 4,
     "ChromeHeadless": 4,
-    "OperaMobile": 3,
     "YandexBot": 3,
+    "OperaMobile": 3,
     "Instagram": 2,
-    "AppleBot": 1,
-    "Yandex": 1,
     "Silk": 1,
+    "Yandex": 1,
     "Facebook": 1,
+    "AppleBot": 1,
     "FirefoxMobile": 1,
     "UCBrowserMobile": 1,
-    "Chromium": 0,
+    "Brave": 1,
     "LinkedInBot": 0,
     "TwitterBot": 0,
     "IE": 0,
-    "Wget": 0,
-    "Brave": 0
+    "Chromium": 0,
+    "Wget": 0
   }
 }
