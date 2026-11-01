@@ -144,7 +144,7 @@
     {
       "date": "2026-10-13",
       "domains": {
-        "essentials.com": 1477,
+        "essentials.com": 1478,
         "essentials.co.uk": 155,
         "essentials.uk": 117,
         "essentials.net": 203,
@@ -158,7 +158,7 @@
     {
       "date": "2026-10-14",
       "domains": {
-        "essentials.com": 1507,
+        "essentials.com": 1509,
         "essentials.co.uk": 707,
         "essentials.uk": 125,
         "essentials.net": 230,
@@ -232,7 +232,7 @@
         "essentials.co.uk": 242,
         "essentials.uk": 135,
         "essentials.net": 211,
-        "essentials.eu": 143,
+        "essentials.eu": 142,
         "essentials.us": 128,
         "essentials.fr": 157,
         "essentials.hk": 107,
@@ -242,7 +242,7 @@
     {
       "date": "2026-10-20",
       "domains": {
-        "essentials.com": 1277,
+        "essentials.com": 1278,
         "essentials.co.uk": 184,
         "essentials.uk": 135,
         "essentials.net": 160,
@@ -320,7 +320,7 @@
         "essentials.us": 142,
         "essentials.fr": 213,
         "essentials.hk": 148,
-        "essentials.tw": 143
+        "essentials.tw": 145
       }
     },
     {
@@ -348,7 +348,7 @@
         "essentials.us": 165,
         "essentials.fr": 149,
         "essentials.hk": 125,
-        "essentials.tw": 162
+        "essentials.tw": 161
       }
     },
     {
@@ -410,19 +410,20 @@
     {
       "date": "2026-11-01",
       "domains": {
-        "essentials.com": 52,
-        "essentials.co.uk": 4,
-        "essentials.uk": 7,
-        "essentials.net": 6,
+        "essentials.com": 59,
+        "essentials.co.uk": 5,
+        "essentials.uk": 8,
+        "essentials.net": 7,
         "essentials.eu": 5,
-        "essentials.us": 8,
+        "essentials.us": 9,
         "essentials.fr": 4,
-        "essentials.hk": 4
+        "essentials.hk": 6,
+        "essentials.tw": 1
       }
     }
   ],
   "browsers": {
-    "Unknown": 821,
+    "Unknown": 822,
     "Chrome": 682,
     "MobileSafari": 312,
     "ChromeMobile": 140,
