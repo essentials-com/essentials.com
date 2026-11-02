@@ -396,7 +396,7 @@
     {
       "date": "2026-11-01",
       "domains": {
-        "essentials.com": 1259,
+        "essentials.com": 1266,
         "essentials.co.uk": 236,
         "essentials.uk": 140,
         "essentials.net": 188,
@@ -409,7 +409,10 @@
     },
     {
       "date": "2026-11-02",
-      "domains": {}
+      "domains": {
+        "essentials.com": 4,
+        "essentials.hk": 1
+      }
     }
   ],
   "browsers": {
