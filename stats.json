@@ -1,20 +1,6 @@
 {
-  "date": "2026-11-04",
+  "date": "2026-11-05",
   "domains": [
-    {
-      "date": "2026-10-06",
-      "domains": {
-        "essentials.com": 1388,
-        "essentials.co.uk": 299,
-        "essentials.uk": 191,
-        "essentials.net": 191,
-        "essentials.eu": 161,
-        "essentials.us": 129,
-        "essentials.fr": 151,
-        "essentials.hk": 127,
-        "essentials.tw": 116
-      }
-    },
     {
       "date": "2026-10-07",
       "domains": {
@@ -410,47 +396,52 @@
     {
       "date": "2026-11-04",
       "domains": {
-        "essentials.com": 1313,
-        "essentials.co.uk": 192,
+        "essentials.com": 1315,
+        "essentials.co.uk": 193,
         "essentials.uk": 110,
         "essentials.net": 229,
-        "essentials.eu": 138,
+        "essentials.eu": 139,
         "essentials.us": 169,
         "essentials.fr": 156,
         "essentials.hk": 107,
         "essentials.tw": 131
       }
+    },
+    {
+      "date": "2026-11-05",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 797,
-    "Chrome": 734,
-    "MobileSafari": 313,
-    "ChromeMobile": 148,
-    "Firefox": 71,
-    "Safari": 55,
-    "Edge": 45,
+    "Unknown": 827,
+    "Chrome": 705,
+    "MobileSafari": 324,
+    "ChromeMobile": 153,
+    "Firefox": 81,
+    "Safari": 60,
+    "Edge": 44,
     "GoogleBot": 27,
     "ChromeDerivative": 21,
-    "ChromeMobileWebview": 13,
-    "SamsungInternet": 7,
-    "Curl": 7,
-    "Opera": 6,
-    "MobileSafariWebview": 4,
-    "ChromeHeadless": 3,
+    "ChromeMobileWebview": 17,
+    "SamsungInternet": 9,
+    "Opera": 7,
+    "MobileSafariWebview": 5,
+    "Curl": 5,
     "BingBot": 3,
-    "YandexBot": 2,
-    "OperaMobile": 2,
-    "Facebook": 2,
+    "OperaMobile": 3,
+    "ChromeHeadless": 3,
     "Brave": 2,
-    "AppleBot": 1,
-    "FirefoxMobile": 1,
     "Instagram": 1,
+    "AppleBot": 1,
     "Yandex": 1,
+    "Facebook": 1,
     "SamsungTV": 1,
     "YandexMobile": 1,
+    "YandexBot": 0,
+    "FirefoxMobile": 0,
     "UCBrowserMobile": 0,
     "Silk": 0,
-    "Microsoft365": 0
+    "Microsoft365": 0,
+    "IE": 0
   }
 }
