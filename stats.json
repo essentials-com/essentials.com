@@ -1,20 +1,6 @@
 {
-  "date": "2026-11-06",
+  "date": "2026-11-07",
   "domains": [
-    {
-      "date": "2026-10-08",
-      "domains": {
-        "essentials.com": 1362,
-        "essentials.co.uk": 231,
-        "essentials.uk": 148,
-        "essentials.net": 195,
-        "essentials.eu": 165,
-        "essentials.us": 140,
-        "essentials.fr": 195,
-        "essentials.hk": 211,
-        "essentials.tw": 164
-      }
-    },
     {
       "date": "2026-10-09",
       "domains": {
@@ -411,47 +397,52 @@
       "date": "2026-11-06",
       "domains": {
         "essentials.com": 1347,
-        "essentials.co.uk": 157,
-        "essentials.uk": 115,
+        "essentials.co.uk": 158,
+        "essentials.uk": 117,
         "essentials.net": 152,
         "essentials.eu": 142,
         "essentials.us": 126,
-        "essentials.fr": 124,
+        "essentials.fr": 126,
         "essentials.hk": 121,
         "essentials.tw": 123
       }
+    },
+    {
+      "date": "2026-11-07",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 832,
+    "Unknown": 866,
     "Chrome": 734,
-    "MobileSafari": 326,
-    "ChromeMobile": 143,
-    "Firefox": 82,
-    "Safari": 62,
+    "MobileSafari": 336,
+    "ChromeMobile": 153,
+    "Firefox": 85,
+    "Safari": 63,
     "Edge": 42,
-    "GoogleBot": 30,
-    "ChromeDerivative": 22,
-    "ChromeMobileWebview": 15,
+    "GoogleBot": 31,
+    "ChromeDerivative": 21,
+    "ChromeMobileWebview": 16,
     "SamsungInternet": 9,
-    "MobileSafariWebview": 6,
-    "Opera": 6,
-    "Curl": 6,
-    "ChromeHeadless": 4,
-    "BingBot": 3,
-    "OperaMobile": 3,
-    "Brave": 2,
+    "MobileSafariWebview": 8,
+    "Opera": 7,
+    "ChromeHeadless": 6,
+    "Curl": 5,
+    "OperaMobile": 4,
+    "Brave": 3,
+    "BingBot": 2,
+    "Instagram": 2,
     "AppleBot": 1,
+    "FirefoxMobile": 1,
     "Yandex": 1,
     "Facebook": 1,
     "SamsungTV": 1,
-    "Instagram": 1,
     "YandexMobile": 1,
     "IE": 1,
-    "FirefoxMobile": 0,
     "UCBrowserMobile": 0,
     "Silk": 0,
     "Microsoft365": 0,
-    "Wget": 0
+    "Wget": 0,
+    "TwitterBot": 0
   }
 }
