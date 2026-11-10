@@ -1,20 +1,6 @@
 {
-  "date": "2026-11-09",
+  "date": "2026-11-10",
   "domains": [
-    {
-      "date": "2026-10-11",
-      "domains": {
-        "essentials.com": 1438,
-        "essentials.co.uk": 197,
-        "essentials.uk": 116,
-        "essentials.net": 164,
-        "essentials.eu": 140,
-        "essentials.us": 169,
-        "essentials.fr": 146,
-        "essentials.hk": 128,
-        "essentials.tw": 129
-      }
-    },
     {
       "date": "2026-10-12",
       "domains": {
@@ -410,49 +396,55 @@
     {
       "date": "2026-11-09",
       "domains": {
-        "essentials.com": 1371,
+        "essentials.com": 1382,
         "essentials.co.uk": 180,
-        "essentials.uk": 94,
+        "essentials.uk": 96,
         "essentials.net": 151,
         "essentials.eu": 129,
         "essentials.us": 106,
-        "essentials.fr": 128,
+        "essentials.fr": 129,
         "essentials.hk": 81,
-        "essentials.tw": 95
+        "essentials.tw": 96
+      }
+    },
+    {
+      "date": "2026-11-10",
+      "domains": {
+        "essentials.com": 13,
+        "essentials.co.uk": 1
       }
     }
   ],
   "browsers": {
-    "Unknown": 894,
-    "Chrome": 645,
-    "MobileSafari": 356,
-    "ChromeMobile": 157,
-    "Firefox": 77,
-    "Safari": 58,
-    "Edge": 34,
-    "GoogleBot": 28,
+    "Unknown": 896,
+    "Chrome": 709,
+    "MobileSafari": 358,
+    "ChromeMobile": 161,
+    "Firefox": 79,
+    "Safari": 71,
+    "Edge": 42,
+    "GoogleBot": 30,
     "ChromeMobileWebview": 15,
-    "ChromeDerivative": 12,
     "SamsungInternet": 11,
     "MobileSafariWebview": 10,
+    "ChromeDerivative": 8,
+    "Opera": 6,
     "ChromeHeadless": 5,
-    "Opera": 4,
+    "Curl": 5,
     "OperaMobile": 4,
-    "Curl": 4,
-    "Brave": 3,
     "AppleBot": 2,
-    "BingBot": 2,
+    "Brave": 2,
     "Instagram": 2,
+    "BingBot": 2,
     "FirefoxMobile": 1,
     "Yandex": 1,
-    "YandexMobile": 1,
     "Facebook": 1,
     "IE": 1,
-    "Silk": 0,
-    "Microsoft365": 0,
+    "YandexMobile": 1,
     "UCBrowserMobile": 0,
     "Wget": 0,
     "TwitterBot": 0,
+    "Silk": 0,
     "SmartTV": 0,
     "YandexBot": 0,
     "Chromium": 0
