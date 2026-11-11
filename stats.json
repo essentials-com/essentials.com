@@ -1,20 +1,6 @@
 {
-  "date": "2026-11-10",
+  "date": "2026-11-11",
   "domains": [
-    {
-      "date": "2026-10-12",
-      "domains": {
-        "essentials.com": 1519,
-        "essentials.co.uk": 198,
-        "essentials.uk": 123,
-        "essentials.net": 176,
-        "essentials.eu": 127,
-        "essentials.us": 150,
-        "essentials.fr": 147,
-        "essentials.hk": 124,
-        "essentials.tw": 149
-      }
-    },
     {
       "date": "2026-10-13",
       "domains": {
@@ -410,45 +396,48 @@
     {
       "date": "2026-11-10",
       "domains": {
-        "essentials.com": 1620,
+        "essentials.com": 1624,
         "essentials.co.uk": 181,
         "essentials.uk": 108,
-        "essentials.net": 167,
+        "essentials.net": 168,
         "essentials.eu": 104,
         "essentials.us": 122,
         "essentials.fr": 118,
-        "essentials.hk": 90,
+        "essentials.hk": 91,
         "essentials.tw": 133
       }
+    },
+    {
+      "date": "2026-11-11",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 896,
-    "Chrome": 709,
-    "MobileSafari": 358,
-    "ChromeMobile": 161,
-    "Firefox": 79,
-    "Safari": 71,
-    "Edge": 42,
-    "GoogleBot": 30,
-    "ChromeMobileWebview": 15,
+    "Unknown": 893,
+    "Chrome": 731,
+    "MobileSafari": 363,
+    "ChromeMobile": 158,
+    "Firefox": 75,
+    "Safari": 70,
+    "Edge": 41,
+    "Curl": 32,
+    "GoogleBot": 23,
+    "ChromeMobileWebview": 13,
+    "MobileSafariWebview": 11,
     "SamsungInternet": 11,
-    "MobileSafariWebview": 10,
     "ChromeDerivative": 8,
-    "Opera": 6,
-    "ChromeHeadless": 5,
-    "Curl": 5,
-    "OperaMobile": 4,
-    "AppleBot": 2,
-    "Brave": 2,
+    "Opera": 5,
+    "OperaMobile": 5,
+    "ChromeHeadless": 4,
     "Instagram": 2,
+    "AppleBot": 2,
     "BingBot": 2,
-    "FirefoxMobile": 1,
-    "Yandex": 1,
+    "Brave": 2,
     "Facebook": 1,
     "IE": 1,
+    "FirefoxMobile": 1,
     "YandexMobile": 1,
-    "UCBrowserMobile": 0,
+    "Yandex": 0,
     "Wget": 0,
     "TwitterBot": 0,
     "Silk": 0,
