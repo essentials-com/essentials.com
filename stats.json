@@ -1,20 +1,6 @@
 {
-  "date": "2026-11-13",
+  "date": "2026-11-14",
   "domains": [
-    {
-      "date": "2026-10-15",
-      "domains": {
-        "essentials.com": 1431,
-        "essentials.co.uk": 224,
-        "essentials.uk": 139,
-        "essentials.net": 204,
-        "essentials.eu": 156,
-        "essentials.us": 133,
-        "essentials.fr": 161,
-        "essentials.hk": 150,
-        "essentials.tw": 126
-      }
-    },
     {
       "date": "2026-10-16",
       "domains": {
@@ -410,49 +396,54 @@
     {
       "date": "2026-11-13",
       "domains": {
-        "essentials.com": 1447,
-        "essentials.co.uk": 189,
+        "essentials.com": 1464,
+        "essentials.co.uk": 191,
         "essentials.uk": 103,
-        "essentials.net": 202,
+        "essentials.net": 203,
         "essentials.eu": 131,
-        "essentials.us": 160,
+        "essentials.us": 161,
         "essentials.fr": 129,
         "essentials.hk": 100,
         "essentials.tw": 115
       }
+    },
+    {
+      "date": "2026-11-14",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 873,
-    "Chrome": 716,
-    "MobileSafari": 355,
-    "ChromeMobile": 165,
-    "Safari": 86,
-    "Firefox": 71,
-    "Edge": 41,
+    "Unknown": 831,
+    "Chrome": 750,
+    "MobileSafari": 351,
+    "ChromeMobile": 157,
+    "Safari": 93,
+    "Firefox": 87,
+    "Edge": 39,
     "Curl": 30,
-    "GoogleBot": 20,
-    "ChromeMobileWebview": 12,
+    "GoogleBot": 21,
     "SamsungInternet": 11,
     "MobileSafariWebview": 10,
-    "ChromeDerivative": 6,
-    "ChromeHeadless": 5,
-    "Opera": 4,
-    "OperaMobile": 4,
+    "ChromeMobileWebview": 10,
+    "ChromeDerivative": 5,
+    "ChromeHeadless": 4,
+    "OperaMobile": 3,
+    "Opera": 3,
     "BingBot": 3,
     "AppleBot": 2,
-    "Brave": 2,
-    "Instagram": 2,
     "Facebook": 2,
-    "FirefoxMobile": 2,
-    "IE": 1,
     "Silk": 1,
+    "Brave": 1,
+    "Instagram": 1,
+    "YandexBot": 1,
+    "FirefoxMobile": 1,
     "YandexMobile": 1,
-    "TwitterBot": 0,
     "SmartTV": 0,
-    "YandexBot": 0,
     "Chromium": 0,
+    "IE": 0,
     "Yandex": 0,
-    "Wget": 0
+    "Wget": 0,
+    "LinkedInBot": 0,
+    "UCBrowserMobile": 0
   }
 }
