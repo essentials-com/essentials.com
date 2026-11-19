@@ -1,20 +1,6 @@
 {
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "domains": [
-    {
-      "date": "2026-10-20",
-      "domains": {
-        "essentials.com": 1278,
-        "essentials.co.uk": 184,
-        "essentials.uk": 135,
-        "essentials.net": 160,
-        "essentials.eu": 163,
-        "essentials.us": 130,
-        "essentials.fr": 155,
-        "essentials.hk": 114,
-        "essentials.tw": 164
-      }
-    },
     {
       "date": "2026-10-21",
       "domains": {
@@ -410,47 +396,52 @@
     {
       "date": "2026-11-18",
       "domains": {
-        "essentials.com": 1644,
-        "essentials.co.uk": 164,
+        "essentials.com": 1654,
+        "essentials.co.uk": 166,
         "essentials.uk": 100,
-        "essentials.net": 151,
-        "essentials.eu": 141,
-        "essentials.us": 122,
+        "essentials.net": 153,
+        "essentials.eu": 142,
+        "essentials.us": 123,
         "essentials.fr": 159,
         "essentials.hk": 94,
         "essentials.tw": 86
       }
+    },
+    {
+      "date": "2026-11-19",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 802,
-    "Chrome": 717,
-    "MobileSafari": 345,
-    "ChromeMobile": 156,
-    "Safari": 77,
-    "Firefox": 75,
+    "Unknown": 832,
+    "Chrome": 732,
+    "MobileSafari": 348,
+    "ChromeMobile": 160,
+    "Firefox": 79,
+    "Safari": 70,
     "Edge": 24,
-    "GoogleBot": 17,
+    "GoogleBot": 15,
     "MobileSafariWebview": 11,
-    "ChromeMobileWebview": 10,
-    "Curl": 10,
-    "SamsungInternet": 7,
-    "ChromeDerivative": 6,
+    "ChromeMobileWebview": 9,
+    "Curl": 9,
+    "ChromeDerivative": 7,
+    "SamsungInternet": 5,
     "BingBot": 4,
-    "ChromeHeadless": 4,
+    "ChromeHeadless": 3,
     "Opera": 2,
     "Facebook": 2,
+    "OperaMobile": 2,
     "Silk": 1,
     "FirefoxMobile": 1,
-    "Yandex": 1,
-    "OperaMobile": 1,
-    "Instagram": 1,
     "AppleBot": 1,
     "YandexBot": 1,
+    "Instagram": 1,
     "Brave": 1,
+    "Yandex": 1,
     "IE": 0,
     "LinkedInBot": 0,
     "UCBrowserMobile": 0,
-    "Chromium": 0
+    "Chromium": 0,
+    "SamsungTV": 0
   }
 }
