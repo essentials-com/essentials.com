@@ -1,20 +1,6 @@
 {
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "domains": [
-    {
-      "date": "2026-10-21",
-      "domains": {
-        "essentials.com": 1433,
-        "essentials.co.uk": 199,
-        "essentials.uk": 113,
-        "essentials.net": 165,
-        "essentials.eu": 153,
-        "essentials.us": 449,
-        "essentials.fr": 131,
-        "essentials.hk": 105,
-        "essentials.tw": 106
-      }
-    },
     {
       "date": "2026-10-22",
       "domains": {
@@ -410,48 +396,53 @@
     {
       "date": "2026-11-19",
       "domains": {
-        "essentials.com": 1754,
+        "essentials.com": 1759,
         "essentials.co.uk": 242,
-        "essentials.uk": 108,
-        "essentials.net": 188,
+        "essentials.uk": 109,
+        "essentials.net": 189,
         "essentials.eu": 151,
-        "essentials.us": 127,
-        "essentials.fr": 158,
+        "essentials.us": 129,
+        "essentials.fr": 159,
         "essentials.hk": 109,
         "essentials.tw": 132
       }
+    },
+    {
+      "date": "2026-11-20",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 832,
-    "Chrome": 732,
-    "MobileSafari": 348,
-    "ChromeMobile": 160,
-    "Firefox": 79,
-    "Safari": 70,
-    "Edge": 24,
-    "GoogleBot": 15,
+    "Unknown": 848,
+    "Chrome": 721,
+    "MobileSafari": 355,
+    "ChromeMobile": 166,
+    "Firefox": 81,
+    "Safari": 65,
+    "Edge": 29,
+    "GoogleBot": 17,
     "MobileSafariWebview": 11,
     "ChromeMobileWebview": 9,
     "Curl": 9,
     "ChromeDerivative": 7,
-    "SamsungInternet": 5,
+    "SamsungInternet": 6,
     "BingBot": 4,
     "ChromeHeadless": 3,
     "Opera": 2,
-    "Facebook": 2,
+    "Instagram": 2,
     "OperaMobile": 2,
     "Silk": 1,
-    "FirefoxMobile": 1,
     "AppleBot": 1,
     "YandexBot": 1,
-    "Instagram": 1,
+    "Facebook": 1,
     "Brave": 1,
     "Yandex": 1,
-    "IE": 0,
     "LinkedInBot": 0,
     "UCBrowserMobile": 0,
+    "IE": 0,
+    "FirefoxMobile": 0,
     "Chromium": 0,
-    "SamsungTV": 0
+    "SamsungTV": 0,
+    "SmartTV": 0
   }
 }
