@@ -1,20 +1,6 @@
 {
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "domains": [
-    {
-      "date": "2026-10-22",
-      "domains": {
-        "essentials.com": 1379,
-        "essentials.co.uk": 263,
-        "essentials.uk": 183,
-        "essentials.net": 199,
-        "essentials.eu": 190,
-        "essentials.us": 148,
-        "essentials.fr": 195,
-        "essentials.hk": 159,
-        "essentials.tw": 161
-      }
-    },
     {
       "date": "2026-10-23",
       "domains": {
@@ -410,49 +396,53 @@
     {
       "date": "2026-11-20",
       "domains": {
-        "essentials.com": 1796,
+        "essentials.com": 1804,
         "essentials.co.uk": 177,
         "essentials.uk": 116,
-        "essentials.net": 204,
+        "essentials.net": 206,
         "essentials.eu": 116,
         "essentials.us": 148,
         "essentials.fr": 148,
         "essentials.hk": 107,
         "essentials.tw": 107
       }
+    },
+    {
+      "date": "2026-11-21",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Unknown": 849,
-    "Chrome": 721,
-    "MobileSafari": 355,
-    "ChromeMobile": 166,
-    "Firefox": 81,
-    "Safari": 65,
-    "Edge": 29,
-    "GoogleBot": 17,
+    "Unknown": 881,
+    "Chrome": 703,
+    "MobileSafari": 361,
+    "ChromeMobile": 168,
+    "Safari": 67,
+    "Firefox": 67,
+    "Edge": 28,
+    "GoogleBot": 15,
+    "ChromeMobileWebview": 13,
     "MobileSafariWebview": 11,
-    "ChromeMobileWebview": 9,
-    "Curl": 9,
-    "ChromeDerivative": 7,
+    "Curl": 10,
+    "ChromeDerivative": 8,
     "SamsungInternet": 6,
     "BingBot": 4,
-    "ChromeHeadless": 3,
-    "Opera": 2,
+    "Opera": 3,
     "Instagram": 2,
+    "ChromeHeadless": 2,
     "OperaMobile": 2,
-    "Silk": 1,
     "AppleBot": 1,
     "YandexBot": 1,
     "Facebook": 1,
     "Brave": 1,
+    "FirefoxMobile": 1,
     "Yandex": 1,
-    "LinkedInBot": 0,
-    "UCBrowserMobile": 0,
     "IE": 0,
-    "FirefoxMobile": 0,
+    "Silk": 0,
     "Chromium": 0,
     "SamsungTV": 0,
-    "SmartTV": 0
+    "SmartTV": 0,
+    "Pinterest": 0,
+    "UCBrowserMobile": 0
   }
 }
