@@ -1,20 +1,6 @@
 {
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "domains": [
-    {
-      "date": "2026-10-26",
-      "domains": {
-        "essentials.com": 1504,
-        "essentials.co.uk": 205,
-        "essentials.uk": 121,
-        "essentials.net": 215,
-        "essentials.eu": 116,
-        "essentials.us": 149,
-        "essentials.fr": 202,
-        "essentials.hk": 108,
-        "essentials.tw": 121
-      }
-    },
     {
       "date": "2026-10-27",
       "domains": {
@@ -26,7 +12,7 @@
         "essentials.us": 165,
         "essentials.fr": 149,
         "essentials.hk": 125,
-        "essentials.tw": 162
+        "essentials.tw": 161
       }
     },
     {
@@ -250,7 +236,7 @@
         "essentials.us": 179,
         "essentials.fr": 159,
         "essentials.hk": 179,
-        "essentials.tw": 103
+        "essentials.tw": 104
       }
     },
     {
@@ -334,7 +320,7 @@
         "essentials.us": 123,
         "essentials.fr": 159,
         "essentials.hk": 95,
-        "essentials.tw": 85
+        "essentials.tw": 86
       }
     },
     {
@@ -410,48 +396,51 @@
     {
       "date": "2026-11-24",
       "domains": {
-        "essentials.com": 1808,
-        "essentials.co.uk": 159,
+        "essentials.com": 1813,
+        "essentials.co.uk": 161,
         "essentials.uk": 99,
         "essentials.net": 176,
         "essentials.eu": 102,
-        "essentials.us": 106,
+        "essentials.us": 107,
         "essentials.fr": 115,
         "essentials.hk": 101,
         "essentials.tw": 154
       }
+    },
+    {
+      "date": "2026-11-25",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Chrome": 912,
-    "Unknown": 824,
-    "MobileSafari": 396,
-    "ChromeMobile": 209,
-    "Firefox": 113,
-    "Safari": 110,
-    "Edge": 42,
+    "Chrome": 879,
+    "Unknown": 813,
+    "MobileSafari": 409,
+    "ChromeMobile": 204,
+    "Firefox": 129,
+    "Safari": 126,
+    "Edge": 51,
     "GoogleBot": 15,
-    "ChromeMobileWebview": 15,
-    "ChromeDerivative": 12,
+    "ChromeMobileWebview": 13,
     "MobileSafariWebview": 10,
+    "ChromeDerivative": 10,
     "Curl": 8,
-    "SamsungInternet": 6,
+    "SamsungInternet": 7,
     "Opera": 4,
     "BingBot": 4,
-    "Instagram": 3,
+    "YandexBot": 3,
     "OperaMobile": 3,
+    "Instagram": 3,
     "ChromeHeadless": 2,
     "Yandex": 1,
+    "AppleBot": 1,
     "Facebook": 1,
     "Brave": 1,
-    "YandexBot": 1,
-    "AppleBot": 1,
-    "FirefoxMobile": 0,
-    "Chromium": 0,
     "SamsungTV": 0,
     "SmartTV": 0,
     "IE": 0,
     "Silk": 0,
+    "FirefoxMobile": 0,
     "Pinterest": 0,
     "UCBrowserMobile": 0,
     "Wget": 0
