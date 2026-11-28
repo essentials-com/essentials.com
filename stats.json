@@ -1,20 +1,6 @@
 {
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "domains": [
-    {
-      "date": "2026-10-29",
-      "domains": {
-        "essentials.com": 1461,
-        "essentials.co.uk": 220,
-        "essentials.uk": 152,
-        "essentials.net": 209,
-        "essentials.eu": 175,
-        "essentials.us": 178,
-        "essentials.fr": 181,
-        "essentials.hk": 151,
-        "essentials.tw": 145
-      }
-    },
     {
       "date": "2026-10-30",
       "domains": {
@@ -410,31 +396,35 @@
     {
       "date": "2026-11-27",
       "domains": {
-        "essentials.com": 2191,
-        "essentials.co.uk": 316,
-        "essentials.uk": 136,
+        "essentials.com": 2201,
+        "essentials.co.uk": 317,
+        "essentials.uk": 137,
         "essentials.net": 234,
         "essentials.eu": 139,
-        "essentials.us": 179,
-        "essentials.fr": 151,
-        "essentials.hk": 88,
+        "essentials.us": 180,
+        "essentials.fr": 152,
+        "essentials.hk": 89,
         "essentials.tw": 120
       }
+    },
+    {
+      "date": "2026-11-28",
+      "domains": {}
     }
   ],
   "browsers": {
-    "Chrome": 872,
-    "Unknown": 850,
-    "MobileSafari": 445,
-    "ChromeMobile": 205,
-    "Safari": 129,
-    "Firefox": 127,
-    "Edge": 49,
-    "GoogleBot": 13,
+    "Chrome": 881,
+    "Unknown": 876,
+    "MobileSafari": 504,
+    "ChromeMobile": 231,
+    "Safari": 130,
+    "Firefox": 130,
+    "Edge": 51,
+    "GoogleBot": 14,
+    "MobileSafariWebview": 13,
     "ChromeMobileWebview": 13,
-    "MobileSafariWebview": 11,
     "ChromeDerivative": 10,
-    "SamsungInternet": 7,
+    "SamsungInternet": 8,
     "Curl": 7,
     "BingBot": 5,
     "Opera": 4,
@@ -443,16 +433,16 @@
     "OperaMobile": 2,
     "ChromeHeadless": 2,
     "Silk": 1,
-    "AppleBot": 1,
     "Facebook": 1,
     "Brave": 1,
-    "IE": 0,
-    "FirefoxMobile": 0,
-    "Yandex": 0,
-    "Pinterest": 0,
+    "AppleBot": 1,
     "UCBrowserMobile": 0,
     "Wget": 0,
+    "FirefoxMobile": 0,
+    "Yandex": 0,
     "TwitterBot": 0,
-    "Chromium": 0
+    "Chromium": 0,
+    "Pinterest": 0,
+    "IE": 0
   }
 }
